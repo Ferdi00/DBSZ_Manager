@@ -81,7 +81,8 @@ thead {
   color: white;
 }
 
-th, td {
+th,
+td {
   padding: 10px;
   text-align: left;
   border: 1px solid #444444;
@@ -195,7 +196,8 @@ td img {
     justify-content: center;
   }
 
-  th, td {
+  th,
+  td {
     padding: 8px;
     font-size: 0.85em;
   }
@@ -208,5 +210,67 @@ td img {
     font-size: 0.9em;
     padding: 8px 15px;
   }
-  
+}
+
+/* Stile del selettore dei preset */
+#presetSelect {
+  padding: 10px 15px;
+  font-size: 1em;
+  background-color: #2b2b2b;
+  color: #ffffff;
+  border: 2px solid #e25822;
+  border-radius: 8px;
+  margin: 20px 0;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  transition: border-color 0.3s, transform 0.3s;
+}
+
+#presetSelect:hover {
+  border-color: #ff4500;
+  transform: scale(1.02);
+}
+
+#presetSelect:focus {
+  outline: none;
+  border-color: #ff4500;
+}
+
+/* Stile delle opzioni del selettore */
+#presetSelect option {
+  background-color: #2b2b2b;
+  color: #ffffff;
+}
+
+/* Aggiungi spazio tra il selettore e il pulsante */
+#generateButton {
+  margin-top: 10px;
+}
+
+/* Media Query: Schermi piccoli (max 768px) */
+@media (max-width: 768px) {
+  #presetSelect {
+    width: 90%; /* Larghezza maggiore su schermi piccoli */
+    font-size: 0.95em;
+    padding: 8px 12px;
+  }
+
+  .random-button {
+    font-size: 1em;
+    padding: 10px 20px;
+  }
+}
+
+/* Media Query: Schermi molto piccoli (max 480px) */
+@media (max-width: 480px) {
+  #presetSelect {
+    width: 90%;
+    font-size: 0.9em;
+    padding: 6px 10px;
+  }
+
+  .random-button {
+    font-size: 0.9em;
+    padding: 8px 15px;
+  }
 }

@@ -3,6 +3,7 @@ const player2TableBody = document.querySelector("#player2Table tbody");
 const generateButton = document.getElementById("generateButton");
 const player1DLC = document.getElementById("player1DLC");
 const player2DLC = document.getElementById("player2DLC");
+const presetSelect = document.getElementById("presetSelect"); // Aggiungi un selettore per i preset
 let characters = [];
 
 // Ordine personalizzato per il campo Type
@@ -16,8 +17,10 @@ fetch("../data/characters.json")
   })
   .catch((error) => console.error("Errore nel caricamento dei dati:", error));
 
-// Funzione per generare personaggi casuali ordinati per importanza
+// Funzione per generare personaggi in base al preset selezionato
 function generateRandomCharacters() {
+  const preset = presetSelect.value; // Ottieni il preset selezionato
+
   // Filtra i personaggi in base al toggle DLC
   const availableCharacters = characters.filter(
     (character) =>
@@ -30,23 +33,69 @@ function generateRandomCharacters() {
     return;
   }
 
-  // Mischia e seleziona 10 personaggi unici
-  const shuffledCharacters = availableCharacters
-    .sort(() => 0.5 - Math.random())
-    .slice(0, 10);
+  let player1Characters = [];
+  let player2Characters = [];
 
-  // Ordina i personaggi per importanza (TOP → SCARSO)
-  shuffledCharacters.sort(
-    (a, b) => typeOrder.indexOf(a.type) - typeOrder.indexOf(b.type)
-  );
-
-  // Dividi casualmente i 10 personaggi tra Player 1 e Player 2
-  const player1Characters = shuffledCharacters.slice(0, 5);
-  const player2Characters = shuffledCharacters.slice(5, 10);
+  if (preset === "preset1") {
+    // Preset 1:
+    player1Characters = getCharactersByType(availableCharacters, [
+      "WEAK",
+      "GOOD",
+      "MID",
+      "TOP",
+      "WEAK",
+    ]);
+    player2Characters = getCharactersByType(availableCharacters, [
+      "WEAK",
+      "GOOD",
+      "MID",
+      "TOP",
+      "WEAK",
+    ]);
+  } else if (preset === "preset2") {
+    // Preset 2: Tutti SCARSO
+    player1Characters = getCharactersByType(availableCharacters, [
+      "WEAK",
+      "WEAK",
+      "TOP",
+      "WEAK",
+      "WEAK",
+    ]);
+    player2Characters = getCharactersByType(availableCharacters, [
+      "WEAK",
+      "WEAK",
+      "TOP",
+      "WEAK",
+      "WEAK",
+    ]);
+  } else if (preset === "preset3") {
+    // Preset 3: Tutto casuale
+    const shuffledCharacters = availableCharacters
+      .sort(() => 0.5 - Math.random())
+      .slice(0, 10);
+    player1Characters = shuffledCharacters.slice(0, 5);
+    player2Characters = shuffledCharacters.slice(5, 10);
+  }
 
   // Aggiorna le tabelle
   updateTable(player1TableBody, player1Characters);
   updateTable(player2TableBody, player2Characters);
+}
+
+// Funzione per ottenere personaggi in base ai tipi specificati
+function getCharactersByType(availableCharacters, types) {
+  const selectedCharacters = [];
+  types.forEach((type) => {
+    const filteredCharacters = availableCharacters.filter(
+      (character) => character.type === type
+    );
+    const randomCharacter =
+      filteredCharacters[Math.floor(Math.random() * filteredCharacters.length)];
+    if (randomCharacter) {
+      selectedCharacters.push(randomCharacter);
+    }
+  });
+  return selectedCharacters;
 }
 
 // Funzione per aggiornare una tabella
@@ -74,13 +123,13 @@ function updateTable(tableBody, characterList) {
       case "TOP":
         typeCell.style.color = "purple";
         break;
-      case "BUONO":
+      case "GOOD":
         typeCell.style.color = "green";
         break;
-      case "MEDIO":
+      case "MID":
         typeCell.style.color = "orange";
         break;
-      case "SCARSO":
+      case "WEAK":
         typeCell.style.color = "red";
         break;
       default:
