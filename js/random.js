@@ -5,6 +5,9 @@ const player1DLC = document.getElementById("player1DLC");
 const player2DLC = document.getElementById("player2DLC");
 let characters = [];
 
+// Ordine personalizzato per il campo Type
+const typeOrder = ["TOP", "BUONO", "MEDIO", "SCARSO"];
+
 // Carica i dati dal file JSON
 fetch("../data/characters.json")
   .then((response) => response.json())
@@ -13,27 +16,33 @@ fetch("../data/characters.json")
   })
   .catch((error) => console.error("Errore nel caricamento dei dati:", error));
 
-// Funzione per generare personaggi casuali
+// Funzione per generare personaggi casuali ordinati per importanza
 function generateRandomCharacters() {
-  // Filtro dei personaggi in base al toggle DLC
-  const filteredCharactersPlayer1 = player1DLC.checked
-    ? characters
-    : characters.filter((character) => character.dlc === "no");
-
-  const filteredCharactersPlayer2 = player2DLC.checked
-    ? characters
-    : characters.filter((character) => character.dlc === "no");
-
-  // Seleziona casualmente 5 personaggi per ciascun giocatore
-  const shuffledPlayer1 = filteredCharactersPlayer1.sort(
-    () => 0.5 - Math.random()
-  );
-  const shuffledPlayer2 = filteredCharactersPlayer2.sort(
-    () => 0.5 - Math.random()
+  // Filtra i personaggi in base al toggle DLC
+  const availableCharacters = characters.filter(
+    (character) =>
+      (player1DLC.checked || character.dlc === "no") &&
+      (player2DLC.checked || character.dlc === "no")
   );
 
-  const player1Characters = shuffledPlayer1.slice(0, 5);
-  const player2Characters = shuffledPlayer2.slice(0, 5);
+  if (availableCharacters.length < 10) {
+    console.error("Non ci sono abbastanza personaggi disponibili!");
+    return;
+  }
+
+  // Mischia e seleziona 10 personaggi unici
+  const shuffledCharacters = availableCharacters
+    .sort(() => 0.5 - Math.random())
+    .slice(0, 10);
+
+  // Ordina i personaggi per importanza (TOP → SCARSO)
+  shuffledCharacters.sort(
+    (a, b) => typeOrder.indexOf(a.type) - typeOrder.indexOf(b.type)
+  );
+
+  // Dividi casualmente i 10 personaggi tra Player 1 e Player 2
+  const player1Characters = shuffledCharacters.slice(0, 5);
+  const player2Characters = shuffledCharacters.slice(5, 10);
 
   // Aggiorna le tabelle
   updateTable(player1TableBody, player1Characters);

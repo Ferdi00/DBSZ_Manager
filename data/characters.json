@@ -336,12 +336,6 @@
         "dlc": "no"
     },
     {
-        "name": "GLORIO",
-        "image_url": null,
-        "type": "TOP",
-        "dlc": "no"
-    },
-    {
         "name": "GOGETA (GT) Super Saiyan 4",
         "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/f/f7/34_GOGETA_%28GT%29_Super_Saiyan_4.png",
         "type": "BUONO",
@@ -1053,12 +1047,6 @@
         "name": "VEGETA (GT) Super Saiyan 4",
         "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/6/6a/14_VEGETA_%28GT%29_Super_Saiyan_4.png",
         "type": "TOP",
-        "dlc": "no"
-    },
-    {
-        "name": "VEGETA (MINI)",
-        "image_url": null,
-        "type": "SCARSO",
         "dlc": "no"
     },
     {
