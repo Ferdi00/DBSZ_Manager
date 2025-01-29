@@ -1,0 +1,212 @@
+/* Stile del corpo */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1e1e1e; /* Sfondo scuro */
+  color: #ffffff; /* Testo chiaro */
+  margin: 0;
+  padding: 0;
+}
+
+/* Contenitore principale */
+.container {
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+}
+
+/* Titolo */
+h1 {
+  color: #e25822;
+  margin-bottom: 20px;
+}
+
+/* Testo */
+p {
+  color: #dddddd;
+  font-size: 1.1em;
+}
+
+/* Pulsante di generazione */
+.random-button {
+  padding: 12px 25px;
+  font-size: 1.2em;
+  background-color: #e25822;
+  color: white;
+  border: 2px solid #ff4500;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.random-button:hover {
+  background-color: #ff4500;
+  transform: scale(1.05);
+}
+
+/* Contenitore delle tabelle */
+.tables {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+  flex-wrap: wrap; /* Permette di adattarsi su schermi piccoli */
+}
+
+/* Ogni tabella */
+.player-table {
+  width: 45%;
+  background-color: #2b2b2b;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+  border: 2px solid #e25822;
+  text-align: center;
+}
+
+/* Titoli delle tabelle */
+.player-table h2 {
+  color: #ff4500;
+  margin-bottom: 10px;
+}
+
+/* Stile delle tabelle */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background: #3a3a3a;
+  color: white;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #444444;
+  font-size: 0.95em;
+}
+
+tr:nth-child(even) {
+  background-color: #343434;
+}
+
+tr:nth-child(odd) {
+  background-color: #2b2b2b;
+}
+
+td img {
+  display: block;
+  margin: 0 auto;
+  width: 50px;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Stile del toggle switch */
+.toggle-switch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.toggle-switch input {
+  display: none;
+}
+
+.toggle-switch .slider {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  margin-left: 10px;
+  border-radius: 20px;
+  background-color: #e25822;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.toggle-switch input:checked + .slider {
+  background-color: #4caf50;
+}
+
+.toggle-switch .slider:before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: white;
+  top: 2px;
+  left: 2px;
+  transition: transform 0.3s;
+}
+
+.toggle-switch input:checked + .slider:before {
+  transform: translateX(20px);
+}
+
+/* Effetto di animazione */
+.fade-in {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 📱 Media Query: Schermi piccoli (max 768px) */
+@media (max-width: 768px) {
+  .tables {
+    flex-direction: column; /* Imposta le tabelle in colonna */
+    align-items: center;
+    justify-content: center;
+  }
+
+  .player-table {
+    width: 90%; /* Tabelle più larghe su schermi piccoli */
+    margin-bottom: 20px; /* Spazio tra le due tabelle */
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  .random-button {
+    font-size: 1em;
+    padding: 10px 20px;
+  }
+}
+
+/* 📱 Media Query: Schermi molto piccoli (max 480px) */
+@media (max-width: 480px) {
+  .player-table {
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+  }
+
+  th, td {
+    padding: 8px;
+    font-size: 0.85em;
+  }
+
+  td img {
+    width: 40px;
+  }
+
+  .random-button {
+    font-size: 0.9em;
+    padding: 8px 15px;
+  }
+  
+}

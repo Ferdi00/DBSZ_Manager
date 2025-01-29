@@ -1,0 +1,50 @@
+/* Stile della navbar */
+.navbar {
+  background-color: #2b2b2b;
+  padding: 10px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  color: #e25822;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+  transition: color 0.3s;
+}
+
+.navbar-link:hover {
+  color: #e25822; /* Accento arancione */
+}
+
+@media (max-width: 480px) {
+  
+  .navbar-logo {
+  display: none;}
+
+   .navbar-container {
+  align-items: center;
+  justify-content: center;
+} 
+
+}

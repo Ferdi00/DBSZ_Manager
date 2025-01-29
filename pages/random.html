@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DBZ Characters</title>
+  <link rel="stylesheet" href="../css/random.css">
+  <link rel="stylesheet" href="../css/navbar.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-logo">DBZ Characters</a>
+      <ul class="navbar-menu">
+        <li><a href="list.html" class="navbar-link">Characters List</a></li>
+        <li><a href="random.html" class="navbar-link">Random Selection</a></li>
+      </ul>
+    </div>
+  </nav>
+
+ <!-- Container -->
+  <div class="container">
+    <h1>Random Character Selection</h1>
+    <p>Click the button below to randomly generate characters for Player 1 and Player 2!</p>
+    <button id="generateButton" class="random-button">Generate Characters</button>
+
+    <div class="tables">
+      <!-- Giocatore 1 -->
+      <div class="player-table">
+        <h2>Giocatore 1</h2>
+        <label class="toggle-switch">
+          DLC 
+          <input type="checkbox" id="player1DLC" checked>
+          <span class="slider"></span>
+        </label>
+        <table id="player1Table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Image</th>
+              <th>Type</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Righe generate dinamicamente -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Giocatore 2 -->
+      <div class="player-table">
+        
+        <h2>Giocatore 2</h2>
+        <label class="toggle-switch">
+          DLC 
+          <input type="checkbox" id="player2DLC" checked>
+          <span class="slider"></span>
+        </label>
+        <table id="player2Table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Image</th>
+              <th>Type</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Righe generate dinamicamente -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/random.js"></script>
+</body>
+</html>

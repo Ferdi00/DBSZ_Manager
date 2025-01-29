@@ -1,0 +1,1172 @@
+[
+    {
+        "name": "ANDROID 13",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/a/a0/83_ANDROID_13.png",
+        "type": "SCARSO",
+        "dlc": "no"
+    },
+    {
+        "name": "ANDROID 16",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/2/26/66_ANDROID_16.png",
+        "type": "MEDIO",
+        "dlc": "no"
+    },
+    {
+        "name": "ANDROID 17 (SUPER)",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/f/f3/68_ANDROID_17_%28SUPER%29.png",
+        "type": "TOP",
+        "dlc": "no"
+    },
+    {
+        "name": "ANDROID 17 (Z)",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/1/12/67_ANDROID_17_%28Z%29.png",
+        "type": "TOP",
+        "dlc": "no"
+    },
+    {
+        "name": "ANDROID 18",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/e/e1/69_ANDROID_18.png",
+        "type": "BUONO",
+        "dlc": "no"
+    },
+    {
+        "name": "ANDROID 19",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/b/b7/70_ANDROID_19.png",
+        "type": "BUONO",
+        "dlc": "no"
+    },
+    {
+        "name": "ANILAZA",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/e/e7/109_ANILAZA.png",
+        "type": "SCARSO",
+        "dlc": "no"
+    },
+    {
+        "name": "BABIDI",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/3/38/72_BABIDI.png",
+        "type": "MEDIO",
+        "dlc": "no"
+    },
+    {
+        "name": "BABY VEGETA (GT)",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/f/fb/88_BABY_VEGETA_%28GT%29.png",
+        "type": "MEDIO",
+        "dlc": "no"
+    },
+    {
+        "name": "BARDOCK",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/1/1b/53_BARDOCK.png",
+        "type": "SCARSO",
+        "dlc": "no"
+    },
+    {
+        "name": "BEERUS",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/1/1c/91_BEERUS.png",
+        "type": "BUONO",
+        "dlc": "no"
+    },
+    {
+        "name": "BERGAMO",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/1/1c/105_BERGAMO.png",
+        "type": "MEDIO",
+        "dlc": "no"
+    },
+    {
+        "name": "BOJACK",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/1/16/84_BOJACK.png",
+        "type": "MEDIO",
+        "dlc": "no"
+    },
+    {
+        "name": "BROLY (SUPER)",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/5/5c/76_BROLY_%28SUPER%29.PNG",
+        "type": "SCARSO",
+        "dlc": "no"
+    },
+    {
+        "name": "BROLY (SUPER) Super Saiyan",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/7/7c/76%C2%BA_BROLY_%28SUPER%29_Super_Saiyan.png",
+        "type": "TOP",
+        "dlc": "no"
+    },
+    {
+        "name": "BROLY (SUPER) Super Saiyan Full Power",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/d/d6/76%C2%BA%C2%BA_BROLY_%28SUPER%29_Super_Saiyan_Full_Power.PNG",
+        "type": "BUONO",
+        "dlc": "no"
+    },
+    {
+        "name": "BROLY (Z)",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/5/50/75_BROLY_%28Z%29.png",
+        "type": "MEDIO",
+        "dlc": "no"
+    },
+    {
+        "name": "BROLY (Z) Legendary Super Saiyan",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/3/3e/75%C2%BA%C2%BA_BROLY_%28Z%29_Legendary_Super_Saiyan.png",
+        "type": "TOP",
+        "dlc": "no"
+    },
+    {
+        "name": "BROLY (Z) Super Saiyan",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/e/e7/75%C2%BA_BROLY_%28Z%29_Super_Saiyan.png",
+        "type": "MEDIO",
+        "dlc": "no"
+    },
+    {
+        "name": "BURTER",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/3/32/62_BURTER.png",
+        "type": "MEDIO",
+        "dlc": "no"
+    },
+    {
+        "name": "CABBA",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/e/e3/98_CABBA.png",
+        "type": "TOP",
+        "dlc": "no"
+    },
+    {
+        "name": "CABBA Super Saiyan",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/4/44/98%C2%BA_CABBA_Super_Saiyan.png",
+        "type": "SCARSO",
+        "dlc": "no"
+    },
+    {
+        "name": "CABBA Super Saiyan 2",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/c/c2/98%C2%BA%C2%BA_CABBA_Super_Saiyan_2.png",
+        "type": "SCARSO",
+        "dlc": "no"
+    },
+    {
+        "name": "CAPTAIN GINYU",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/a/a7/60_CAPTAIN_GINYU.png",
+        "type": "SCARSO",
+        "dlc": "no"
+    },
+    {
+        "name": "CAULIFLA",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/7/76/99_CAULIFLA.png",
+        "type": "MEDIO",
+        "dlc": "no"
+    },
+    {
+        "name": "CAULIFLA Super Saiyan 2",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/e/e7/99%C2%BA_CAULIFLA_Super_Saiyan_2.png",
+        "type": "MEDIO",
+        "dlc": "no"
+    },
+    {
+        "name": "CELL 1st Form",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/3/33/41_CELL_1st_Form.png",
+        "type": "TOP",
+        "dlc": "no"
+    },
+    {
+        "name": "CELL 2nd Form",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/e/e0/41%C2%BA_CELL_2nd_Form.png",
+        "type": "MEDIO",
+        "dlc": "no"
+    },
+    {
+        "name": "CELL JR.",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/3/32/43_CELL_JR..png",
+        "type": "TOP",
+        "dlc": "no"
+    },
+    {
+        "name": "CELL MAX",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/d/d4/114_CELL_MAX.png",
+        "type": "BUONO",
+        "dlc": "no"
+    },
+    {
+        "name": "CELL Perfect Form",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/2/29/41%C2%BA%C2%BA_CELL_Perfect_Form.png",
+        "type": "SCARSO",
+        "dlc": "no"
+    },
+    {
+        "name": "CHIAOTZU",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/1/1a/49_CHIAOTZU.png",
+        "type": "SCARSO",
+        "dlc": "no"
+    },
+    {
+        "name": "COOLER",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/a/a3/81_COOLER.png",
+        "type": "MEDIO",
+        "dlc": "no"
+    },
+    {
+        "name": "COOLER Final Form",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/a/a7/81%C2%BA_COOLER_Final_Form.png",
+        "type": "TOP",
+        "dlc": "no"
+    },
+    {
+        "name": "CUI",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/0/0f/59_CUI.png",
+        "type": "SCARSO",
+        "dlc": "no"
+    },
+    {
+        "name": "DABURA",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/c/c2/73_DABURA.png",
+        "type": "TOP",
+        "dlc": "no"
+    },
+    {
+        "name": "DODORIA",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/9/9a/58_DODORIA.png",
+        "type": "BUONO",
+        "dlc": "no"
+    },
+    {
+        "name": "DR. GERO",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/5/54/71_DR._GERO.png",
+        "type": "SCARSO",
+        "dlc": "no"
+    },
+    {
+        "name": "DR. WHEELO",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/c/c5/78_DR._WHEELO.png",
+        "type": "SCARSO",
+        "dlc": "no"
+    },
+    {
+        "name": "DYSPO",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/8/8f/104_DYSPO.png",
+        "type": "BUONO",
+        "dlc": "no"
+    },
+    {
+        "name": "FRIEZA (SUPER)",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/0/00/40_FRIEZA_%28SUPER%29.png",
+        "type": "BUONO",
+        "dlc": "no"
+    },
+    {
+        "name": "FRIEZA (Z) 1st Form",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/3/38/38_FRIEZA_%28Z%29_1st_Form.png",
+        "type": "TOP",
+        "dlc": "no"
+    },
+    {
+        "name": "FRIEZA (Z) 2nd Form",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/a/ab/38%C2%BA_FRIEZA_%28Z%29_2nd_Form.png",
+        "type": "BUONO",
+        "dlc": "no"
+    },
+    {
+        "name": "FRIEZA (Z) 3rd Form",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/e/e7/38%C2%BA%C2%BA_FRIEZA_%28Z%29_3rd_Form.png",
+        "type": "BUONO",
+        "dlc": "no"
+    },
+    {
+        "name": "FRIEZA (Z) 4th Form",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/a/ab/38%C2%BA%C2%BA%C2%BA_FRIEZA_%28Z%29_4th_Form.png",
+        "type": "BUONO",
+        "dlc": "no"
+    },
+    {
+        "name": "FRIEZA (Z) Full Power",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/6/68/38%C2%BA%C2%BA%C2%BA%C2%BA_FRIEZA_%28Z%29_Full_Power.png",
+        "type": "MEDIO",
+        "dlc": "no"
+    },
+    {
+        "name": "FRIEZA FORCE SOLDIER",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/6/6c/74_FRIEZA_FORCE_SOLDIER.png",
+        "type": "MEDIO",
+        "dlc": "no"
+    },
+    {
+        "name": "FROST",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/9/9a/97_FROST.png",
+        "type": "TOP",
+        "dlc": "no"
+    },
+    {
+        "name": "FULL-POWER BOJACK",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/f/f6/84%C2%BA_FULL-POWER_BOJACK.png",
+        "type": "SCARSO",
+        "dlc": "no"
+    },
+    {
+        "name": "FUSED ZAMASU",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/8/80/95_FUSED_ZAMASU.png",
+        "type": "SCARSO",
+        "dlc": "no"
+    },
+    {
+        "name": "FUSED ZAMASU Half-Corrupted",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/e/e0/95%C2%BA_FUSED_ZAMASU_Half-Corrupted.png",
+        "type": "MEDIO",
+        "dlc": "no"
+    },
+    {
+        "name": "FUSION ANDROID 13",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/f/fd/83%C2%BA_FUSION_ANDROID_13.png",
+        "type": "SCARSO",
+        "dlc": "no"
+    },
+    {
+        "name": "FUTURE TRUNKS",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/9/91/28_FUTURE_TRUNKS.png",
+        "type": "SCARSO",
+        "dlc": "no"
+    },
+    {
+        "name": "FUTURE TRUNKS Super Saiyan",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/a/a8/28%C2%BA_FUTURE_TRUNKS_Super_Saiyan.png",
+        "type": "BUONO",
+        "dlc": "no"
+    },
+    {
+        "name": "GAMMA 1",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/e/e8/112_GAMMA_1.png",
+        "type": "TOP",
+        "dlc": "no"
+    },
+    {
+        "name": "GAMMA 2",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/9/99/113_GAMMA_2.png",
+        "type": "TOP",
+        "dlc": "no"
+    },
+    {
+        "name": "GLORIO",
+        "image_url": null,
+        "type": "TOP",
+        "dlc": "no"
+    },
+    {
+        "name": "GOGETA (GT) Super Saiyan 4",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/f/f7/34_GOGETA_%28GT%29_Super_Saiyan_4.png",
+        "type": "BUONO",
+        "dlc": "no"
+    },
+    {
+        "name": "GOGETA (SUPER)",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/8/80/33_GOGETA_%28SUPER%29.png",
+        "type": "BUONO",
+        "dlc": "no"
+    },
+    {
+        "name": "GOGETA (SUPER) Super Saiyan",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/8/87/33%C2%BA_GOGETA_%28SUPER%29_Super_Saiyan.png",
+        "type": "BUONO",
+        "dlc": "no"
+    },
+    {
+        "name": "GOGETA (SUPER) Super Saiyan God Super Saiyan",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/7/74/33%C2%BA%C2%BA_GOGETA_%28SUPER%29_Super_Saiyan_God_Super_Saiyan.png",
+        "type": "MEDIO",
+        "dlc": "no"
+    },
+    {
+        "name": "GOHAN (ADULT)",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/4/45/17_GOHAN_%28ADULT%29.png",
+        "type": "BUONO",
+        "dlc": "no"
+    },
+    {
+        "name": "GOHAN (ADULT) Super Saiyan",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/4/47/17%C2%BA_GOHAN_%28ADULT%29_Super_Saiyan.png",
+        "type": "BUONO",
+        "dlc": "no"
+    },
+    {
+        "name": "GOHAN (ADULT) Super Saiyan 2",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/a/a6/17%C2%BA%C2%BA_GOHAN_%28ADULT%29_Super_Saiyan_2.png",
+        "type": "TOP",
+        "dlc": "no"
+    },
+    {
+        "name": "GOHAN (FUTURE)",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/2/21/19_GOHAN_%28FUTURE%29.png",
+        "type": "SCARSO",
+        "dlc": "no"
+    },
+    {
+        "name": "GOHAN (FUTURE) Super Saiyan",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/e/e4/19%C2%BA_GOHAN_%28FUTURE%29_Super_Saiyan.png",
+        "type": "SCARSO",
+        "dlc": "no"
+    },
+    {
+        "name": "GOHAN (KID)",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/7/7d/15_GOHAN_%28KID%29.png",
+        "type": "MEDIO",
+        "dlc": "no"
+    },
+    {
+        "name": "GOHAN (SUPER HERO)",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/c/c9/110_GOHAN_%28SUPER_HERO%29.png",
+        "type": "TOP",
+        "dlc": "no"
+    },
+    {
+        "name": "GOHAN (SUPER HERO) Super Saiyan",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/9/9c/110%C2%BA_GOHAN_%28SUPER_HERO%29_Super_Saiyan.png",
+        "type": "TOP",
+        "dlc": "no"
+    },
+    {
+        "name": "GOHAN (TEEN)",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/3/3a/16_GOHAN_%28TEEN%29.png",
+        "type": "TOP",
+        "dlc": "no"
+    },
+    {
+        "name": "GOHAN (TEEN) Super Saiyan",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/d/d1/16%C2%BA_GOHAN_%28TEEN%29_Super_Saiyan.png",
+        "type": "BUONO",
+        "dlc": "no"
+    },
+    {
+        "name": "GOHAN (TEEN) Super Saiyan 2",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/a/a7/16%C2%BA%C2%BA_GOHAN_%28TEEN%29_Super_Saiyan_2.png",
+        "type": "TOP",
+        "dlc": "no"
+    },
+    {
+        "name": "GOHAN BEAST",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/9/90/110%C2%BA%C2%BA%C2%BA_GOHAN_BEAST.png",
+        "type": "MEDIO",
+        "dlc": "no"
+    },
+    {
+        "name": "GOKU (GT)",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/b/bb/06_GOKU_%28GT%29.png",
+        "type": "TOP",
+        "dlc": "no"
+    },
+    {
+        "name": "GOKU (GT) Super Saiyan",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/1/16/06%C2%BA_GOKU_%28GT%29_Super_Saiyan.png",
+        "type": "MEDIO",
+        "dlc": "no"
+    },
+    {
+        "name": "GOKU (GT) Super Saiyan 3",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/d/dd/06%C2%BA%C2%BA_GOKU_%28GT%29_Super_Saiyan_3.png",
+        "type": "BUONO",
+        "dlc": "no"
+    },
+    {
+        "name": "GOKU (GT) Super Saiyan 4",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/0/07/06%C2%BA%C2%BA%C2%BA_GOKU_%28GT%29_Super_Saiyan_4.png",
+        "type": "BUONO",
+        "dlc": "no"
+    },
+    {
+        "name": "GOKU (MINI)",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/b/bf/08_GOKU_%28MINI%29.png",
+        "type": "TOP",
+        "dlc": "no"
+    },
+    {
+        "name": "GOKU (SUPER)",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/2/2e/04_GOKU_%28SUPER%29.png",
+        "type": "BUONO",
+        "dlc": "no"
+    },
+    {
+        "name": "GOKU (SUPER) Super Saiyan",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/1/15/04%C2%BA_GOKU_%28SUPER%29_Super_Saiyan.png",
+        "type": "SCARSO",
+        "dlc": "no"
+    },
+    {
+        "name": "GOKU (SUPER) Super Saiyan God",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/3/30/04%C2%BA%C2%BA_GOKU_%28SUPER%29_Super_Saiyan_God.png",
+        "type": "TOP",
+        "dlc": "no"
+    },
+    {
+        "name": "GOKU (SUPER) Super Saiyan God Super Saiyan",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/d/d8/04%C2%BA%C2%BA%C2%BA_GOKU_%28SUPER%29_Super_Saiyan_God_Super_Saiyan.png",
+        "type": "TOP",
+        "dlc": "no"
+    },
+    {
+        "name": "GOKU (SUPER) Ultra Instinct",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/9/9f/05%C2%BA_GOKU_%28SUPER%29_Ultra_Instinct.png",
+        "type": "BUONO",
+        "dlc": "no"
+    },
+    {
+        "name": "GOKU (SUPER) Ultra Instinct -Sign-",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/8/8b/05_GOKU_%28SUPER%29_Ultra_Instinct_-Sign-.png",
+        "type": "BUONO",
+        "dlc": "no"
+    },
+    {
+        "name": "GOKU (TEEN)",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/5/52/07_GOKU_%28TEEN%29.png",
+        "type": "BUONO",
+        "dlc": "no"
+    },
+    {
+        "name": "GOKU (Z-EARLY)",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/2/23/01_GOKU_%28Z-EARLY%29.png",
+        "type": "SCARSO",
+        "dlc": "no"
+    },
+    {
+        "name": "GOKU (Z-END)",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/4/43/03_GOKU_%28Z-END%29.png",
+        "type": "BUONO",
+        "dlc": "no"
+    },
+    {
+        "name": "GOKU (Z-END) Super Saiyan",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/d/de/03%C2%BA_GOKU_%28Z-END%29_Super_Saiyan.png",
+        "type": "BUONO",
+        "dlc": "no"
+    },
+    {
+        "name": "GOKU (Z-END) Super Saiyan 2",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/0/05/03%C2%BA%C2%BA_GOKU_%28Z-END%29_Super_Saiyan_2.png",
+        "type": "TOP",
+        "dlc": "no"
+    },
+    {
+        "name": "GOKU (Z-END) Super Saiyan 3",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/3/3f/03%C2%BA%C2%BA%C2%BA_GOKU_%28Z-END%29_Super_Saiyan_3.png",
+        "type": "SCARSO",
+        "dlc": "no"
+    },
+    {
+        "name": "GOKU (Z-MID)",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/f/fd/02_GOKU_%28Z-MID%29.png",
+        "type": "BUONO",
+        "dlc": "no"
+    },
+    {
+        "name": "GOKU (Z-MID) Super Saiyan",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/3/3f/02%C2%BA_GOKU_%28Z-MID%29_Super_Saiyan.png",
+        "type": "MEDIO",
+        "dlc": "no"
+    },
+    {
+        "name": "GOKU BLACK",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/6/6e/93_GOKU_BLACK.png",
+        "type": "BUONO",
+        "dlc": "no"
+    },
+    {
+        "name": "GOKU BLACK Super Saiyan Rosé",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/c/c3/93%C2%BA_GOKU_BLACK_Super_Saiyan_Ros%C3%A9.png",
+        "type": "TOP",
+        "dlc": "no"
+    },
+    {
+        "name": "GOLDEN FRIEZA",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/9/9a/40%C2%BA_GOLDEN_FRIEZA.png",
+        "type": "MEDIO",
+        "dlc": "no"
+    },
+    {
+        "name": "GOTEN",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/d/d7/30_GOTEN.png",
+        "type": "MEDIO",
+        "dlc": "no"
+    },
+    {
+        "name": "GOTEN Super Saiyan",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/1/16/30%C2%BA_GOTEN_Super_Saiyan.png",
+        "type": "TOP",
+        "dlc": "no"
+    },
+    {
+        "name": "GOTENKS",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/e/e9/35_GOTENKS.png",
+        "type": "SCARSO",
+        "dlc": "no"
+    },
+    {
+        "name": "GOTENKS Super Saiyan",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/4/45/35%C2%BA_SUPER_GOTENKS.png",
+        "type": "SCARSO",
+        "dlc": "no"
+    },
+    {
+        "name": "GOTENKS Super Saiyan 3",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/4/43/35%C2%BA%C2%BA_GOTENKS_Super_Saiyan_3.png",
+        "type": "TOP",
+        "dlc": "no"
+    },
+    {
+        "name": "GREAT APE BABY (GT)",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/2/23/88%C2%BA%C2%BA%C2%BA_GREAT_APE_BABY_%28GT%29.png",
+        "type": "MEDIO",
+        "dlc": "no"
+    },
+    {
+        "name": "GREAT APE VEGETA",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/4/40/09%C2%BA_GREAT_APE_VEGETA.png",
+        "type": "TOP",
+        "dlc": "no"
+    },
+    {
+        "name": "GREAT SAIYAMAN",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/b/b0/17%C2%BA%C2%BA%C2%BA_GREAT_SAIYAMAN.png",
+        "type": "SCARSO",
+        "dlc": "no"
+    },
+    {
+        "name": "GULDO",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/8/82/64_GULDO.png",
+        "type": "SCARSO",
+        "dlc": "no"
+    },
+    {
+        "name": "HIRUDEGARN",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/2/2c/87_HIRUDEGARN.png",
+        "type": "BUONO",
+        "dlc": "no"
+    },
+    {
+        "name": "HIT",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/5/57/96_HIT.png",
+        "type": "SCARSO",
+        "dlc": "no"
+    },
+    {
+        "name": "JANEMBA",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/5/53/85_JANEMBA.png",
+        "type": "BUONO",
+        "dlc": "no"
+    },
+    {
+        "name": "JEICE",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/b/b5/63_JEICE.png",
+        "type": "TOP",
+        "dlc": "no"
+    },
+    {
+        "name": "JIREN",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/3/3c/102_JIREN.png",
+        "type": "MEDIO",
+        "dlc": "no"
+    },
+    {
+        "name": "JIREN Full Power",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/6/6b/102%C2%BA_JIREN_Full_Power.png",
+        "type": "MEDIO",
+        "dlc": "no"
+    },
+    {
+        "name": "KAKUNSA",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/c/c5/107_KAKUNSA.png",
+        "type": "SCARSO",
+        "dlc": "no"
+    },
+    {
+        "name": "KALE",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/8/81/100_KALE.png",
+        "type": "MEDIO",
+        "dlc": "no"
+    },
+    {
+        "name": "KALE Super Saiyan",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/6/68/100%C2%BA%C2%BA_KALE_Super_Saiyan.png",
+        "type": "TOP",
+        "dlc": "no"
+    },
+    {
+        "name": "KALE Super Saiyan (Berserk)",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/0/04/100%C2%BA_KALE_Super_Saiyan_%28Berserk%29.png",
+        "type": "SCARSO",
+        "dlc": "no"
+    },
+    {
+        "name": "KEFLA",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/b/be/101_KEFLA.png",
+        "type": "SCARSO",
+        "dlc": "no"
+    },
+    {
+        "name": "KEFLA Super Saiyan",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/d/db/101%C2%BA_KEFLA_Super_Saiyan.png",
+        "type": "SCARSO",
+        "dlc": "no"
+    },
+    {
+        "name": "KEFLA Super Saiyan 2",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/5/52/101%C2%BA%C2%BA_KEFLA_Super_Saiyan_2.png",
+        "type": "TOP",
+        "dlc": "no"
+    },
+    {
+        "name": "KID BUU",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/9/94/47_KID_BUU.png",
+        "type": "MEDIO",
+        "dlc": "no"
+    },
+    {
+        "name": "KING COLD",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/4/42/65_KING_COLD.png",
+        "type": "TOP",
+        "dlc": "no"
+    },
+    {
+        "name": "KRILLIN",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/9/93/23_KRILLIN.png",
+        "type": "BUONO",
+        "dlc": "no"
+    },
+    {
+        "name": "LORD SLUG",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/3/37/80_LORD_SLUG.png",
+        "type": "SCARSO",
+        "dlc": "no"
+    },
+    {
+        "name": "LORD SLUG Giant Form",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/7/74/80%C2%BA_LORD_SLUG_Giant_Form.png",
+        "type": "BUONO",
+        "dlc": "no"
+    },
+    {
+        "name": "MAJIN BUU",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/8/8b/44_MAJIN_BUU.png",
+        "type": "MEDIO",
+        "dlc": "no"
+    },
+    {
+        "name": "MAJIN BUU (EVIL)",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/5/5c/45_MAJIN_BUU_%28EVIL%29.png",
+        "type": "BUONO",
+        "dlc": "no"
+    },
+    {
+        "name": "MAJIN VEGETA",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/5/55/12_MAJIN_VEGETA.png",
+        "type": "SCARSO",
+        "dlc": "no"
+    },
+    {
+        "name": "MAJUUB (GT)",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/9/92/52%C2%BA_MAJUUB_%28GT%29.png",
+        "type": "SCARSO",
+        "dlc": "no"
+    },
+    {
+        "name": "MASTER ROSHI",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/7/74/37_MASTER_ROSHI.png",
+        "type": "SCARSO",
+        "dlc": "no"
+    },
+    {
+        "name": "MASTER ROSHI Max Power",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/8/80/37%C2%BA_MASTER_ROSHI_Max_Power.png",
+        "type": "TOP",
+        "dlc": "no"
+    },
+    {
+        "name": "MECHA FRIEZA",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/7/70/39_MECHA_FRIEZA.png",
+        "type": "SCARSO",
+        "dlc": "no"
+    },
+    {
+        "name": "METAL COOLER",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/1/1c/82_METAL_COOLER.png",
+        "type": "SCARSO",
+        "dlc": "no"
+    },
+    {
+        "name": "MR. SATAN",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/7/73/48_MR._SATAN.png",
+        "type": "BUONO",
+        "dlc": "no"
+    },
+    {
+        "name": "NAIL",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/2/2a/22_NAIL.png",
+        "type": "SCARSO",
+        "dlc": "no"
+    },
+    {
+        "name": "NAPPA",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/e/e9/56_NAPPA.png",
+        "type": "SCARSO",
+        "dlc": "no"
+    },
+    {
+        "name": "OMEGA SHENRON (GT)",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/3/3d/89%C2%BA_OMEGA_SHENRON_%28GT%29.png",
+        "type": "MEDIO",
+        "dlc": "no"
+    },
+    {
+        "name": "ORANGE PICCOLO",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/2/2e/111%C2%BA%C2%BA_ORANGE_PICCOLO.png",
+        "type": "MEDIO",
+        "dlc": "no"
+    },
+    {
+        "name": "ORANGE PICCOLO Giant Form",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/1/1b/111%C2%BA%C2%BA%C2%BA_ORANGE_PICCOLO_Giant_Form.png",
+        "type": "BUONO",
+        "dlc": "no"
+    },
+    {
+        "name": "PAN (GT)",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/2/27/51_PAN_%28GT%29.png",
+        "type": "BUONO",
+        "dlc": "no"
+    },
+    {
+        "name": "PERFECT CELL",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/f/f7/42_PERFECT_CELL.png",
+        "type": "MEDIO",
+        "dlc": "no"
+    },
+    {
+        "name": "PICCOLO",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/5/5f/20_PICCOLO.png",
+        "type": "TOP",
+        "dlc": "no"
+    },
+    {
+        "name": "PICCOLO (FUSED WITH KAMI)",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/3/36/21_PICCOLO_%28FUSED_WITH_KAMI%29.png",
+        "type": "BUONO",
+        "dlc": "no"
+    },
+    {
+        "name": "PICCOLO (SUPER HERO)",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/9/9b/111_PICCOLO_%28SUPER_HERO%29.png",
+        "type": "TOP",
+        "dlc": "no"
+    },
+    {
+        "name": "PICCOLO (SUPER HERO) Power Awakening",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/1/19/111%C2%BA_PICCOLO_%28SUPER_HERO%29_Power_Awakening.png",
+        "type": "MEDIO",
+        "dlc": "no"
+    },
+    {
+        "name": "RADITZ",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/d/d8/54_RADITZ.png",
+        "type": "TOP",
+        "dlc": "no"
+    },
+    {
+        "name": "RECOOME",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/b/bc/61_RECOOME.png",
+        "type": "BUONO",
+        "dlc": "no"
+    },
+    {
+        "name": "RIBRIANNE",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/c/c0/106_RIBRIANNE.png",
+        "type": "MEDIO",
+        "dlc": "no"
+    },
+    {
+        "name": "ROASIE",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/2/24/108_ROASIE.png",
+        "type": "TOP",
+        "dlc": "no"
+    },
+    {
+        "name": "SAIBAMAN",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/a/ad/55_SAIBAMAN.png",
+        "type": "SCARSO",
+        "dlc": "no"
+    },
+    {
+        "name": "SPOPOVICH",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/3/31/90_SPOPOVICH.png",
+        "type": "BUONO",
+        "dlc": "no"
+    },
+    {
+        "name": "SUPER BABY 1 (GT)",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/a/a9/88%C2%BA_SUPER_BABY_1_%28GT%29.png",
+        "type": "BUONO",
+        "dlc": "no"
+    },
+    {
+        "name": "SUPER BABY 2 (GT)",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/e/e7/88%C2%BA%C2%BA_SUPER_BABY_2_%28GT%29.png",
+        "type": "MEDIO",
+        "dlc": "no"
+    },
+    {
+        "name": "SUPER BUU",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/f/fd/46_SUPER_BUU.png",
+        "type": "MEDIO",
+        "dlc": "no"
+    },
+    {
+        "name": "SUPER BUU Gohan Absorbed",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/b/bb/46%C2%BA%C2%BA_SUPER_BUU_Gohan_Absorbed.png",
+        "type": "TOP",
+        "dlc": "no"
+    },
+    {
+        "name": "SUPER BUU Gotenks Absorbed",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/9/96/46%C2%BA_SUPER_BUU_Gotenks_Absorbed.png",
+        "type": "SCARSO",
+        "dlc": "no"
+    },
+    {
+        "name": "SUPER GARLIC JR.",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/4/43/77_GARLICK_JR..png",
+        "type": "BUONO",
+        "dlc": "no"
+    },
+    {
+        "name": "SUPER GOGETA (Z)",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/1/1d/32_SUPER_GOGETA_%28Z%29.png",
+        "type": "BUONO",
+        "dlc": "no"
+    },
+    {
+        "name": "SUPER JANEMBA",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/7/7f/85%C2%BA_SUPER_JANEMBA.png",
+        "type": "BUONO",
+        "dlc": "no"
+    },
+    {
+        "name": "SUPER TRUNKS",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/c/cd/27%C2%BA%C2%BA_SUPER_TRUNKS.png",
+        "type": "MEDIO",
+        "dlc": "no"
+    },
+    {
+        "name": "SUPER VEGETA",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/d/d0/10%C2%BA%C2%BA_SUPER_VEGETA.png",
+        "type": "BUONO",
+        "dlc": "no"
+    },
+    {
+        "name": "SUPER VEGITO",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/d/dc/31%C2%BA_SUPER_VEGITO.png",
+        "type": "SCARSO",
+        "dlc": "no"
+    },
+    {
+        "name": "SUPER ZARBON",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/b/bb/57%C2%BA_SUPER_ZARBON.png",
+        "type": "SCARSO",
+        "dlc": "no"
+    },
+    {
+        "name": "SYN SHENRON (GT)",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/3/38/89_SYN_SHENRON.png",
+        "type": "BUONO",
+        "dlc": "no"
+    },
+    {
+        "name": "TAPION",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/a/a4/86_TAPION.png",
+        "type": "MEDIO",
+        "dlc": "no"
+    },
+    {
+        "name": "TIEN",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/e/eb/25_TIEN.png",
+        "type": "MEDIO",
+        "dlc": "no"
+    },
+    {
+        "name": "TOPPO",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/b/ba/103_TOPPO.png",
+        "type": "BUONO",
+        "dlc": "no"
+    },
+    {
+        "name": "TOPPO, GOD OF DESTRUCTION",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/6/6b/103%C2%BA_TOPPO%2C_GOD_OF_DESTRUCTION.png",
+        "type": "MEDIO",
+        "dlc": "no"
+    },
+    {
+        "name": "TRUNKS (KID)",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/2/26/29_TRUNKS_%28KID%29.png",
+        "type": "BUONO",
+        "dlc": "no"
+    },
+    {
+        "name": "TRUNKS (KID) Super Saiyan",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/9/9a/29%C2%BA_TRUNKS_%28KID%29_Super_Saiyan.png",
+        "type": "BUONO",
+        "dlc": "no"
+    },
+    {
+        "name": "TRUNKS (MELEE)",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/4/40/27_TRUNKS_%28MELEE%29.png",
+        "type": "SCARSO",
+        "dlc": "no"
+    },
+    {
+        "name": "TRUNKS (MELEE) Super Saiyan",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/c/cc/27%C2%BA_TRUNKS_%28MELEE%29_Super_Saiyan.png",
+        "type": "TOP",
+        "dlc": "no"
+    },
+    {
+        "name": "TRUNKS (SWORD)",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/4/47/26_TRUNKS_%28SWORD%29.png",
+        "type": "BUONO",
+        "dlc": "no"
+    },
+    {
+        "name": "TRUNKS (SWORD) Super Saiyan",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/5/58/26%C2%BA_TRUNKS_%28SWORD%29_Super_Saiyan.png",
+        "type": "BUONO",
+        "dlc": "no"
+    },
+    {
+        "name": "TURLES",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/d/d5/79_TURLES.png",
+        "type": "TOP",
+        "dlc": "no"
+    },
+    {
+        "name": "ULTIMATE GOHAN",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/7/7f/18_ULTIMATE_GOHAN.png",
+        "type": "BUONO",
+        "dlc": "no"
+    },
+    {
+        "name": "ULTIMATE GOHAN (SUPER HERO)",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/4/48/110%C2%BA%C2%BA_ULTIMATE_GOHAN_%28SUPER_HERO%29.png",
+        "type": "BUONO",
+        "dlc": "no"
+    },
+    {
+        "name": "UUB (GT)",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/d/de/52_UUB_%28GT%29.png",
+        "type": "TOP",
+        "dlc": "no"
+    },
+    {
+        "name": "VEGETA (GT) Super Saiyan 4",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/6/6a/14_VEGETA_%28GT%29_Super_Saiyan_4.png",
+        "type": "TOP",
+        "dlc": "no"
+    },
+    {
+        "name": "VEGETA (MINI)",
+        "image_url": null,
+        "type": "SCARSO",
+        "dlc": "no"
+    },
+    {
+        "name": "VEGETA (SUPER)",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/1/10/13_VEGETA_%28SUPER%29.png",
+        "type": "TOP",
+        "dlc": "no"
+    },
+    {
+        "name": "VEGETA (SUPER) Super Saiyan",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/7/75/13%C2%BA_VEGETA_%28SUPER%29_Super_Saiyan.png",
+        "type": "BUONO",
+        "dlc": "no"
+    },
+    {
+        "name": "VEGETA (SUPER) Super Saiyan God",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/b/b1/13%C2%BA%C2%BA_VEGETA_%28SUPER%29_Super_Saiyan_God.png",
+        "type": "SCARSO",
+        "dlc": "no"
+    },
+    {
+        "name": "VEGETA (SUPER) Super Saiyan God Super Saiyan",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/a/ae/13%C2%BA%C2%BA%C2%BA_VEGETA_%28SUPER%29_Super_Saiyan_God_Super_Saiyan.png",
+        "type": "SCARSO",
+        "dlc": "no"
+    },
+    {
+        "name": "VEGETA (Z-EARLY)",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/0/08/10_VEGETA_%28Z-EARLY%29.png",
+        "type": "TOP",
+        "dlc": "no"
+    },
+    {
+        "name": "VEGETA (Z-EARLY) Super Saiyan",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/3/3b/10%C2%BA_VEGETA_%28Z-EARLY%29_Super_Saiyan.png",
+        "type": "SCARSO",
+        "dlc": "no"
+    },
+    {
+        "name": "VEGETA (Z-END)",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/a/ad/11_VEGETA_%28Z-END%29.png",
+        "type": "TOP",
+        "dlc": "no"
+    },
+    {
+        "name": "VEGETA (Z-END) Super Saiyan",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/d/df/11%C2%BA_VEGETA_%28Z-END%29_Super_Saiyan.png",
+        "type": "MEDIO",
+        "dlc": "no"
+    },
+    {
+        "name": "VEGETA (Z-END) Super Saiyan 2",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/0/06/11%C2%BA%C2%BA_VEGETA_%28Z-END%29_Super_Saiyan_2.png",
+        "type": "SCARSO",
+        "dlc": "no"
+    },
+    {
+        "name": "VEGETA (Z-SCOUTER)",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/a/ab/09_VEGETA_%28Z-SCOUTER%29.png",
+        "type": "MEDIO",
+        "dlc": "no"
+    },
+    {
+        "name": "VEGITO",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/0/08/31_VEGITO.png",
+        "type": "SCARSO",
+        "dlc": "no"
+    },
+    {
+        "name": "VEGITO Super Saiyan God Super Saiyan",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/d/de/31%C2%BA%C2%BA_VEGITO_Super_Saiyan_God_Super_Saiyan.png",
+        "type": "BUONO",
+        "dlc": "no"
+    },
+    {
+        "name": "VIDEL",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/d/de/36_VIDEL.png",
+        "type": "MEDIO",
+        "dlc": "no"
+    },
+    {
+        "name": "WHIS",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/7/7b/92_WHIS.png",
+        "type": "BUONO",
+        "dlc": "no"
+    },
+    {
+        "name": "YAJIROBE",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/b/b0/50_YAJIROBE.png",
+        "type": "BUONO",
+        "dlc": "no"
+    },
+    {
+        "name": "YAMCHA",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/a/a4/24_YAMCHA.png",
+        "type": "BUONO",
+        "dlc": "no"
+    },
+    {
+        "name": "ZAMASU",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/b/b2/94_ZAMASU.png",
+        "type": "MEDIO",
+        "dlc": "no"
+    },
+    {
+        "name": "ZARBON",
+        "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/2/25/57_ZARBON.png",
+        "type": "MEDIO",
+        "dlc": "no"
+    }
+]
