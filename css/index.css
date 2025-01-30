@@ -1,7 +1,7 @@
 /* Stile generale */
 body {
   font-family: Arial, sans-serif;
-  background-color: #1e1e1e; /* Sfondo scuro */
+  background-color: #1e1e1e;
   color: white;
   margin: 0;
   padding: 0;
@@ -14,14 +14,22 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 80vh; /* Centra verticalmente */
+  height: 80vh;
   padding: 20px;
+}
+
+/* Logo responsive */
+.logo {
+  width: 60%;
+  max-width: 400px;
+  height: auto;
+  margin-bottom: 20px;
 }
 
 /* Titolo */
 h1 {
   font-size: 2.5em;
-  color: #e25822; /* Arancione */
+  color: #e25822;
   margin-bottom: 10px;
 }
 
@@ -33,7 +41,24 @@ p {
   line-height: 1.6;
 }
 
-.container img {
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .container {
+    height: auto;
+    padding: 40px 20px;
+  }
 
-  width: 90%;
+  .logo {
+    width: 80%;
+    max-width: 250px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  p {
+    font-size: 1.1em;
+    max-width: 90%;
+  }
 }
