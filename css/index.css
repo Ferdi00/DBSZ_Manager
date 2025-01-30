@@ -32,3 +32,8 @@ p {
   color: #dddddd;
   line-height: 1.6;
 }
+
+.container img {
+
+  width: 90%;
+}

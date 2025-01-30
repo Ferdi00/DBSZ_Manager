@@ -11,11 +11,14 @@
   align-items: center;
 }
 
+.navbar-logo img {
+  width: 50%;
+}
+
 .navbar-logo {
-  color: #e25822;
-  font-size: 1.5em;
-  font-weight: bold;
-  text-decoration: none;
+  width: 20%;
+  display: flex;
+  align-items: start;
 }
 
 .navbar-menu {
@@ -29,7 +32,7 @@
 .navbar-link {
   color: white;
   text-decoration: none;
-  font-size: 1em;
+  font-size: 1.5em;
   transition: color 0.3s;
 }
 
@@ -37,14 +40,118 @@
   color: #e25822; /* Accento arancione */
 }
 
+/* Icona del menu (visibile solo su dispositivi piccoli) */
+.menu-icon {
+  display: none;
+  color: white;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+/* Menu laterale */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -250px; /* Nascondi il menu a destra */
+  width: 250px;
+  height: 100%;
+  background-color: #2b2b2b;
+  transition: right 0.3s ease-in-out; /* Animazione fluida */
+  z-index: 1000;
+  box-shadow: -4px 0 10px rgba(0, 0, 0, 0.3); /* Ombra laterale */
+  border-top-left-radius: 15px; /* Bordi arrotondati */
+  border-bottom-left-radius: 15px;
+}
+
+.sidebar.open {
+  right: 0; /* Mostra il menu laterale da destra */
+}
+
+/* Icona di chiusura */
+.sidebar-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: white;
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.sidebar-close:hover {
+  color: #e25822; /* Cambia colore al passaggio del mouse */
+}
+
+/* Menu della sidebar */
+.sidebar-menu {
+  list-style: none;
+  padding: 60px 20px 20px; /* Spazio per l'icona di chiusura */
+  margin: 0;
+}
+
+.sidebar-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center; /* Allinea icone e testo */
+  padding: 12px 0;
+  transition: color 0.3s, background-color 0.3s;
+  border-radius: 8px; /* Bordi arrotondati per i link */
+}
+
+.sidebar-link:hover {
+  color: #e25822; /* Cambia colore al passaggio del mouse */
+  background-color: rgba(255, 255, 255, 0.1); /* Sfondo al passaggio del mouse */
+}
+
+/* Icone dei link */
+.sidebar-link i {
+  margin-right: 12px; /* Spazio tra l'icona e il testo */
+  font-size: 1.2em;
+  width: 24px; /* Larghezza fissa per allineare le icone */
+  text-align: center;
+}
+
+/* Overlay */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+/* Media Query: Schermi piccoli (max 768px) */
+@media (max-width: 768px) {
+  .navbar-menu {
+    display: none; /* Nascondi il menu standard */
+  }
+
+  .menu-icon {
+    display: block; /* Mostra l'icona del menu */
+  }
+
+  .sidebar.open {
+    right: 0; /* Mostra il menu laterale */
+  }
+
+  .overlay.active {
+    display: block; /* Mostra l'overlay */
+  }
+}
+
 @media (max-width: 480px) {
-  
   .navbar-logo {
-  display: none;}
+    width: 100%;
+    justify-content: center;
+  }
 
-   .navbar-container {
-  align-items: center;
-  justify-content: center;
-} 
-
+  .navbar-container {
+    align-items: center;
+    justify-content: center;
+  }
 }

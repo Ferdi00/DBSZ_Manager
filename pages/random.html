@@ -6,21 +6,55 @@
     <title>DBZ Characters</title>
     <link rel="stylesheet" href="../css/random.css" />
     <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   </head>
   <body>
     <!-- Navbar -->
     <nav class="navbar">
       <div class="navbar-container">
-        <a href="index.html" class="navbar-logo">DBZ Characters</a>
-        <ul class="navbar-menu">
+        <a href="../index.html" class="navbar-logo"><img src="../images/logo.png"></a>
+        <!-- Icona del menu per dispositivi mobili -->
+        <div class="menu-icon" id="menuIcon">
+          <i class="fas fa-bars"></i>
+        </div>
+        <!-- Menu standard -->
+        <ul class="navbar-menu" id="navbarMenu">
           <li><a href="../index.html" class="navbar-link">Home</a></li>
           <li><a href="list.html" class="navbar-link">Characters List</a></li>
-          <li>
-            <a href="random.html" class="navbar-link">Random Selection</a>
-          </li>
+          <li><a href="random.html" class="navbar-link">Random Selection</a></li>
         </ul>
       </div>
     </nav>
+
+   <!-- Menu laterale -->
+<div class="sidebar" id="sidebar">
+  <!-- Icona di chiusura -->
+  <div class="sidebar-close" id="sidebarClose">
+    <i class="fas fa-times"></i>
+  </div>
+
+  <!-- Menu della sidebar -->
+  <ul class="sidebar-menu">
+    <li>
+      <a href="../index.html" class="sidebar-link">
+        <i class="fas fa-home"></i> Home
+      </a>
+    </li>
+    <li>
+      <a href="list.html" class="sidebar-link">
+        <i class="fas fa-list"></i> Characters List
+      </a>
+    </li>
+    <li>
+      <a href="random.html" class="sidebar-link">
+        <i class="fas fa-random"></i> Random Selection
+      </a>
+    </li>
+  </ul>
+</div>
+
+<!-- Overlay -->
+<div class="overlay" id="overlay"></div>
 
     <!-- Container -->
     <div class="container">
@@ -33,9 +67,12 @@
       <!-- Aggiungi un selettore per i preset -->
       <label for="presetSelect">Select Preset:</label>
       <select id="presetSelect">
-        <option value="preset1">PRESET 1: 1 TOP, 1 GOOD, 1 MID, 2 WEAK</option>
-        <option value="preset2">PRESET 2: 4 WEAK, 1 TOP</option>
-        <option value="preset3">PRESET 3: FULL RANDOM</option>
+        <option value="preset1">PRESET_1: 1 TOP, 1 GOOD, 1 MID, 2 WEAK</option>
+        <option value="preset2">PRESET_2: FULL TOP</option>
+        <option value="preset3">PRESET_3: FULL GOOD</option>
+        <option value="preset4">PRESET_4: FULL MID</option>
+        <option value="preset5">PRESET_5: FULL WEAK</option>
+        <option value="preset6">PRESET_6: FULL RANDOM</option>
       </select>
 
       <button id="generateButton" class="random-button">
@@ -89,6 +126,7 @@
       </div>
     </div>
 
-    <script src="../js/random.js"></script>
+    <script src="../js/random.js" defer></script>
+    <script src="../js/navbar.js" defer></script>
   </body>
 </html>

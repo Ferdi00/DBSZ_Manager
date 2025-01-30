@@ -55,20 +55,84 @@ function generateRandomCharacters() {
   } else if (preset === "preset2") {
     // Preset 2: Tutti SCARSO
     player1Characters = getCharactersByType(availableCharacters, [
-      "WEAK",
-      "WEAK",
       "TOP",
+      "TOP",
+      "TOP",
+      "TOP",
+      "TOP",
+    ]);
+    player2Characters = getCharactersByType(availableCharacters, [
+      "TOP",
+      "TOP",
+      "TOP",
+      "TOP",
+      "TOP",
+    ]);
+  } else if (preset === "preset3") {
+    // Preset 2: Tutti SCARSO
+    player1Characters = getCharactersByType(availableCharacters, [
+      "GOOD",
+      "GOOD",
+      "GOOD",
+      "GOOD",
+      "GOOD",
+    ]);
+    player2Characters = getCharactersByType(availableCharacters, [
+      "GOOD",
+      "GOOD",
+      "GOOD",
+      "GOOD",
+      "GOOD",
+    ]);
+  } else if (preset === "preset4") {
+    // Preset 2: Tutti SCARSO
+    player1Characters = getCharactersByType(availableCharacters, [
+      "MID",
+      "MID",
+      "MID",
+      "MID",
+      "MID",
+    ]);
+    player2Characters = getCharactersByType(availableCharacters, [
+      "MID",
+      "MID",
+      "MID",
+      "MID",
+      "MID",
+    ]);
+  } else if (preset === "preset3") {
+    // Preset 2: Tutti SCARSO
+    player1Characters = getCharactersByType(availableCharacters, [
+      "GOOD",
+      "GOOD",
+      "GOOD",
+      "GOOD",
+      "GOOD",
+    ]);
+    player2Characters = getCharactersByType(availableCharacters, [
+      "GOOD",
+      "GOOD",
+      "GOOD",
+      "GOOD",
+      "GOOD",
+    ]);
+  } else if (preset === "preset5") {
+    // Preset 2: Tutti SCARSO
+    player1Characters = getCharactersByType(availableCharacters, [
+      "WEAK",
+      "WEAK",
+      "WEAK",
       "WEAK",
       "WEAK",
     ]);
     player2Characters = getCharactersByType(availableCharacters, [
       "WEAK",
       "WEAK",
-      "TOP",
+      "WEAK",
       "WEAK",
       "WEAK",
     ]);
-  } else if (preset === "preset3") {
+  } else if (preset === "preset6") {
     // Preset 3: Tutto casuale
     const shuffledCharacters = availableCharacters
       .sort(() => 0.5 - Math.random())
@@ -85,16 +149,29 @@ function generateRandomCharacters() {
 // Funzione per ottenere personaggi in base ai tipi specificati
 function getCharactersByType(availableCharacters, types) {
   const selectedCharacters = [];
+  const usedCharacters = new Set(); // Per evitare duplicati
+
   types.forEach((type) => {
+    // Filtra i personaggi disponibili per il tipo specificato
     const filteredCharacters = availableCharacters.filter(
-      (character) => character.type === type
+      (character) => character.type === type && !usedCharacters.has(character.name)
     );
+
+    if (filteredCharacters.length === 0) {
+      console.error(`Non ci sono abbastanza personaggi di tipo ${type} disponibili!`);
+      return;
+    }
+
+    // Seleziona un personaggio casuale tra quelli disponibili
     const randomCharacter =
       filteredCharacters[Math.floor(Math.random() * filteredCharacters.length)];
+
     if (randomCharacter) {
       selectedCharacters.push(randomCharacter);
+      usedCharacters.add(randomCharacter.name); // Aggiungi il personaggio alla lista dei già selezionati
     }
   });
+
   return selectedCharacters;
 }
 

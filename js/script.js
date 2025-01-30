@@ -8,7 +8,7 @@ let characters = [];
 let currentPage = 1;
 const rowsPerPage = 20;
 const rowsPerTable = rowsPerPage / 2; // Ogni tabella ha metà righe
-const typeOrder = ["TOP", "BUONO", "MEDIO", "SCARSO"]; // Ordine personalizzato per Type
+const typeOrder = ["GIANT","TOP", "GOOD", "MID", "WEAK", "NC"]; // Ordine personalizzato per Type
 
 // Carica i dati dal JSON
 fetch("../data/characters.json")
@@ -81,14 +81,17 @@ function updateTableRows(tableBody, tableCharacters) {
         case "TOP":
           cells[2].style.color = "purple";
           break;
-        case "BUONO":
+        case "GOOD":
           cells[2].style.color = "green";
           break;
-        case "MEDIO":
+        case "MID":
           cells[2].style.color = "orange";
           break;
-        case "SCARSO":
+        case "WEAK":
           cells[2].style.color = "red";
+          break;
+        case "GIANT":
+          cells[2].style.color = "#35f0f3";
           break;
         default:
           cells[2].style.color = "white";

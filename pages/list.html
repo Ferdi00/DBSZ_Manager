@@ -3,26 +3,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DBZ Characters</title>
+  <title>DBZ Characters List</title>
   <link rel="stylesheet" href="../css/navbar.css">
-  <link rel="stylesheet" href="../css/list.css"> <!-- ✅ Nuovo file CSS -->
+  <link rel="stylesheet" href="../css/list.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="navbar-container">
-      <a href="index.html" class="navbar-logo">DBZ Characters</a>
-      <ul class="navbar-menu">
-        <li><a href="../index.html" class="navbar-link">Home</a></li>
-        <li><a href="list.html" class="navbar-link">Characters List</a></li>
-        <li><a href="random.html" class="navbar-link">Random Selection</a></li>
-      </ul>
-    </div>
-  </nav>
+ <!-- Navbar -->
+    <nav class="navbar">
+      <div class="navbar-container">
+        <a href="../index.html" class="navbar-logo"><img src="../images/logo.png"></a>
+        <!-- Icona del menu per dispositivi mobili -->
+        <div class="menu-icon" id="menuIcon">
+          <i class="fas fa-bars"></i>
+        </div>
+        <!-- Menu standard -->
+        <ul class="navbar-menu" id="navbarMenu">
+          <li><a href="../index.html" class="navbar-link">Home</a></li>
+          <li><a href="list.html" class="navbar-link">Characters List</a></li>
+          <li><a href="random.html" class="navbar-link">Random Selection</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Menu laterale -->
+<div class="sidebar" id="sidebar">
+  <!-- Icona di chiusura -->
+  <div class="sidebar-close" id="sidebarClose">
+    <i class="fas fa-times"></i>
+  </div>
+
+  <!-- Menu della sidebar -->
+  <ul class="sidebar-menu">
+    <li>
+      <a href="../index.html" class="sidebar-link">
+        <i class="fas fa-home"></i> Home
+      </a>
+    </li>
+    <li>
+      <a href="list.html" class="sidebar-link">
+        <i class="fas fa-list"></i> Characters List
+      </a>
+    </li>
+    <li>
+      <a href="random.html" class="sidebar-link">
+        <i class="fas fa-random"></i> Random Selection
+      </a>
+    </li>
+  </ul>
+</div>
+
+<!-- Overlay -->
+<div class="overlay" id="overlay"></div>
 
   <!-- Contenitore principale -->
   <div class="container">
-    <h1>Dragon Ball Characters</h1>
+    <h1>Dragon Ball Characters List</h1>
     <p>Browse all playable characters below.</p>
 
     <!-- Navigazione tra tabelle su mobile -->
@@ -66,6 +102,7 @@
     <div id="pagination"></div>
   </div>
 
-  <script src="../js/script.js"></script>
+  <script src="../js/script.js" defer></script>
+  <script src="../js/navbar.js" defer></script>
 </body>
 </html>
