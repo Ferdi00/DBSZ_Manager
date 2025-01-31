@@ -101,6 +101,60 @@ function generateRandomCharacters() {
             "TOP",
           ])
         : [];
+  } else if (preset === "preset3") {
+    player1Characters = getCharactersByType(availableCharacters, [
+      "GOOD",
+      "GOOD",
+      "GOOD",
+      "GOOD",
+      "GOOD",
+    ]);
+    player2Characters =
+      selectedMode === "local"
+        ? getCharactersByType(availableCharacters, [
+            "GOOD",
+            "GOOD",
+            "GOOD",
+            "GOOD",
+            "GOOD",
+          ])
+        : [];
+  } else if (preset === "preset4") {
+    player1Characters = getCharactersByType(availableCharacters, [
+      "MID",
+      "MID",
+      "MID",
+      "MID",
+      "MID",
+    ]);
+    player2Characters =
+      selectedMode === "local"
+        ? getCharactersByType(availableCharacters, [
+            "MID",
+            "MID",
+            "MID",
+            "MID",
+            "MID",
+          ])
+        : [];
+  } else if (preset === "preset5") {
+    player1Characters = getCharactersByType(availableCharacters, [
+      "WEAK",
+      "WEAK",
+      "WEAK",
+      "WEAK",
+      "WEAK",
+    ]);
+    player2Characters =
+      selectedMode === "local"
+        ? getCharactersByType(availableCharacters, [
+            "WEAK",
+            "WEAK",
+            "WEAK",
+            "WEAK",
+            "WEAK",
+          ])
+        : [];
   } else if (preset === "preset6") {
     const shuffledCharacters = availableCharacters
       .sort(() => 0.5 - Math.random())

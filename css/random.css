@@ -214,6 +214,17 @@ td img {
     font-size: 0.9em;
     padding: 8px 15px;
   }
+
+   #presetSelect {
+    width: 90%;
+    font-size: 0.9em;
+    padding: 6px 10px;
+  }
+
+  .random-button {
+    font-size: 0.9em;
+    padding: 8px 15px;
+  }
 }
 
 /* Stile del selettore dei preset */
@@ -265,19 +276,7 @@ td img {
   }
 }
 
-/* Media Query: Schermi molto piccoli (max 480px) */
-@media (max-width: 480px) {
-  #presetSelect {
-    width: 90%;
-    font-size: 0.9em;
-    padding: 6px 10px;
-  }
 
-  .random-button {
-    font-size: 0.9em;
-    padding: 8px 15px;
-  }
-}
 
 /* Stile per la scelta della modalità di gioco */
 .mode-selection {
@@ -307,13 +306,12 @@ td img {
 
 /* Stile per la tabella singola (multiplayer online) */
 .single-table .player-table {
-  width: 85%; 
+  width: 90%; 
 }
 
 /* Stile per le tabelle doppie (coop locale) */
 .double-tables .player-table {
-
-  width: 85%; 
+  width: 90%; 
 }
 
 .Option {
