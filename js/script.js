@@ -3,26 +3,38 @@ const rightTableBody = document.querySelector("#rightTable tbody");
 const pagination = document.getElementById("pagination");
 const prevButton = document.getElementById("prevTable");
 const nextButton = document.getElementById("nextTable");
+const searchInput = document.getElementById("searchInput");
+const sortSelect = document.getElementById("sortSelect");
 
 let characters = [];
+let filteredCharacters = [];
 let currentPage = 1;
 const rowsPerPage = 20;
-const rowsPerTable = rowsPerPage / 2; // Ogni tabella ha metà righe
-const typeOrder = ["GIANT","TOP", "GOOD", "MID", "WEAK", "NC"]; // Ordine personalizzato per Type
+const rowsPerTable = rowsPerPage / 2;
+const typeOrder = ["GIANT", "TOP", "GOOD", "MID", "WEAK", "NC"];
 
-// Carica i dati dal JSON
-fetch("../data/characters.json")
-  .then((response) => response.json())
-  .then((data) => {
-    characters = data;
-    renderTableStructure();
-    renderTableRows();
-    renderPagination();
-    updateMobileTableNavigation();
-  })
-  .catch((error) => console.error("Errore nel caricamento dei dati:", error));
+// 📌 Carica i dati dal JSON in modo sicuro
+async function fetchCharacters() {
+  try {
+    const response = await fetch("../data/characters.json");
+    if (!response.ok) throw new Error("Errore nel caricamento del JSON");
+    characters = await response.json();
+    filteredCharacters = [...characters]; // Inizializza i dati filtrati
+    initializeTables();
+  } catch (error) {
+    console.error("Errore nel caricamento dei dati:", error);
+  }
+}
 
-// Funzione per creare solo la struttura delle tabelle
+// 📌 Funzione per inizializzare le tabelle
+function initializeTables() {
+  renderTableStructure();
+  renderTableRows();
+  renderPagination();
+  updateMobileTableNavigation();
+}
+
+// 📌 Funzione per creare la struttura delle tabelle
 function renderTableStructure() {
   leftTableBody.innerHTML = "";
   rightTableBody.innerHTML = "";
@@ -41,11 +53,14 @@ function renderTableStructure() {
   }
 }
 
-// Funzione per aggiornare solo le righe visibili delle tabelle
+// 📌 Funzione per aggiornare le righe delle tabelle
 function renderTableRows() {
   const startIndex = (currentPage - 1) * rowsPerPage;
-  const endIndex = Math.min(startIndex + rowsPerPage, characters.length);
-  const pageCharacters = characters.slice(startIndex, endIndex);
+  const endIndex = Math.min(
+    startIndex + rowsPerPage,
+    filteredCharacters.length
+  );
+  const pageCharacters = filteredCharacters.slice(startIndex, endIndex);
 
   const leftCharacters = pageCharacters.slice(0, rowsPerTable);
   const rightCharacters = pageCharacters.slice(rowsPerTable);
@@ -55,75 +70,63 @@ function renderTableRows() {
   updateMobileTableNavigation();
 }
 
-// Funzione per aggiornare una singola tabella
+// 📌 Funzione per aggiornare una tabella
 function updateTableRows(tableBody, tableCharacters) {
-  const rows = tableBody.querySelectorAll("tr");
+  tableBody.innerHTML = "";
 
-  rows.forEach((row, index) => {
-    const cells = row.children;
+  tableCharacters.forEach((character) => {
+    const row = document.createElement("tr");
+    row.classList.add("fade-in");
 
-    if (index < tableCharacters.length) {
-      const character = tableCharacters[index];
+    const nameCell = document.createElement("td");
+    nameCell.textContent = character.name;
 
-      cells[0].textContent = character.name;
+    const imageCell = document.createElement("td");
+    const img = document.createElement("img");
+    img.src = character.image_url;
+    img.alt = character.name;
+    img.style.width = "50px";
+    imageCell.appendChild(img);
 
-      const img = document.createElement("img");
-      img.src = character.image_url;
-      img.alt = character.name;
-      img.style.width = "50px";
-      cells[1].innerHTML = "";
-      cells[1].appendChild(img);
+    const typeCell = document.createElement("td");
+    typeCell.textContent = character.type;
+    typeCell.style.fontWeight = "bold";
+    typeCell.style.color = getTypeColor(character.type);
 
-      cells[2].textContent = character.type;
-      cells[2].style.fontWeight = "bold";
-
-      switch (character.type) {
-        case "TOP":
-          cells[2].style.color = "purple";
-          break;
-        case "GOOD":
-          cells[2].style.color = "green";
-          break;
-        case "MID":
-          cells[2].style.color = "orange";
-          break;
-        case "WEAK":
-          cells[2].style.color = "red";
-          break;
-        case "GIANT":
-          cells[2].style.color = "#35f0f3";
-          break;
-        default:
-          cells[2].style.color = "white";
-      }
-
-      row.style.opacity = "0";
-      row.style.transform = "translateY(10px)";
-      setTimeout(() => {
-        row.style.transition = "opacity 0.4s, transform 0.4s";
-        row.style.opacity = "1";
-        row.style.transform = "translateY(0)";
-      }, 50);
-    } else {
-      cells[0].textContent = "";
-      cells[1].innerHTML = "";
-      cells[2].textContent = "";
-    }
+    row.appendChild(nameCell);
+    row.appendChild(imageCell);
+    row.appendChild(typeCell);
+    tableBody.appendChild(row);
   });
 }
 
-// Funzione per generare la paginazione
+// 📌 Funzione per ottenere il colore in base al tipo
+function getTypeColor(type) {
+  switch (type) {
+    case "TOP":
+      return "purple";
+    case "GOOD":
+      return "green";
+    case "MID":
+      return "orange";
+    case "WEAK":
+      return "red";
+    case "GIANT":
+      return "#35f0f3";
+    default:
+      return "white";
+  }
+}
+
+// 📌 Funzione per la paginazione
 function renderPagination() {
   pagination.innerHTML = "";
-  const totalPages = Math.ceil(characters.length / rowsPerPage);
+  const totalPages = Math.ceil(filteredCharacters.length / rowsPerPage);
 
   for (let i = 1; i <= totalPages; i++) {
     const button = document.createElement("button");
     button.textContent = i;
-
-    if (i === currentPage) {
-      button.classList.add("active");
-    }
+    if (i === currentPage) button.classList.add("active");
 
     button.addEventListener("click", () => {
       currentPage = i;
@@ -135,17 +138,43 @@ function renderPagination() {
   }
 }
 
-// Funzione per ordinare la tabella per `type`
-function sortTableByType() {
-  characters.sort(
-    (a, b) => typeOrder.indexOf(a.type) - typeOrder.indexOf(b.type)
-  );
+// 📌 Funzione per filtrare i personaggi in base alla ricerca
+function filterCharacters(searchTerm) {
+  if (searchTerm.length < 3) {
+    filteredCharacters = [...characters];
+  } else {
+    filteredCharacters = characters.filter((character) =>
+      character.name.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+  }
   currentPage = 1;
   renderTableRows();
   renderPagination();
 }
 
-// **📱 Navigazione tra le pagine su mobile**
+// 📌 Funzione per ordinare i personaggi in base al tipo
+function sortCharacters(order) {
+  if (order === "type-asc") {
+    filteredCharacters.sort(
+      (a, b) => typeOrder.indexOf(a.type) - typeOrder.indexOf(b.type)
+    );
+  } else if (order === "type-desc") {
+    filteredCharacters.sort(
+      (a, b) => typeOrder.indexOf(b.type) - typeOrder.indexOf(a.type)
+    );
+  } else {
+    filteredCharacters = [...characters];
+  }
+  currentPage = 1;
+  renderTableRows();
+  renderPagination();
+}
+
+// 📌 Eventi per la barra di ricerca e il selettore di ordinamento
+searchInput.addEventListener("input", (e) => filterCharacters(e.target.value));
+sortSelect.addEventListener("change", (e) => sortCharacters(e.target.value));
+
+// 📌 Navigazione su mobile
 function updateMobileTableNavigation() {
   const isMobile = window.innerWidth <= 768;
   const leftTable = document.getElementById("leftTable");
@@ -156,14 +185,14 @@ function updateMobileTableNavigation() {
     rightTable.style.display = currentPage % 2 === 0 ? "table" : "none";
     prevButton.disabled = currentPage === 1;
     nextButton.disabled =
-      currentPage === Math.ceil(characters.length / rowsPerPage);
+      currentPage === Math.ceil(filteredCharacters.length / rowsPerPage);
   } else {
     leftTable.style.display = "table";
     rightTable.style.display = "table";
   }
 }
 
-// Evento per la navigazione su mobile (cambia pagina intera)
+// 📌 Eventi per la navigazione su mobile
 prevButton.addEventListener("click", () => {
   if (currentPage > 1) {
     currentPage--;
@@ -173,12 +202,15 @@ prevButton.addEventListener("click", () => {
 });
 
 nextButton.addEventListener("click", () => {
-  if (currentPage < Math.ceil(characters.length / rowsPerPage)) {
+  if (currentPage < Math.ceil(filteredCharacters.length / rowsPerPage)) {
     currentPage++;
     renderTableRows();
     renderPagination();
   }
 });
 
-// Aggiorna la visibilità della tabella quando cambia la dimensione dello schermo
+// 📌 Aggiorna la visibilità della tabella quando cambia la dimensione dello schermo
 window.addEventListener("resize", updateMobileTableNavigation);
+
+// 📌 Carica i dati inizialmente
+document.addEventListener("DOMContentLoaded", fetchCharacters);

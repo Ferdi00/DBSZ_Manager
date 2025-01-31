@@ -1,108 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DBZ Characters List</title>
-  <link rel="stylesheet" href="../css/navbar.css">
-  <link rel="stylesheet" href="../css/list.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-<body>
- <!-- Navbar -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DBZ Characters List</title>
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/list.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
     <nav class="navbar">
       <div class="navbar-container">
-        <a href="../index.html" class="navbar-logo"><img src="../images/logo.png"></a>
-        <!-- Icona del menu per dispositivi mobili -->
+        <a href="../index.html" class="navbar-logo"
+          ><img src="../images/logo.png"
+        /></a>
         <div class="menu-icon" id="menuIcon">
           <i class="fas fa-bars"></i>
         </div>
-        <!-- Menu standard -->
         <ul class="navbar-menu" id="navbarMenu">
           <li><a href="../index.html" class="navbar-link">Home</a></li>
           <li><a href="list.html" class="navbar-link">Characters List</a></li>
-          <li><a href="random.html" class="navbar-link">Random Selection</a></li>
+          <li>
+            <a href="random.html" class="navbar-link">Random Selection</a>
+          </li>
         </ul>
       </div>
     </nav>
 
     <!-- Menu laterale -->
-<div class="sidebar" id="sidebar">
-  <!-- Icona di chiusura -->
-  <div class="sidebar-close" id="sidebarClose">
-    <i class="fas fa-times"></i>
-  </div>
-
-  <!-- Menu della sidebar -->
-  <ul class="sidebar-menu">
-    <li>
-      <a href="../index.html" class="sidebar-link">
-        <i class="fas fa-home"></i> Home
-      </a>
-    </li>
-    <li>
-      <a href="list.html" class="sidebar-link">
-        <i class="fas fa-list"></i> Characters List
-      </a>
-    </li>
-    <li>
-      <a href="random.html" class="sidebar-link">
-        <i class="fas fa-random"></i> Random Selection
-      </a>
-    </li>
-  </ul>
-</div>
-
-<!-- Overlay -->
-<div class="overlay" id="overlay"></div>
-
-  <!-- Contenitore principale -->
-  <div class="container">
-    <h1>Dragon Ball Characters List</h1>
-    <p>Browse all playable characters below.</p>
-
-    <!-- Navigazione tra tabelle su mobile -->
-    <div id="mobileTableNav">
-      <button id="prevTable" class="table-nav-btn">◀ Previous</button>
-      <button id="nextTable" class="table-nav-btn">Next ▶</button>
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-close" id="sidebarClose">
+        <i class="fas fa-times"></i>
+      </div>
+      <ul class="sidebar-menu">
+        <li>
+          <a href="../index.html" class="sidebar-link">
+            <i class="fas fa-home"></i> Home
+          </a>
+        </li>
+        <li>
+          <a href="list.html" class="sidebar-link">
+            <i class="fas fa-list"></i> Characters List
+          </a>
+        </li>
+        <li>
+          <a href="random.html" class="sidebar-link">
+            <i class="fas fa-random"></i> Random Selection
+          </a>
+        </li>
+      </ul>
     </div>
 
-    <!-- Contenitore delle tabelle -->
-    <div class="tables">
-      <!-- Tabella sinistra (Player 1) -->
-      <table id="leftTable">
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Image</th>
-            <th class="sortable" onclick="sortTableByType()">Type</th>
-          </tr>
-        </thead>
-        <tbody>
-          <!-- Righe generate dinamicamente -->
-        </tbody>
-      </table>
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
 
-      <!-- Tabella destra (Player 2) -->
-      <table id="rightTable">
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Image</th>
-            <th class="sortable" onclick="sortTableByType()">Type</th>
-          </tr>
-        </thead>
-        <tbody>
-          <!-- Righe generate dinamicamente -->
-        </tbody>
-      </table>
+    <!-- Contenitore principale -->
+    <div class="container">
+      <h1>Dragon Ball Characters List</h1>
+      <p>Browse all playable characters below.</p>
+
+      <!-- Barra di ricerca -->
+      <div class="search-bar">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search characters..."
+          minlength="3"
+        />
+        <i class="fas fa-search"></i>
+      </div>
+
+      <!-- Selettore per l'ordinamento -->
+      <div class="sort-container">
+        <label for="sortSelect">Sort by:</label>
+        <select id="sortSelect">
+          <option value="default">Alphabetical</option>
+          <option value="type-asc">Type (TOP → WEAK)</option>
+          <option value="type-desc">Type (WEAK → TOP)</option>
+        </select>
+      </div>
+
+      <!-- Navigazione tra tabelle su mobile -->
+      <div id="mobileTableNav">
+        <button id="prevTable" class="table-nav-btn">◀ Previous</button>
+        <button id="nextTable" class="table-nav-btn">Next ▶</button>
+      </div>
+
+      <!-- Contenitore delle tabelle -->
+      <div class="tables">
+        <!-- Tabella sinistra (Player 1) -->
+        <table id="leftTable">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Image</th>
+              <th class="sortable" onclick="sortTableByType()">Type</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Righe generate dinamicamente -->
+          </tbody>
+        </table>
+
+        <!-- Tabella destra (Player 2) -->
+        <table id="rightTable">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Image</th>
+              <th class="sortable" onclick="sortTableByType()">Type</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Righe generate dinamicamente -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Paginazione -->
+      <div id="pagination"></div>
     </div>
 
-    <!-- Paginazione -->
-    <div id="pagination"></div>
-  </div>
-
-  <script src="../js/script.js" defer></script>
-  <script src="../js/navbar.js" defer></script>
-</body>
+    <script src="../js/script.js" defer></script>
+    <script src="../js/navbar.js" defer></script>
+  </body>
 </html>

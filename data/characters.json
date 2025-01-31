@@ -278,7 +278,7 @@
   {
     "name": "FRIEZA FORCE SOLDIER",
     "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/6/6c/74_FRIEZA_FORCE_SOLDIER.png",
-    "type": "NC",
+    "type": "WEAK",
     "dlc": "no"
   },
   {
@@ -428,7 +428,7 @@
   {
     "name": "GOHAN BEAST",
     "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/9/90/110%C2%BA%C2%BA%C2%BA_GOHAN_BEAST.png",
-    "type": "MID",
+    "type": "TOP",
     "dlc": "si"
   },
   {
@@ -500,7 +500,7 @@
   {
     "name": "GOKU (TEEN)",
     "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/5/52/07_GOKU_%28TEEN%29.png",
-    "type": "GOOD",
+    "type": "WEAK",
     "dlc": "no"
   },
   {
@@ -560,7 +560,7 @@
   {
     "name": "GOLDEN FRIEZA",
     "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/9/9a/40%C2%BA_GOLDEN_FRIEZA.png",
-    "type": "MID",
+    "type": "NC",
     "dlc": "no"
   },
   {
@@ -764,7 +764,7 @@
   {
     "name": "MECHA FRIEZA",
     "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/7/70/39_MECHA_FRIEZA.png",
-    "type": "WEAK",
+    "type": "NC",
     "dlc": "no"
   },
   {
@@ -896,7 +896,7 @@
   {
     "name": "SUPER BUU",
     "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/f/fd/46_SUPER_BUU.png",
-    "type": "MID",
+    "type": "NC",
     "dlc": "no"
   },
   {
@@ -1028,7 +1028,7 @@
   {
     "name": "ULTIMATE GOHAN",
     "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/7/7f/18_ULTIMATE_GOHAN.png",
-    "type": "GOOD",
+    "type": "NC",
     "dlc": "no"
   },
   {

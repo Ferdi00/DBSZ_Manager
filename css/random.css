@@ -274,3 +274,51 @@ td img {
     padding: 8px 15px;
   }
 }
+
+/* Stile per la scelta della modalità di gioco */
+.mode-selection {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.mode-selection label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+.mode-selection input[type="radio"] {
+  margin: 0;
+}
+
+/* Nascondi elementi inizialmente */
+.hidden {
+  display: none;
+}
+
+/* Stile per la tabella singola (multiplayer online) */
+.single-table .player-table {
+  width: 85%; 
+}
+
+/* Stile per le tabelle doppie (coop locale) */
+.double-tables .player-table {
+  width: 85%; 
+}
+
+.Option {
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+  border: 2px solid #e25822;
+}
+
+.orange{
+
+  color: #e25822;
+  font-size: 20px;
+}

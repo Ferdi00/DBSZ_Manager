@@ -6,66 +6,79 @@
     <title>DBZ Characters</title>
     <link rel="stylesheet" href="../css/random.css" />
     <link rel="stylesheet" href="../css/navbar.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
   </head>
   <body>
     <!-- Navbar -->
     <nav class="navbar">
       <div class="navbar-container">
-        <a href="../index.html" class="navbar-logo"><img src="../images/logo.png"></a>
-        <!-- Icona del menu per dispositivi mobili -->
+        <a href="../index.html" class="navbar-logo"
+          ><img src="../images/logo.png"
+        /></a>
         <div class="menu-icon" id="menuIcon">
           <i class="fas fa-bars"></i>
         </div>
-        <!-- Menu standard -->
         <ul class="navbar-menu" id="navbarMenu">
           <li><a href="../index.html" class="navbar-link">Home</a></li>
           <li><a href="list.html" class="navbar-link">Characters List</a></li>
-          <li><a href="random.html" class="navbar-link">Random Selection</a></li>
+          <li>
+            <a href="random.html" class="navbar-link">Random Selection</a>
+          </li>
         </ul>
       </div>
     </nav>
 
-   <!-- Menu laterale -->
-<div class="sidebar" id="sidebar">
-  <!-- Icona di chiusura -->
-  <div class="sidebar-close" id="sidebarClose">
-    <i class="fas fa-times"></i>
-  </div>
+    <!-- Menu laterale -->
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-close" id="sidebarClose">
+        <i class="fas fa-times"></i>
+      </div>
+      <ul class="sidebar-menu">
+        <li>
+          <a href="../index.html" class="sidebar-link">
+            <i class="fas fa-home"></i> Home
+          </a>
+        </li>
+        <li>
+          <a href="list.html" class="sidebar-link">
+            <i class="fas fa-list"></i> Characters List
+          </a>
+        </li>
+        <li>
+          <a href="random.html" class="sidebar-link">
+            <i class="fas fa-random"></i> Random Selection
+          </a>
+        </li>
+      </ul>
+    </div>
 
-  <!-- Menu della sidebar -->
-  <ul class="sidebar-menu">
-    <li>
-      <a href="../index.html" class="sidebar-link">
-        <i class="fas fa-home"></i> Home
-      </a>
-    </li>
-    <li>
-      <a href="list.html" class="sidebar-link">
-        <i class="fas fa-list"></i> Characters List
-      </a>
-    </li>
-    <li>
-      <a href="random.html" class="sidebar-link">
-        <i class="fas fa-random"></i> Random Selection
-      </a>
-    </li>
-  </ul>
-</div>
-
-<!-- Overlay -->
-<div class="overlay" id="overlay"></div>
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
 
     <!-- Container -->
     <div class="container">
       <h1>Random Character Selection</h1>
       <p>
-        Click the button below to randomly generate characters for Player 1 and
-        Player 2!
+        Click the button below to randomly generate characters for your team!
       </p>
-
-      <!-- Aggiungi un selettore per i preset -->
-      <label for="presetSelect">Select Preset:</label>
+      <div class="Option">
+        <!-- Scelta della modalità di gioco -->
+         <label class="orange" for="mode-selection">Select Mode:</label>
+        <div class="mode-selection">
+          <label>
+            <input type="radio" name="gameMode" value="local" checked />
+            Local Co-op
+          </label>
+          <label>
+            <input type="radio" name="gameMode" value="online" />
+            Multiplayer Online
+          </label>
+        </div>
+        <!-- Aggiungi un selettore per i preset -->
+      <label class="orange" for="presetSelect">Select Preset:</label>
       <select id="presetSelect">
         <option value="preset1">PRESET_1: 1 TOP, 1 GOOD, 1 MID, 2 WEAK</option>
         <option value="preset2">PRESET_2: FULL TOP</option>
@@ -74,20 +87,29 @@
         <option value="preset5">PRESET_5: FULL WEAK</option>
         <option value="preset6">PRESET_6: FULL RANDOM</option>
       </select>
+      <!-- Spunta DLC (solo per multiplayer online) -->
+      <div id="dlcToggle" class="hidden">
+        <label class="toggle-switch">
+          DLC
+          <input type="checkbox" id="dlcCheckbox" checked />
+          <span class="slider"></span>
+        </label>
+      </div>
 
       <button id="generateButton" class="random-button">
         Generate Characters
       </button>
+      </div>
 
+      
+
+      
+
+      <!-- Contenitore delle tabelle -->
       <div class="tables">
         <!-- Giocatore 1 -->
-        <div class="player-table">
+        <div class="player-table" id="player1TableContainer">
           <h2>Player 1</h2>
-          <label class="toggle-switch">
-            DLC
-            <input type="checkbox" id="player1DLC" checked />
-            <span class="slider"></span>
-          </label>
           <table id="player1Table">
             <thead>
               <tr>
@@ -102,14 +124,9 @@
           </table>
         </div>
 
-        <!-- Giocatore 2 -->
-        <div class="player-table">
+        <!-- Giocatore 2 (solo per coop locale) -->
+        <div class="player-table" id="player2TableContainer">
           <h2>Player 2</h2>
-          <label class="toggle-switch">
-            DLC
-            <input type="checkbox" id="player2DLC" checked />
-            <span class="slider"></span>
-          </label>
           <table id="player2Table">
             <thead>
               <tr>
