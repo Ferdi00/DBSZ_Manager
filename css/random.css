@@ -10,6 +10,10 @@ body {
 /* Contenitore principale */
 .container {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 20px;
   padding: 20px;
 }
@@ -280,14 +284,15 @@ td img {
   margin: 20px 0;
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 10px;
 }
 
 .mode-selection label {
   display: flex;
   align-items: center;
-  gap: 8px;
-  font-size: 1.1em;
+  justify-content: center;
+  gap: 5px;
+  font-size: 1em;
   cursor: pointer;
 }
 
@@ -307,6 +312,7 @@ td img {
 
 /* Stile per le tabelle doppie (coop locale) */
 .double-tables .player-table {
+
   width: 85%; 
 }
 
@@ -315,6 +321,7 @@ td img {
   padding: 20px;
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
   border: 2px solid #e25822;
+  max-width: 700px;
 }
 
 .orange{
