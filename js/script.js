@@ -12,6 +12,13 @@ let currentPage = 1;
 const rowsPerPage = 20;
 const rowsPerTable = rowsPerPage / 2;
 const typeOrder = ["GIANT", "TOP", "GOOD", "MID", "WEAK", "NC"];
+const sortOptions = {
+  DEFAULT: "default",
+  TYPE_ASC: "type-asc",
+  TYPE_DESC: "type-desc",
+  NAME_ASC: "name-asc",
+  NAME_DESC: "name-desc",
+};
 
 // 📌 Carica i dati dal JSON in modo sicuro
 async function fetchCharacters() {
@@ -154,17 +161,31 @@ function filterCharacters(searchTerm) {
 
 // 📌 Funzione per ordinare i personaggi in base al tipo
 function sortCharacters(order) {
-  if (order === "type-asc") {
-    filteredCharacters.sort(
-      (a, b) => typeOrder.indexOf(a.type) - typeOrder.indexOf(b.type)
-    );
-  } else if (order === "type-desc") {
-    filteredCharacters.sort(
-      (a, b) => typeOrder.indexOf(b.type) - typeOrder.indexOf(a.type)
-    );
-  } else {
-    filteredCharacters = [...characters];
+  switch (order) {
+    case sortOptions.TYPE_ASC:
+      filteredCharacters.sort(
+        (a, b) => typeOrder.indexOf(a.type) - typeOrder.indexOf(b.type)
+      );
+      break;
+
+    case sortOptions.TYPE_DESC:
+      filteredCharacters.sort(
+        (a, b) => typeOrder.indexOf(b.type) - typeOrder.indexOf(a.type)
+      );
+      break;
+
+    case sortOptions.NAME_ASC:
+      filteredCharacters.sort((a, b) => a.name.localeCompare(b.name));
+      break;
+
+    case sortOptions.NAME_DESC:
+      filteredCharacters.sort((a, b) => b.name.localeCompare(a.name));
+      break;
+
+    default:
+      filteredCharacters = [...characters];
   }
+
   currentPage = 1;
   renderTableRows();
   renderPagination();

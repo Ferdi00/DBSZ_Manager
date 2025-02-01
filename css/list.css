@@ -60,15 +60,6 @@ th, td {
   font-size: 1em;
 }
 
-th.sortable {
-  cursor: pointer;
-  transition: color 0.3s;
-}
-
-th.sortable:hover {
-  color: #ff4500;
-}
-
 tr:nth-child(even) {
   background-color: #343434;
 }

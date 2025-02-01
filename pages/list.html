@@ -78,9 +78,11 @@
       <div class="sort-container">
         <label for="sortSelect">Sort by:</label>
         <select id="sortSelect">
-          <option value="default">Alphabetical</option>
+          <option value="default">Default</option>
           <option value="type-asc">Type (TOP → WEAK)</option>
           <option value="type-desc">Type (WEAK → TOP)</option>
+          <option value="name-asc">Name (A-Z)</option>
+          <option value="name-desc">Name (Z-A)</option>
         </select>
       </div>
 
@@ -112,7 +114,7 @@
             <tr>
               <th>Name</th>
               <th>Image</th>
-              <th class="sortable" onclick="sortTableByType()">Type</th>
+              <th class="sortable">Type</th>
             </tr>
           </thead>
           <tbody>

@@ -10,6 +10,8 @@ const player2TableContainer = document.getElementById("player2TableContainer");
 const tablesContainer = document.querySelector(".tables");
 let characters = [];
 
+
+
 // Carica i dati dal file JSON
 fetch("../data/characters.json")
   .then((response) => response.json())
@@ -64,96 +66,77 @@ function generateRandomCharacters() {
 
   let player1Characters = [];
   let player2Characters = [];
+  const usedIds = new Set(); // Set per tenere traccia degli ID già usati
 
   if (preset === "preset1") {
-    player1Characters = getCharactersByType(availableCharacters, [
-      "WEAK",
-      "GOOD",
-      "MID",
-      "TOP",
-      "WEAK",
-    ]);
+    player1Characters = getCharactersByType(
+      availableCharacters,
+      ["WEAK", "GOOD", "MID", "TOP", "WEAK"],
+      usedIds
+    );
     player2Characters =
       selectedMode === "local"
-        ? getCharactersByType(availableCharacters, [
-            "WEAK",
-            "GOOD",
-            "MID",
-            "TOP",
-            "WEAK",
-          ])
+        ? getCharactersByType(
+            availableCharacters,
+            ["WEAK", "GOOD", "MID", "TOP", "WEAK"],
+            usedIds
+          )
         : [];
   } else if (preset === "preset2") {
-    player1Characters = getCharactersByType(availableCharacters, [
-      "TOP",
-      "TOP",
-      "TOP",
-      "TOP",
-      "TOP",
-    ]);
+    player1Characters = getCharactersByType(
+      availableCharacters,
+      ["TOP", "TOP", "TOP", "TOP", "TOP"],
+      usedIds
+    );
     player2Characters =
       selectedMode === "local"
-        ? getCharactersByType(availableCharacters, [
-            "TOP",
-            "TOP",
-            "TOP",
-            "TOP",
-            "TOP",
-          ])
+        ? getCharactersByType(
+            availableCharacters,
+            ["TOP", "TOP", "TOP", "TOP", "TOP"],
+            usedIds
+          )
         : [];
   } else if (preset === "preset3") {
-    player1Characters = getCharactersByType(availableCharacters, [
-      "GOOD",
-      "GOOD",
-      "GOOD",
-      "GOOD",
-      "GOOD",
-    ]);
+    player1Characters = getCharactersByType(
+      availableCharacters,
+      ["GOOD", "GOOD", "GOOD", "GOOD", "GOOD"],
+      usedIds
+    );
     player2Characters =
       selectedMode === "local"
-        ? getCharactersByType(availableCharacters, [
-            "GOOD",
-            "GOOD",
-            "GOOD",
-            "GOOD",
-            "GOOD",
-          ])
+        ? getCharactersByType(
+            availableCharacters,
+            ["GOOD", "GOOD", "GOOD", "GOOD", "GOOD"],
+            usedIds
+          )
         : [];
   } else if (preset === "preset4") {
-    player1Characters = getCharactersByType(availableCharacters, [
-      "MID",
-      "MID",
-      "MID",
-      "MID",
-      "MID",
-    ]);
+    player1Characters = getCharactersByType(
+      availableCharacters,
+      ["MID", "MID", "MID", "MID", "MID"],
+      usedIds
+    );
     player2Characters =
       selectedMode === "local"
-        ? getCharactersByType(availableCharacters, [
-            "MID",
-            "MID",
-            "MID",
-            "MID",
-            "MID",
-          ])
+        ? getCharactersByType(
+            availableCharacters,
+            ["MID", "MID", "MID", "MID", "MID"],
+            usedIds
+          )
         : [];
   } else if (preset === "preset5") {
-    player1Characters = getCharactersByType(availableCharacters, [
-      "WEAK",
-      "WEAK",
-      "WEAK",
-      "WEAK",
-      "WEAK",
-    ]);
+    player1Characters = getCharactersByType(
+      availableCharacters,
+      ["WEAK", "WEAK", "WEAK", "WEAK", "WEAK"],
+      usedIds
+    );
     player2Characters =
       selectedMode === "local"
-        ? getCharactersByType(availableCharacters, [
-            "WEAK",
-            "WEAK",
-            "WEAK",
-            "WEAK",
-            "WEAK",
-          ])
+        ? getCharactersByType(
+            availableCharacters,
+            ["WEAK", "WEAK", "WEAK", "WEAK", "WEAK"],
+            usedIds
+          )
         : [];
   } else if (preset === "preset6") {
     const shuffledCharacters = availableCharacters
@@ -172,14 +155,16 @@ function generateRandomCharacters() {
 }
 
 // Funzione per ottenere personaggi in base ai tipi specificati
-function getCharactersByType(availableCharacters, types) {
+function getCharactersByType(availableCharacters, types, usedIds) {
   const selectedCharacters = [];
   const usedCharacters = new Set();
 
   types.forEach((type) => {
     const filteredCharacters = availableCharacters.filter(
       (character) =>
-        character.type === type && !usedCharacters.has(character.name)
+        character.type === type &&
+        !usedCharacters.has(character.name) &&
+        !usedIds.has(character.id) // Escludi personaggi con ID già usati
     );
 
     if (filteredCharacters.length === 0) {
@@ -194,6 +179,7 @@ function getCharactersByType(availableCharacters, types) {
     if (randomCharacter) {
       selectedCharacters.push(randomCharacter);
       usedCharacters.add(randomCharacter.name);
+      usedIds.add(randomCharacter.id); // Aggiungi l'ID alla lista degli ID usati
     }
   });
 
