@@ -63,11 +63,13 @@ p {
   max-width: 600px;
   background-color: #2b2b2b;
   border-radius: 12px;
-  padding: 20px;
+  padding: 10px;
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
   border: 2px solid #e25822;
   text-align: center;
 }
+
+
 
 #player1TableContainer.player-table {
   border: 2px solid #138f25;
@@ -295,7 +297,7 @@ td img {
   margin: 10px 0;
   display: flex;
   justify-content: center;
-  gap: 5px;
+  gap: 10px;
 }
 
 .mode-selection label {
@@ -333,14 +335,19 @@ td img {
 
 .room-container {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   text-align: start;
   margin: 20px 0;
 }
 
+.room-container input{
+  outline: none;
+  width: 40%;
+}
+
 .create-room,
 .join-room {
-  margin: 10px 0;
+  margin: 5px 0;
 }
 
 .create-room input,
