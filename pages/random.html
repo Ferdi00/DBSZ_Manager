@@ -10,6 +10,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+    
   </head>
   <body>
     <!-- Navbar -->
@@ -77,6 +78,22 @@
             Multiplayer Online
           </label>
         </div>
+
+        <!-- Sezione Multiplayer Online -->
+      <div class="room-container" id="multiplayerSection" style="display: none;">
+  <div class="create-room">
+    <input type="text" id="roomPassword" placeholder="Enter Room Password">
+    <button id="createRoomButton">Create Room</button>
+  </div>
+  <div class="join-room">
+    <input type="text" id="joinRoomPassword" placeholder="Enter Room Password">
+    <button id="joinRoomButton">Join Room</button>
+  </div>
+  <div id="roomIdDisplay" style="display: none;">
+    <p>Room ID: <span id="roomIdText"></span></p>
+  </div>
+</div>
+
         <!-- Aggiungi un selettore per i preset -->
       <label class="orange" for="presetSelect">Select Preset:</label>
       <select id="presetSelect">
@@ -101,10 +118,7 @@
       </button>
       </div>
 
-      
-
-      
-
+    
       <!-- Contenitore delle tabelle -->
       <div class="tables">
         <!-- Giocatore 1 -->
@@ -124,7 +138,7 @@
           </table>
         </div>
 
-        <!-- Giocatore 2 (solo per coop locale) -->
+        <!-- Giocatore 2 -->
         <div class="player-table" id="player2TableContainer">
           <h2>Player 2</h2>
           <table id="player2Table">
@@ -141,9 +155,30 @@
           </table>
         </div>
       </div>
-    </div>
 
-    <script src="../js/random.js" defer></script>
+    <script type="module" src="../js/random.js" defer></script>
     <script src="../js/navbar.js" defer></script>
+    <script>
+      const multiplayerSection = document.getElementById("multiplayerSection");
+      const gameModeOptions = document.querySelectorAll('input[name="gameMode"]');
+
+      // Funzione per gestire il cambiamento della modalità di gioco
+      function handleGameModeChange() {
+        const selectedMode = document.querySelector('input[name="gameMode"]:checked').value;
+        if (selectedMode === "online") {
+          multiplayerSection.style.display = "block";
+        } else {
+          multiplayerSection.style.display = "none";
+        }
+      }
+
+      // Aggiungi l'evento di cambiamento per le opzioni di modalità di gioco
+      gameModeOptions.forEach(option => {
+        option.addEventListener("change", handleGameModeChange);
+      });
+
+      // Imposta la modalità iniziale
+      handleGameModeChange();
+    </script>
   </body>
 </html>

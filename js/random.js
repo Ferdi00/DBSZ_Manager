@@ -1,16 +1,47 @@
+import { initializeApp } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-app.js";
+import {
+  getFirestore,
+  doc,
+  setDoc,
+  addDoc,
+  collection,
+  query,
+  where,
+  getDocs,
+  onSnapshot,
+  updateDoc,
+} from "https://www.gstatic.com/firebasejs/11.2.0/firebase-firestore.js";
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyAAr2hqejSjlFnLq9KBEqXG_EQZFMh588E",
+  authDomain: "dbszmanager.firebaseapp.com",
+  projectId: "dbszmanager",
+  storageBucket: "dbszmanager.firebasestorage.app",
+  messagingSenderId: "436504110426",
+  appId: "1:436504110426:web:7a0d2b3e44ca5f3f00ff63",
+  measurementId: "G-ZB6DECV6M6",
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
 const player1TableBody = document.querySelector("#player1Table tbody");
 const player2TableBody = document.querySelector("#player2Table tbody");
 const generateButton = document.getElementById("generateButton");
 const dlcCheckbox = document.getElementById("dlcCheckbox");
 const presetSelect = document.getElementById("presetSelect");
-const modeSelection = document.querySelectorAll('input[name="gameMode"]');
-const dlcToggle = document.getElementById("dlcToggle");
-const player1TableContainer = document.getElementById("player1TableContainer");
-const player2TableContainer = document.getElementById("player2TableContainer");
-const tablesContainer = document.querySelector(".tables");
+const roomIdDisplay = document.getElementById("roomIdDisplay");
+const roomIdText = document.getElementById("roomIdText");
 let characters = [];
 
+const createRoomButton = document.getElementById("createRoomButton");
+const joinRoomButton = document.getElementById("joinRoomButton");
+const roomPasswordInput = document.getElementById("roomPassword");
+const joinRoomPasswordInput = document.getElementById("joinRoomPassword");
 
+let roomId = null;
 
 // Carica i dati dal file JSON
 fetch("../data/characters.json")
@@ -20,33 +51,69 @@ fetch("../data/characters.json")
   })
   .catch((error) => console.error("Errore nel caricamento dei dati:", error));
 
-// Funzione per gestire la scelta della modalità di gioco
-function handleModeChange() {
-  const selectedMode = document.querySelector(
-    'input[name="gameMode"]:checked'
-  ).value;
-
-  if (selectedMode === "local") {
-    // Modalità Co-op locale
-    dlcToggle.classList.add("hidden"); // Nascondi la spunta DLC
-    player2TableContainer.classList.remove("hidden"); // Mostra la seconda tabella
-    tablesContainer.classList.remove("single-table");
-    tablesContainer.classList.add("double-tables");
-  } else {
-    // Modalità Multiplayer online
-    dlcToggle.classList.remove("hidden"); // Mostra la spunta DLC
-    player2TableContainer.classList.add("hidden"); // Nascondi la seconda tabella
-    tablesContainer.classList.remove("double-tables");
-    tablesContainer.classList.add("single-table");
+// Funzione per creare una stanza
+createRoomButton.addEventListener("click", async () => {
+  const roomPassword = roomPasswordInput.value;
+  if (!roomPassword) {
+    alert("Please enter a room password.");
+    return;
   }
-}
 
-// Aggiungi event listener per la scelta della modalità
-modeSelection.forEach((mode) => {
-  mode.addEventListener("change", handleModeChange);
+  const roomRef = await addDoc(collection(db, "rooms"), {
+    password: roomPassword,
+    player1: [],
+    player2: [],
+  });
+
+  roomId = roomRef.id;
+  roomIdText.textContent = roomId;
+  roomIdDisplay.style.display = "block";
+  alert("Room created successfully. Room ID: " + roomId);
+
+  // Ascolta le modifiche in tempo reale
+  listenToRoomChanges(roomId);
 });
 
-// Funzione per generare personaggi in base al preset selezionato
+// Funzione per partecipare a una stanza
+joinRoomButton.addEventListener("click", async () => {
+  const roomPassword = joinRoomPasswordInput.value;
+  if (!roomPassword) {
+    alert("Please enter a room password.");
+    return;
+  }
+
+  const roomQuery = query(
+    collection(db, "rooms"),
+    where("password", "==", roomPassword)
+  );
+  const roomSnapshot = await getDocs(roomQuery);
+  if (roomSnapshot.empty) {
+    alert("Room not found.");
+    return;
+  }
+
+  roomId = roomSnapshot.docs[0].id;
+  roomIdText.textContent = roomId;
+  roomIdDisplay.style.display = "block";
+  alert("Joined room successfully. Room ID: " + roomId);
+
+  // Ascolta le modifiche in tempo reale
+  listenToRoomChanges(roomId);
+});
+
+// Funzione per ascoltare le modifiche in tempo reale
+function listenToRoomChanges(roomId) {
+  const roomRef = doc(db, "rooms", roomId);
+  onSnapshot(roomRef, (doc) => {
+    const data = doc.data();
+    if (data) {
+      updateTable(player1TableBody, data.player1);
+      updateTable(player2TableBody, data.player2);
+    }
+  });
+}
+
+// Funzione per generare personaggi per entrambi i giocatori
 function generateRandomCharacters() {
   const preset = presetSelect.value;
   const selectedMode = document.querySelector(
@@ -59,7 +126,7 @@ function generateRandomCharacters() {
       selectedMode === "local" || dlcCheckbox.checked || character.dlc === "no"
   );
 
-  if (availableCharacters.length < (selectedMode === "local" ? 10 : 5)) {
+  if (availableCharacters.length < 10) {
     console.error("Non ci sono abbastanza personaggi disponibili!");
     return;
   }
@@ -74,83 +141,74 @@ function generateRandomCharacters() {
       ["WEAK", "GOOD", "MID", "TOP", "WEAK"],
       usedIds
     );
-    player2Characters =
-      selectedMode === "local"
-        ? getCharactersByType(
-            availableCharacters,
-            ["WEAK", "GOOD", "MID", "TOP", "WEAK"],
-            usedIds
-          )
-        : [];
+    player2Characters = getCharactersByType(
+      availableCharacters,
+      ["WEAK", "GOOD", "MID", "TOP", "WEAK"],
+      usedIds
+    );
   } else if (preset === "preset2") {
     player1Characters = getCharactersByType(
       availableCharacters,
       ["TOP", "TOP", "TOP", "TOP", "TOP"],
       usedIds
     );
-    player2Characters =
-      selectedMode === "local"
-        ? getCharactersByType(
-            availableCharacters,
-            ["TOP", "TOP", "TOP", "TOP", "TOP"],
-            usedIds
-          )
-        : [];
+    player2Characters = getCharactersByType(
+      availableCharacters,
+      ["TOP", "TOP", "TOP", "TOP", "TOP"],
+      usedIds
+    );
   } else if (preset === "preset3") {
     player1Characters = getCharactersByType(
       availableCharacters,
       ["GOOD", "GOOD", "GOOD", "GOOD", "GOOD"],
       usedIds
     );
-    player2Characters =
-      selectedMode === "local"
-        ? getCharactersByType(
-            availableCharacters,
-            ["GOOD", "GOOD", "GOOD", "GOOD", "GOOD"],
-            usedIds
-          )
-        : [];
+    player2Characters = getCharactersByType(
+      availableCharacters,
+      ["GOOD", "GOOD", "GOOD", "GOOD", "GOOD"],
+      usedIds
+    );
   } else if (preset === "preset4") {
     player1Characters = getCharactersByType(
       availableCharacters,
       ["MID", "MID", "MID", "MID", "MID"],
       usedIds
     );
-    player2Characters =
-      selectedMode === "local"
-        ? getCharactersByType(
-            availableCharacters,
-            ["MID", "MID", "MID", "MID", "MID"],
-            usedIds
-          )
-        : [];
+    player2Characters = getCharactersByType(
+      availableCharacters,
+      ["MID", "MID", "MID", "MID", "MID"],
+      usedIds
+    );
   } else if (preset === "preset5") {
     player1Characters = getCharactersByType(
       availableCharacters,
       ["WEAK", "WEAK", "WEAK", "WEAK", "WEAK"],
       usedIds
     );
-    player2Characters =
-      selectedMode === "local"
-        ? getCharactersByType(
-            availableCharacters,
-            ["WEAK", "WEAK", "WEAK", "WEAK", "WEAK"],
-            usedIds
-          )
-        : [];
+    player2Characters = getCharactersByType(
+      availableCharacters,
+      ["WEAK", "WEAK", "WEAK", "WEAK", "WEAK"],
+      usedIds
+    );
   } else if (preset === "preset6") {
     const shuffledCharacters = availableCharacters
       .sort(() => 0.5 - Math.random())
-      .slice(0, selectedMode === "local" ? 10 : 5);
+      .slice(0, 10);
     player1Characters = shuffledCharacters.slice(0, 5);
-    player2Characters =
-      selectedMode === "local" ? shuffledCharacters.slice(5, 10) : [];
+    player2Characters = shuffledCharacters.slice(5, 10);
   }
 
   // Aggiorna le tabelle
   updateTable(player1TableBody, player1Characters);
-  if (selectedMode === "local") {
-    updateTable(player2TableBody, player2Characters);
+  updateTable(player2TableBody, player2Characters);
+
+  // Sincronizza i dati con Firestore se in modalità online
+  if (selectedMode === "online" && roomId) {
+    const roomRef = doc(db, "rooms", roomId);
+    updateDoc(roomRef, {
+      player1: player1Characters,
+      player2: player2Characters,
+    });
   }
 }
 
@@ -234,6 +292,3 @@ function updateTable(tableBody, characterList) {
 
 // Evento per il pulsante di generazione
 generateButton.addEventListener("click", generateRandomCharacters);
-
-// Imposta la modalità iniziale
-handleModeChange();
