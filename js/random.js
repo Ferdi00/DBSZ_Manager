@@ -32,6 +32,7 @@ const player2TableBody = document.querySelector("#player2Table tbody");
 const generateButton = document.getElementById("generateButton");
 const dlcCheckbox = document.getElementById("dlcCheckbox");
 const presetSelect = document.getElementById("presetSelect");
+const customPresetInput = document.getElementById("customPreset");
 const roomIdDisplay = document.getElementById("roomIdDisplay");
 const roomIdText = document.getElementById("roomIdText");
 let characters = [];
@@ -138,64 +139,54 @@ function generateRandomCharacters() {
   if (preset === "preset1") {
     player1Characters = getCharactersByType(
       availableCharacters,
-      ["WEAK", "GOOD", "MID", "TOP", "WEAK"],
+      ["WEAK", "GOOD", "MID", "TOP", "MID"],
       usedIds
     );
     player2Characters = getCharactersByType(
       availableCharacters,
-      ["WEAK", "GOOD", "MID", "TOP", "WEAK"],
+      ["WEAK", "GOOD", "MID", "TOP", "MID"],
       usedIds
     );
   } else if (preset === "preset2") {
     player1Characters = getCharactersByType(
       availableCharacters,
-      ["TOP", "TOP", "TOP", "TOP", "TOP"],
+      ["TOP", "GOOD", "WEAK", "MID", "GOOD"],
       usedIds
     );
     player2Characters = getCharactersByType(
       availableCharacters,
-      ["TOP", "TOP", "TOP", "TOP", "TOP"],
+      ["TOP", "GOOD", "WEAK", "MID", "GOOD"],
       usedIds
     );
   } else if (preset === "preset3") {
     player1Characters = getCharactersByType(
       availableCharacters,
-      ["GOOD", "GOOD", "GOOD", "GOOD", "GOOD"],
+      ["TOP", "WEAK", "MID", "GOOD", "TOP"],
       usedIds
     );
     player2Characters = getCharactersByType(
       availableCharacters,
-      ["GOOD", "GOOD", "GOOD", "GOOD", "GOOD"],
+      ["TOP", "WEAK", "MID", "GOOD", "TOP"],
       usedIds
     );
-  } else if (preset === "preset4") {
-    player1Characters = getCharactersByType(
-      availableCharacters,
-      ["MID", "MID", "MID", "MID", "MID"],
-      usedIds
-    );
-    player2Characters = getCharactersByType(
-      availableCharacters,
-      ["MID", "MID", "MID", "MID", "MID"],
-      usedIds
-    );
-  } else if (preset === "preset5") {
-    player1Characters = getCharactersByType(
-      availableCharacters,
-      ["WEAK", "WEAK", "WEAK", "WEAK", "WEAK"],
-      usedIds
-    );
-    player2Characters = getCharactersByType(
-      availableCharacters,
-      ["WEAK", "WEAK", "WEAK", "WEAK", "WEAK"],
-      usedIds
-    );
-  } else if (preset === "preset6") {
+  }  else if (preset === "preset4") {
     const shuffledCharacters = availableCharacters
       .sort(() => 0.5 - Math.random())
       .slice(0, 10);
     player1Characters = shuffledCharacters.slice(0, 5);
     player2Characters = shuffledCharacters.slice(5, 10);
+  } else if (preset === "custom") {
+    const customPreset = customPresetInput.value.split(",");
+    player1Characters = getCharactersByType(
+      availableCharacters,
+      customPreset,
+      usedIds
+    );
+    player2Characters = getCharactersByType(
+      availableCharacters,
+      customPreset,
+      usedIds
+    );
   }
 
   // Aggiorna le tabelle
@@ -262,7 +253,9 @@ function updateTable(tableBody, characterList) {
     imageCell.appendChild(img);
 
     const typeCell = document.createElement("td");
+    const positionCell = document.createElement("td");
     typeCell.textContent = character.power_level;
+    positionCell.textContent = character.position;
     typeCell.style.fontWeight = "bold";
 
     switch (character.power_level) {
@@ -285,6 +278,7 @@ function updateTable(tableBody, characterList) {
     row.appendChild(nameCell);
     row.appendChild(imageCell);
     row.appendChild(typeCell);
+    row.appendChild(positionCell);
 
     tableBody.appendChild(row);
   });

@@ -71,7 +71,7 @@ async function loginUser() {
 function showUserInfo(user) {
   userContainer.innerHTML = `
     <div class="user-info">
-      <h2>Benvenuto, ${user.username}</h2>
+      <h2>Welcome back! ${user.username}</h2>
       <img src="${user.image}" alt="Profile Image" class="profile-img">
       <button id="logoutButton">Logout</button>
     </div>
@@ -79,6 +79,10 @@ function showUserInfo(user) {
 
   const logoutButton = document.getElementById("logoutButton");
   logoutButton.addEventListener("click", logoutUser);
+
+  // Mostra la sezione delle statistiche
+  const statsContainer = document.getElementById("statsContainer");
+  statsContainer.classList.remove("hidden");
 }
 
 // Funzione per effettuare il logout

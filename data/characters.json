@@ -1,1353 +1,1546 @@
 [
   {
-    "id": 1,
-    "name": "GOKU (Z-MID)",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/f/fd/02_GOKU_%28Z-MID%29.png"
-  },
-  {
-    "id": 1,
-    "name": "GOKU (Z-MID) Super Saiyan",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/3/3f/02%C2%BA_GOKU_%28Z-MID%29_Super_Saiyan.png"
-  },
-  {
-    "id": 2,
-    "name": "GOKU (Z-END)",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/4/43/03_GOKU_%28Z-END%29.png"
-  },
-  {
-    "id": 2,
-    "name": "GOKU (Z-END) Super Saiyan",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/d/de/03%C2%BA_GOKU_%28Z-END%29_Super_Saiyan.png"
-  },
-  {
-    "id": 2,
-    "name": "GOKU (Z-END) Super Saiyan 2",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/0/05/03%C2%BA%C2%BA_GOKU_%28Z-END%29_Super_Saiyan_2.png"
-  },
-  {
-    "id": 2,
-    "name": "GOKU (Z-END) Super Saiyan 3",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/3/3f/03%C2%BA%C2%BA%C2%BA_GOKU_%28Z-END%29_Super_Saiyan_3.png"
-  },
-  {
-    "id": 3,
-    "name": "GOKU (SUPER)",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/2/2e/04_GOKU_%28SUPER%29.png"
-  },
-  {
-    "id": 3,
-    "name": "GOKU (SUPER) Super Saiyan",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/1/15/04%C2%BA_GOKU_%28SUPER%29_Super_Saiyan.png"
-  },
-  {
-    "id": 3,
-    "name": "GOKU (SUPER) Super Saiyan God",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/3/30/04%C2%BA%C2%BA_GOKU_%28SUPER%29_Super_Saiyan_God.png"
-  },
-  {
-    "id": 3,
-    "name": "GOKU (SUPER) Super Saiyan God Super Saiyan",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/d/d8/04%C2%BA%C2%BA%C2%BA_GOKU_%28SUPER%29_Super_Saiyan_God_Super_Saiyan.png"
-  },
-  {
-    "id": 4,
-    "name": "GOKU (SUPER) Ultra Instinct",
-    "power_level": "TOP",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/9/9f/05%C2%BA_GOKU_%28SUPER%29_Ultra_Instinct.png"
-  },
-  {
-    "id": 4,
-    "name": "GOKU (SUPER) Ultra Instinct -Sign-",
-    "power_level": "TOP",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/8/8b/05_GOKU_%28SUPER%29_Ultra_Instinct_-Sign-.png"
-  },
-  {
-    "id": 5,
-    "name": "GOKU (GT)",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/b/bb/06_GOKU_%28GT%29.png"
-  },
-  {
-    "id": 5,
-    "name": "GOKU (GT) Super Saiyan",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/1/16/06%C2%BA_GOKU_%28GT%29_Super_Saiyan.png"
-  },
-  {
-    "id": 5,
-    "name": "GOKU (GT) Super Saiyan 3",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/d/dd/06%C2%BA%C2%BA_GOKU_%28GT%29_Super_Saiyan_3.png"
-  },
-  {
-    "id": 5,
-    "name": "GOKU (GT) Super Saiyan 4",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/0/07/06%C2%BA%C2%BA%C2%BA_GOKU_%28GT%29_Super_Saiyan_4.png"
-  },
-  {
-    "id": 6,
-    "name": "GREAT APE VEGETA",
-    "power_level": "GIANT",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/4/40/09%C2%BA_GREAT_APE_VEGETA.png"
-  },
-  {
-    "id": 6,
-    "name": "VEGETA (Z-SCOUTER)",
-    "power_level": "WEAK",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/a/ab/09_VEGETA_%28Z-SCOUTER%29.png"
-  },
-  {
-    "id": 7,
-    "name": "SUPER VEGETA",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/d/d0/10%C2%BA%C2%BA_SUPER_VEGETA.png"
-  },
-  {
-    "id": 7,
-    "name": "VEGETA (Z-EARLY)",
-    "power_level": "MID",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/0/08/10_VEGETA_%28Z-EARLY%29.png"
-  },
-  {
-    "id": 7,
-    "name": "VEGETA (Z-EARLY) Super Saiyan",
-    "power_level": "MID",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/3/3b/10%C2%BA_VEGETA_%28Z-EARLY%29_Super_Saiyan.png"
-  },
-  {
-    "id": 8,
-    "name": "VEGETA (Z-END)",
-    "power_level": "MID",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/a/ad/11_VEGETA_%28Z-END%29.png"
-  },
-  {
-    "id": 8,
-    "name": "VEGETA (Z-END) Super Saiyan",
-    "power_level": "MID",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/d/df/11%C2%BA_VEGETA_%28Z-END%29_Super_Saiyan.png"
-  },
-  {
-    "id": 8,
-    "name": "VEGETA (Z-END) Super Saiyan 2",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/0/06/11%C2%BA%C2%BA_VEGETA_%28Z-END%29_Super_Saiyan_2.png"
-  },
-  {
-    "id": 9,
-    "name": "VEGETA (SUPER)",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/1/10/13_VEGETA_%28SUPER%29.png"
-  },
-  {
-    "id": 9,
-    "name": "VEGETA (SUPER) Super Saiyan",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/7/75/13%C2%BA_VEGETA_%28SUPER%29_Super_Saiyan.png"
-  },
-  {
-    "id": 9,
-    "name": "VEGETA (SUPER) Super Saiyan God",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/b/b1/13%C2%BA%C2%BA_VEGETA_%28SUPER%29_Super_Saiyan_God.png"
-  },
-  {
-    "id": 9,
-    "name": "VEGETA (SUPER) Super Saiyan God Super Saiyan",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/a/ae/13%C2%BA%C2%BA%C2%BA_VEGETA_%28SUPER%29_Super_Saiyan_God_Super_Saiyan.png"
-  },
-  {
-    "id": 10,
-    "name": "GOHAN (TEEN)",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/3/3a/16_GOHAN_%28TEEN%29.png"
-  },
-  {
-    "id": 10,
-    "name": "GOHAN (TEEN) Super Saiyan",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/d/d1/16%C2%BA_GOHAN_%28TEEN%29_Super_Saiyan.png"
-  },
-  {
-    "id": 10,
-    "name": "GOHAN (TEEN) Super Saiyan 2",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/a/a7/16%C2%BA%C2%BA_GOHAN_%28TEEN%29_Super_Saiyan_2.png"
-  },
-  {
-    "id": 11,
-    "name": "GOHAN (ADULT)",
-    "power_level": "MID",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/4/45/17_GOHAN_%28ADULT%29.png"
-  },
-  {
-    "id": 11,
-    "name": "GOHAN (ADULT) Super Saiyan",
-    "power_level": "MID",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/4/47/17%C2%BA_GOHAN_%28ADULT%29_Super_Saiyan.png"
-  },
-  {
-    "id": 11,
-    "name": "GOHAN (ADULT) Super Saiyan 2",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/a/a6/17%C2%BA%C2%BA_GOHAN_%28ADULT%29_Super_Saiyan_2.png"
-  },
-  {
-    "id": 11,
-    "name": "GREAT SAIYAMAN",
-    "power_level": "MID",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/b/b0/17%C2%BA%C2%BA%C2%BA_GREAT_SAIYAMAN.png"
-  },
-  {
-    "id": 12,
-    "name": "GOHAN (FUTURE)",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/2/21/19_GOHAN_%28FUTURE%29.png"
-  },
-  {
-    "id": 12,
-    "name": "GOHAN (FUTURE) Super Saiyan",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/e/e4/19%C2%BA_GOHAN_%28FUTURE%29_Super_Saiyan.png"
-  },
-  {
-    "id": 13,
-    "name": "TRUNKS (SWORD)",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/4/47/26_TRUNKS_%28SWORD%29.png"
-  },
-  {
-    "id": 13,
-    "name": "TRUNKS (SWORD) Super Saiyan",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/5/58/26%C2%BA_TRUNKS_%28SWORD%29_Super_Saiyan.png"
-  },
-  {
-    "id": 14,
-    "name": "SUPER TRUNKS",
-    "power_level": "MID",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/c/cd/27%C2%BA%C2%BA_SUPER_TRUNKS.png"
-  },
-  {
-    "id": 14,
-    "name": "TRUNKS (MELEE)",
-    "power_level": "MID",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/4/40/27_TRUNKS_%28MELEE%29.png"
-  },
-  {
-    "id": 14,
-    "name": "TRUNKS (MELEE) Super Saiyan",
-    "power_level": "MID",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/c/cc/27%C2%BA_TRUNKS_%28MELEE%29_Super_Saiyan.png"
-  },
-  {
-    "id": 15,
-    "name": "FUTURE TRUNKS",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/9/91/28_FUTURE_TRUNKS.png"
-  },
-  {
-    "id": 15,
-    "name": "FUTURE TRUNKS Super Saiyan",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/a/a8/28%C2%BA_FUTURE_TRUNKS_Super_Saiyan.png"
-  },
-  {
-    "id": 16,
-    "name": "TRUNKS (KID)",
-    "power_level": "WEAK",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/2/26/29_TRUNKS_%28KID%29.png"
-  },
-  {
-    "id": 16,
-    "name": "TRUNKS (KID) Super Saiyan",
-    "power_level": "WEAK",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/9/9a/29%C2%BA_TRUNKS_%28KID%29_Super_Saiyan.png"
-  },
-  {
-    "id": 17,
-    "name": "GOTEN",
-    "power_level": "WEAK",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/d/d7/30_GOTEN.png"
-  },
-  {
-    "id": 17,
-    "name": "GOTEN Super Saiyan",
-    "power_level": "MID",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/1/16/30%C2%BA_GOTEN_Super_Saiyan.png"
-  },
-  {
-    "id": 18,
-    "name": "SUPER VEGITO",
-    "power_level": "TOP",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/d/dc/31%C2%BA_SUPER_VEGITO.png"
-  },
-  {
-    "id": 18,
-    "name": "VEGITO",
-    "power_level": "TOP",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/0/08/31_VEGITO.png"
-  },
-  {
-    "id": 18,
-    "name": "VEGITO Super Saiyan God Super Saiyan",
-    "power_level": "TOP",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/d/de/31%C2%BA%C2%BA_VEGITO_Super_Saiyan_God_Super_Saiyan.png"
-  },
-  {
-    "id": 19,
-    "name": "GOGETA (SUPER)",
-    "power_level": "TOP",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/8/80/33_GOGETA_%28SUPER%29.png"
-  },
-  {
-    "id": 19,
-    "name": "GOGETA (SUPER) Super Saiyan",
-    "power_level": "TOP",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/8/87/33%C2%BA_GOGETA_%28SUPER%29_Super_Saiyan.png"
-  },
-  {
-    "id": 19,
-    "name": "GOGETA (SUPER) Super Saiyan God Super Saiyan",
-    "power_level": "TOP",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/7/74/33%C2%BA%C2%BA_GOGETA_%28SUPER%29_Super_Saiyan_God_Super_Saiyan.png"
-  },
-  {
-    "id": 20,
-    "name": "GOTENKS",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/e/e9/35_GOTENKS.png"
-  },
-  {
-    "id": 20,
-    "name": "GOTENKS Super Saiyan",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/4/45/35%C2%BA_SUPER_GOTENKS.png"
-  },
-  {
-    "id": 20,
-    "name": "GOTENKS Super Saiyan 3",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/4/43/35%C2%BA%C2%BA_GOTENKS_Super_Saiyan_3.png"
-  },
-  {
-    "id": 21,
-    "name": "MASTER ROSHI",
-    "power_level": "WEAK",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/7/74/37_MASTER_ROSHI.png"
-  },
-  {
-    "id": 21,
-    "name": "MASTER ROSHI Max Power",
-    "power_level": "WEAK",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/8/80/37%C2%BA_MASTER_ROSHI_Max_Power.png"
-  },
-  {
-    "id": 22,
-    "name": "FRIEZA (Z) 1st Form",
-    "power_level": "MID",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/3/38/38_FRIEZA_%28Z%29_1st_Form.png"
-  },
-  {
-    "id": 22,
-    "name": "FRIEZA (Z) 2nd Form",
-    "power_level": "MID",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/a/ab/38%C2%BA_FRIEZA_%28Z%29_2nd_Form.png"
-  },
-  {
-    "id": 22,
-    "name": "FRIEZA (Z) 3rd Form",
-    "power_level": "MID",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/e/e7/38%C2%BA%C2%BA_FRIEZA_%28Z%29_3rd_Form.png"
-  },
-  {
-    "id": 22,
-    "name": "FRIEZA (Z) 4th Form",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/a/ab/38%C2%BA%C2%BA%C2%BA_FRIEZA_%28Z%29_4th_Form.png"
-  },
-  {
-    "id": 22,
-    "name": "FRIEZA (Z) Full Power",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/6/68/38%C2%BA%C2%BA%C2%BA%C2%BA_FRIEZA_%28Z%29_Full_Power.png"
-  },
-  {
-    "id": 23,
-    "name": "FRIEZA (SUPER)",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/0/00/40_FRIEZA_%28SUPER%29.png"
-  },
-  {
-    "id": 23,
-    "name": "GOLDEN FRIEZA",
-    "power_level": "TOP",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/9/9a/40%C2%BA_GOLDEN_FRIEZA.png"
-  },
-  {
-    "id": 24,
-    "name": "CELL 1st Form",
-    "power_level": "MID",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/3/33/41_CELL_1st_Form.png"
-  },
-  {
-    "id": 24,
-    "name": "CELL 2nd Form",
-    "power_level": "MID",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/e/e0/41%C2%BA_CELL_2nd_Form.png"
-  },
-  {
-    "id": 24,
-    "name": "CELL Perfect Form",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/2/29/41%C2%BA%C2%BA_CELL_Perfect_Form.png"
-  },
-  {
-    "id": 25,
-    "name": "SUPER BUU",
-    "power_level": "MID",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/f/fd/46_SUPER_BUU.png"
-  },
-  {
-    "id": 25,
-    "name": "SUPER BUU Gohan Absorbed",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/b/bb/46%C2%BA%C2%BA_SUPER_BUU_Gohan_Absorbed.png"
-  },
-  {
-    "id": 25,
-    "name": "SUPER BUU Gotenks Absorbed",
-    "power_level": "MID",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/9/96/46%C2%BA_SUPER_BUU_Gotenks_Absorbed.png"
-  },
-  {
-    "id": 26,
-    "name": "MAJUUB (GT)",
-    "power_level": "MID",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/9/92/52%C2%BA_MAJUUB_%28GT%29.png"
-  },
-  {
-    "id": 26,
-    "name": "UUB (GT)",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/d/de/52_UUB_%28GT%29.png"
-  },
-  {
-    "id": 27,
-    "name": "SUPER ZARBON",
-    "power_level": "MID",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/b/bb/57%C2%BA_SUPER_ZARBON.png"
-  },
-  {
-    "id": 27,
-    "name": "ZARBON",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/2/25/57_ZARBON.png"
-  },
-  {
-    "id": 28,
-    "name": "BROLY (Z)",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/5/50/75_BROLY_%28Z%29.png"
-  },
-  {
-    "id": 28,
-    "name": "BROLY (Z) Legendary Super Saiyan",
-    "power_level": "TOP",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/3/3e/75%C2%BA%C2%BA_BROLY_%28Z%29_Legendary_Super_Saiyan.png"
-  },
-  {
-    "id": 28,
-    "name": "BROLY (Z) Super Saiyan",
-    "power_level": "TOP",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/e/e7/75%C2%BA_BROLY_%28Z%29_Super_Saiyan.png"
-  },
-  {
-    "id": 29,
-    "name": "BROLY (SUPER)",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/5/5c/76_BROLY_%28SUPER%29.PNG"
-  },
-  {
-    "id": 29,
-    "name": "BROLY (SUPER) Super Saiyan",
-    "power_level": "TOP",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/7/7c/76%C2%BA_BROLY_%28SUPER%29_Super_Saiyan.png"
-  },
-  {
-    "id": 29,
-    "name": "BROLY (SUPER) Super Saiyan Full Power",
-    "power_level": "TOP",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/d/d6/76%C2%BA%C2%BA_BROLY_%28SUPER%29_Super_Saiyan_Full_Power.PNG"
-  },
-  {
-    "id": 30,
-    "name": "LORD SLUG",
-    "power_level": "WEAK",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/3/37/80_LORD_SLUG.png"
-  },
-  {
-    "id": 30,
-    "name": "LORD SLUG Giant Form",
-    "power_level": "GIANT",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/7/74/80%C2%BA_LORD_SLUG_Giant_Form.png"
-  },
-  {
-    "id": 31,
-    "name": "COOLER",
-    "power_level": "MID",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/a/a3/81_COOLER.png"
-  },
-  {
-    "id": 31,
-    "name": "COOLER Final Form",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/a/a7/81%C2%BA_COOLER_Final_Form.png"
-  },
-  {
-    "id": 32,
-    "name": "ANDROID 13",
-    "power_level": "MID",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/a/a0/83_ANDROID_13.png"
-  },
-  {
-    "id": 32,
-    "name": "FUSION ANDROID 13",
-    "power_level": "MID",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/f/fd/83%C2%BA_FUSION_ANDROID_13.png"
-  },
-  {
-    "id": 33,
-    "name": "BOJACK",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/1/16/84_BOJACK.png"
-  },
-  {
-    "id": 33,
-    "name": "FULL-POWER BOJACK",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/f/f6/84%C2%BA_FULL-POWER_BOJACK.png"
-  },
-  {
-    "id": 34,
-    "name": "JANEMBA",
-    "power_level": "GIANT",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/5/53/85_JANEMBA.png"
-  },
-  {
-    "id": 34,
-    "name": "SUPER JANEMBA",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/7/7f/85%C2%BA_SUPER_JANEMBA.png"
-  },
-  {
-    "id": 35,
-    "name": "BABY VEGETA (GT)",
-    "power_level": "MID",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/f/fb/88_BABY_VEGETA_%28GT%29.png"
-  },
-  {
-    "id": 35,
-    "name": "GREAT APE BABY (GT)",
-    "power_level": "GIANT",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/2/23/88%C2%BA%C2%BA%C2%BA_GREAT_APE_BABY_%28GT%29.png"
-  },
-  {
-    "id": 35,
-    "name": "SUPER BABY 1 (GT)",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/a/a9/88%C2%BA_SUPER_BABY_1_%28GT%29.png"
-  },
-  {
-    "id": 35,
-    "name": "SUPER BABY 2 (GT)",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/e/e7/88%C2%BA%C2%BA_SUPER_BABY_2_%28GT%29.png"
-  },
-  {
-    "id": 36,
-    "name": "OMEGA SHENRON (GT)",
-    "power_level": "TOP",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/3/3d/89%C2%BA_OMEGA_SHENRON_%28GT%29.png"
-  },
-  {
-    "id": 36,
-    "name": "SYN SHENRON (GT)",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/3/38/89_SYN_SHENRON.png"
-  },
-  {
-    "id": 37,
-    "name": "GOKU BLACK",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/6/6e/93_GOKU_BLACK.png"
-  },
-  {
-    "id": 37,
-    "name": "GOKU BLACK Super Saiyan Rosé",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/c/c3/93%C2%BA_GOKU_BLACK_Super_Saiyan_Ros%C3%A9.png"
-  },
-  {
-    "id": 38,
-    "name": "FUSED ZAMASU",
-    "power_level": "TOP",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/8/80/95_FUSED_ZAMASU.png"
-  },
-  {
-    "id": 38,
-    "name": "FUSED ZAMASU Half-Corrupted",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/e/e0/95%C2%BA_FUSED_ZAMASU_Half-Corrupted.png"
-  },
-  {
-    "id": 39,
-    "name": "CABBA",
-    "power_level": "MID",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/e/e3/98_CABBA.png"
-  },
-  {
-    "id": 39,
-    "name": "CABBA Super Saiyan",
-    "power_level": "MID",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/4/44/98%C2%BA_CABBA_Super_Saiyan.png"
-  },
-  {
-    "id": 39,
-    "name": "CABBA Super Saiyan 2",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/c/c2/98%C2%BA%C2%BA_CABBA_Super_Saiyan_2.png"
-  },
-  {
-    "id": 40,
-    "name": "CAULIFLA",
-    "power_level": "MID",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/7/76/99_CAULIFLA.png"
-  },
-  {
-    "id": 40,
-    "name": "CAULIFLA Super Saiyan 2",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/e/e7/99%C2%BA_CAULIFLA_Super_Saiyan_2.png"
-  },
-  {
-    "id": 41,
-    "name": "KALE",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/8/81/100_KALE.png"
-  },
-  {
-    "id": 41,
-    "name": "KALE Super Saiyan",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/6/68/100%C2%BA%C2%BA_KALE_Super_Saiyan.png"
-  },
-  {
-    "id": 41,
-    "name": "KALE Super Saiyan (Berserk)",
-    "power_level": "TOP",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/0/04/100%C2%BA_KALE_Super_Saiyan_%28Berserk%29.png"
-  },
-  {
-    "id": 42,
-    "name": "KEFLA",
-    "power_level": "TOP",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/b/be/101_KEFLA.png"
-  },
-  {
-    "id": 42,
-    "name": "KEFLA Super Saiyan",
-    "power_level": "TOP",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/d/db/101%C2%BA_KEFLA_Super_Saiyan.png"
-  },
-  {
-    "id": 42,
-    "name": "KEFLA Super Saiyan 2",
-    "power_level": "TOP",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/5/52/101%C2%BA%C2%BA_KEFLA_Super_Saiyan_2.png"
-  },
-  {
-    "id": 43,
-    "name": "JIREN",
-    "power_level": "TOP",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/3/3c/102_JIREN.png"
-  },
-  {
-    "id": 43,
-    "name": "JIREN Full Power",
-    "power_level": "TOP",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/6/6b/102%C2%BA_JIREN_Full_Power.png"
-  },
-  {
-    "id": 44,
-    "name": "TOPPO",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/b/ba/103_TOPPO.png"
-  },
-  {
-    "id": 44,
-    "name": "TOPPO, GOD OF DESTRUCTION",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/6/6b/103%C2%BA_TOPPO%2C_GOD_OF_DESTRUCTION.png"
-  },
-  {
-    "id": 45,
-    "name": "GOHAN (SUPER HERO)",
-    "power_level": "MID",
-    "dlc": "si",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/c/c9/110_GOHAN_%28SUPER_HERO%29.png"
-  },
-  {
-    "id": 45,
-    "name": "GOHAN (SUPER HERO) Super Saiyan",
-    "power_level": "GOOD",
-    "dlc": "si",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/9/9c/110%C2%BA_GOHAN_%28SUPER_HERO%29_Super_Saiyan.png"
-  },
-  {
-    "id": 45,
-    "name": "GOHAN BEAST",
-    "power_level": "TOP",
-    "dlc": "si",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/9/90/110%C2%BA%C2%BA%C2%BA_GOHAN_BEAST.png"
-  },
-  {
-    "id": 45,
-    "name": "ULTIMATE GOHAN (SUPER HERO)",
-    "power_level": "TOP",
-    "dlc": "si",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/4/48/110%C2%BA%C2%BA_ULTIMATE_GOHAN_%28SUPER_HERO%29.png"
-  },
-  {
-    "id": 46,
-    "name": "ORANGE PICCOLO",
-    "power_level": "GOOD",
-    "dlc": "si",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/2/2e/111%C2%BA%C2%BA_ORANGE_PICCOLO.png"
-  },
-  {
-    "id": 46,
-    "name": "ORANGE PICCOLO Giant Form",
-    "power_level": "GIANT",
-    "dlc": "si",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/1/1b/111%C2%BA%C2%BA%C2%BA_ORANGE_PICCOLO_Giant_Form.png"
-  },
-  {
-    "id": 46,
-    "name": "PICCOLO (SUPER HERO)",
-    "power_level": "MID",
-    "dlc": "si",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/9/9b/111_PICCOLO_%28SUPER_HERO%29.png"
-  },
-  {
-    "id": 46,
-    "name": "PICCOLO (SUPER HERO) Power Awakening",
-    "power_level": "MID",
-    "dlc": "si",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/1/19/111%C2%BA_PICCOLO_%28SUPER_HERO%29_Power_Awakening.png"
-  },
-  {
-    "id": 47,
-    "name": "ANDROID 16",
-    "power_level": "WEAK",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/2/26/66_ANDROID_16.png"
-  },
-  {
-    "id": 48,
-    "name": "ANDROID 17 (SUPER)",
-    "power_level": "MID",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/f/f3/68_ANDROID_17_%28SUPER%29.png"
-  },
-  {
-    "id": 49,
-    "name": "ANDROID 17 (Z)",
-    "power_level": "MID",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/1/12/67_ANDROID_17_%28Z%29.png"
-  },
-  {
-    "id": 50,
-    "name": "ANDROID 18",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/e/e1/69_ANDROID_18.png"
-  },
-  {
-    "id": 51,
-    "name": "ANDROID 19",
-    "power_level": "MID",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/b/b7/70_ANDROID_19.png"
-  },
-  {
-    "id": 52,
-    "name": "ANILAZA",
-    "power_level": "GIANT",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/e/e7/109_ANILAZA.png"
-  },
-  {
-    "id": 53,
-    "name": "BABIDI",
-    "power_level": "WEAK",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/3/38/72_BABIDI.png"
-  },
-  {
-    "id": 54,
-    "name": "BARDOCK",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/1/1b/53_BARDOCK.png"
-  },
-  {
-    "id": 55,
-    "name": "BEERUS",
-    "power_level": "TOP",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/1/1c/91_BEERUS.png"
-  },
-  {
-    "id": 56,
-    "name": "BERGAMO",
-    "power_level": "MID",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/1/1c/105_BERGAMO.png"
-  },
-  {
-    "id": 57,
-    "name": "BURTER",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/3/32/62_BURTER.png"
-  },
-  {
-    "id": 58,
-    "name": "CAPTAIN GINYU",
-    "power_level": "MID",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/a/a7/60_CAPTAIN_GINYU.png"
-  },
-  {
-    "id": 59,
-    "name": "CELL JR.",
-    "power_level": "WEAK",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/3/32/43_CELL_JR..png"
-  },
-  {
+    "position": 33,
     "id": 60,
-    "name": "CELL MAX",
+    "name": "Cell Max",
     "power_level": "GIANT",
     "dlc": "si",
     "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/d/d4/114_CELL_MAX.png"
   },
   {
-    "id": 61,
-    "name": "CHIAOTZU",
-    "power_level": "WEAK",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/1/1a/49_CHIAOTZU.png"
-  },
-  {
-    "id": 62,
-    "name": "CUI",
-    "power_level": "WEAK",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/0/0f/59_CUI.png"
-  },
-  {
-    "id": 63,
-    "name": "DABURA",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/c/c2/73_DABURA.png"
-  },
-  {
-    "id": 64,
-    "name": "DODORIA",
-    "power_level": "WEAK",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/9/9a/58_DODORIA.png"
-  },
-  {
-    "id": 65,
-    "name": "DR. GERO",
-    "power_level": "MID",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/5/54/71_DR._GERO.png"
-  },
-  {
-    "id": 66,
-    "name": "DR. WHEELO",
-    "power_level": "GIANT",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/c/c5/78_DR._WHEELO.png"
-  },
-  {
-    "id": 67,
-    "name": "DYSPO",
-    "power_level": "MID",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/8/8f/104_DYSPO.png"
-  },
-  {
-    "id": 68,
-    "name": "FRIEZA FORCE SOLDIER",
-    "power_level": "WEAK",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/6/6c/74_FRIEZA_FORCE_SOLDIER.png"
-  },
-  {
-    "id": 69,
-    "name": "FROST",
-    "power_level": "MID",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/9/9a/97_FROST.png"
-  },
-  {
+    "position": 32,
     "id": 70,
-    "name": "GAMMA 1",
+    "name": "Gamma 1",
     "power_level": "MID",
     "dlc": "si",
     "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/e/e8/112_GAMMA_1.png"
   },
   {
+    "position": 32,
     "id": 71,
-    "name": "GAMMA 2",
+    "name": "Gamma 2",
     "power_level": "MID",
     "dlc": "si",
     "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/9/99/113_GAMMA_2.png"
   },
   {
-    "id": 72,
-    "name": "GOGETA (GT) Super Saiyan 4",
-    "power_level": "TOP",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/f/f7/34_GOGETA_%28GT%29_Super_Saiyan_4.png"
-  },
-  {
-    "id": 73,
-    "name": "GOHAN (KID)",
-    "power_level": "WEAK",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/7/7d/15_GOHAN_%28KID%29.png"
-  },
-  {
-    "id": 74,
-    "name": "GOKU (MINI)",
-    "power_level": "WEAK",
+    "position": 32,
+    "id": 46,
+    "name": "Orange Piccolo",
+    "power_level": "GOOD",
     "dlc": "si",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/b/bf/08_GOKU_%28MINI%29.png"
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/2/2e/111%C2%BA%C2%BA_ORANGE_PICCOLO.png"
   },
   {
-    "id": 75,
-    "name": "GOKU (TEEN)",
-    "power_level": "WEAK",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/5/52/07_GOKU_%28TEEN%29.png"
+    "position": 32,
+    "id": 46,
+    "name": "Orange Piccolo - Forma gigante",
+    "power_level": "GIANT",
+    "dlc": "si",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/1/1b/111%C2%BA%C2%BA%C2%BA_ORANGE_PICCOLO_Giant_Form.png"
   },
   {
-    "id": 76,
-    "name": "GOKU (Z-EARLY)",
+    "position": 32,
+    "id": 46,
+    "name": "Piccolo (Super Hero)",
     "power_level": "MID",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/2/23/01_GOKU_%28Z-EARLY%29.png"
+    "dlc": "si",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/9/9b/111_PICCOLO_%28SUPER_HERO%29.png"
   },
   {
-    "id": 77,
-    "name": "GULDO",
+    "position": 32,
+    "id": 46,
+    "name": "Piccolo (Super Hero) - Potenziale liberato",
     "power_level": "MID",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/8/82/64_GULDO.png"
+    "dlc": "si",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/1/19/111%C2%BA_PICCOLO_%28SUPER_HERO%29_Power_Awakening.png"
   },
   {
-    "id": 78,
-    "name": "HIRUDEGARN",
+    "position": 31,
+    "id": 52,
+    "name": "Anilaza",
     "power_level": "GIANT",
     "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/2/2c/87_HIRUDEGARN.png"
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/e/e7/109_ANILAZA.png"
   },
   {
-    "id": 79,
-    "name": "HIT",
+    "position": 31,
+    "id": 45,
+    "name": "Gohan (Super Hero)",
+    "power_level": "MID",
+    "dlc": "si",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/c/c9/110_GOHAN_%28SUPER_HERO%29.png"
+  },
+  {
+    "position": 31,
+    "id": 45,
+    "name": "Gohan (Super Hero) - Super Saiyan",
     "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/5/57/96_HIT.png"
+    "dlc": "si",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/9/9c/110%C2%BA_GOHAN_%28SUPER_HERO%29_Super_Saiyan.png"
   },
   {
-    "id": 80,
-    "name": "JEICE",
-    "power_level": "MID",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/b/b5/63_JEICE.png"
+    "position": 31,
+    "id": 45,
+    "name": "Gohan Beast",
+    "power_level": "TOP",
+    "dlc": "si",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/9/90/110%C2%BA%C2%BA%C2%BA_GOHAN_BEAST.png"
   },
   {
-    "id": 81,
-    "name": "KAKUNSA",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/c/c5/107_KAKUNSA.png"
+    "position": 31,
+    "id": 45,
+    "name": "Gohan Supremo (Super Hero)",
+    "power_level": "TOP",
+    "dlc": "si",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/4/48/110%C2%BA%C2%BA_ULTIMATE_GOHAN_%28SUPER_HERO%29.png"
   },
   {
-    "id": 82,
-    "name": "KID BUU",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/9/94/47_KID_BUU.png"
-  },
-  {
-    "id": 83,
-    "name": "KING COLD",
-    "power_level": "WEAK",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/4/42/65_KING_COLD.png"
-  },
-  {
-    "id": 84,
-    "name": "KRILLIN",
-    "power_level": "MID",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/9/93/23_KRILLIN.png"
-  },
-  {
-    "id": 85,
-    "name": "MAJIN BUU",
-    "power_level": "MID",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/8/8b/44_MAJIN_BUU.png"
-  },
-  {
-    "id": 86,
-    "name": "MAJIN BUU (EVIL)",
-    "power_level": "MID",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/5/5c/45_MAJIN_BUU_%28EVIL%29.png"
-  },
-  {
-    "id": 87,
-    "name": "MAJIN VEGETA",
-    "power_level": "MID",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/5/55/12_MAJIN_VEGETA.png"
-  },
-  {
-    "id": 88,
-    "name": "MECHA FRIEZA",
-    "power_level": "MID",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/7/70/39_MECHA_FRIEZA.png"
-  },
-  {
-    "id": 89,
-    "name": "METAL COOLER",
-    "power_level": "MID",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/1/1c/82_METAL_COOLER.png"
-  },
-  {
-    "id": 90,
-    "name": "MR. SATAN",
-    "power_level": "ULTRA-WEAK",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/7/73/48_MR._SATAN.png"
-  },
-  {
-    "id": 91,
-    "name": "NAIL",
-    "power_level": "MID",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/2/2a/22_NAIL.png"
-  },
-  {
-    "id": 92,
-    "name": "NAPPA",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/e/e9/56_NAPPA.png"
-  },
-  {
-    "id": 93,
-    "name": "PAN (GT)",
-    "power_level": "WEAK",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/2/27/51_PAN_%28GT%29.png"
-  },
-  {
-    "id": 94,
-    "name": "PERFECT CELL",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/f/f7/42_PERFECT_CELL.png"
-  },
-  {
-    "id": 95,
-    "name": "PICCOLO",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/5/5f/20_PICCOLO.png"
-  },
-  {
-    "id": 96,
-    "name": "PICCOLO (FUSED WITH KAMI)",
-    "power_level": "MID",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/3/36/21_PICCOLO_%28FUSED_WITH_KAMI%29.png"
-  },
-  {
-    "id": 97,
-    "name": "RADITZ",
-    "power_level": "MID",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/d/d8/54_RADITZ.png"
-  },
-  {
-    "id": 98,
-    "name": "RECOOME",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/b/bc/61_RECOOME.png"
-  },
-  {
-    "id": 99,
-    "name": "RIBRIANNE",
-    "power_level": "MID",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/c/c0/106_RIBRIANNE.png"
-  },
-  {
+    "position": 31,
     "id": 100,
-    "name": "ROASIE",
+    "name": "Rozie",
     "power_level": "MID",
     "dlc": "no",
     "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/2/24/108_ROASIE.png"
   },
   {
-    "id": 101,
-    "name": "SAIBAMAN",
-    "power_level": "WEAK",
+    "position": 30,
+    "id": 56,
+    "name": "Bergamo",
+    "power_level": "MID",
     "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/a/ad/55_SAIBAMAN.png"
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/1/1c/105_BERGAMO.png"
   },
   {
+    "position": 30,
+    "id": 67,
+    "name": "Dyspo",
+    "power_level": "MID",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/8/8f/104_DYSPO.png"
+  },
+  {
+    "position": 30,
+    "id": 81,
+    "name": "Kakunsa",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/c/c5/107_KAKUNSA.png"
+  },
+  {
+    "position": 30,
+    "id": 99,
+    "name": "Ribrianne",
+    "power_level": "MID",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/c/c0/106_RIBRIANNE.png"
+  },
+  {
+    "position": 30,
+    "id": 44,
+    "name": "Toppo",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/b/ba/103_TOPPO.png"
+  },
+  {
+    "position": 30,
+    "id": 44,
+    "name": "Toppo - Dio della distruzione",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/6/6b/103%C2%BA_TOPPO%2C_GOD_OF_DESTRUCTION.png"
+  },
+  {
+    "position": 29,
+    "id": 43,
+    "name": "Jiren",
+    "power_level": "TOP",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/3/3c/102_JIREN.png"
+  },
+  {
+    "position": 29,
+    "id": 43,
+    "name": "Jiren - Massima potenza",
+    "power_level": "TOP",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/6/6b/102%C2%BA_JIREN_Full_Power.png"
+  },
+  {
+    "position": 29,
+    "id": 41,
+    "name": "Kale - Super Saiyan",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/6/68/100%C2%BA%C2%BA_KALE_Super_Saiyan.png"
+  },
+  {
+    "position": 29,
+    "id": 42,
+    "name": "Kefla",
+    "power_level": "TOP",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/b/be/101_KEFLA.png"
+  },
+  {
+    "position": 29,
+    "id": 42,
+    "name": "Kefla - Super Saiyan",
+    "power_level": "TOP",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/d/db/101%C2%BA_KEFLA_Super_Saiyan.png"
+  },
+  {
+    "position": 29,
+    "id": 42,
+    "name": "Kefla - Super Saiyan 2",
+    "power_level": "TOP",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/5/52/101%C2%BA%C2%BA_KEFLA_Super_Saiyan_2.png"
+  },
+  {
+    "position": 28,
+    "id": 39,
+    "name": "Cabba - Super Saiyan",
+    "power_level": "MID",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/4/44/98%C2%BA_CABBA_Super_Saiyan.png"
+  },
+  {
+    "position": 28,
+    "id": 39,
+    "name": "Cabba - Super Saiyan 2",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/c/c2/98%C2%BA%C2%BA_CABBA_Super_Saiyan_2.png"
+  },
+  {
+    "position": 28,
+    "id": 40,
+    "name": "Caulifla",
+    "power_level": "MID",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/7/76/99_CAULIFLA.png"
+  },
+  {
+    "position": 28,
+    "id": 40,
+    "name": "Caulifla - Super Saiyan 2",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/e/e7/99%C2%BA_CAULIFLA_Super_Saiyan_2.png"
+  },
+  {
+    "position": 28,
+    "id": 41,
+    "name": "Kale",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/8/81/100_KALE.png"
+  },
+  {
+    "position": 28,
+    "id": 41,
+    "name": "Kale - Super Saiyan (Berserk)",
+    "power_level": "TOP",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/0/04/100%C2%BA_KALE_Super_Saiyan_%28Berserk%29.png"
+  },
+  {
+    "position": 27,
+    "id": 39,
+    "name": "Cabba",
+    "power_level": "MID",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/e/e3/98_CABBA.png"
+  },
+  {
+    "position": 27,
+    "id": 69,
+    "name": "Frost",
+    "power_level": "MID",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/9/9a/97_FROST.png"
+  },
+  {
+    "position": 27,
+    "id": 79,
+    "name": "Hit",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/5/57/96_HIT.png"
+  },
+  {
+    "position": 27,
+    "id": 114,
+    "name": "Zamasu",
+    "power_level": "MID",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/b/b2/94_ZAMASU.png"
+  },
+  {
+    "position": 27,
+    "id": 38,
+    "name": "Zamasu (fusione)",
+    "power_level": "TOP",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/8/80/95_FUSED_ZAMASU.png"
+  },
+  {
+    "position": 27,
+    "id": 38,
+    "name": "Zamasu (fusione) - Fusione corrotta",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/e/e0/95%C2%BA_FUSED_ZAMASU_Half-Corrupted.png"
+  },
+  {
+    "position": 26,
+    "id": 55,
+    "name": "Beerus",
+    "power_level": "TOP",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/1/1c/91_BEERUS.png"
+  },
+  {
+    "position": 26,
+    "id": 37,
+    "name": "Black Goku",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/6/6e/93_GOKU_BLACK.png"
+  },
+  {
+    "position": 26,
+    "id": 37,
+    "name": "Black Goku - Super Saiyan Rosé",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/c/c3/93%C2%BA_GOKU_BLACK_Super_Saiyan_Ros%C3%A9.png"
+  },
+  {
+    "position": 26,
     "id": 102,
-    "name": "SPOPOVICH",
+    "name": "Spopovitch",
     "power_level": "WEAK",
     "dlc": "no",
     "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/3/31/90_SPOPOVICH.png"
   },
   {
-    "id": 103,
-    "name": "SUPER GARLIC JR.",
-    "power_level": "MID",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/4/43/77_GARLICK_JR..png"
-  },
-  {
-    "id": 104,
-    "name": "SUPER GOGETA (Z)",
+    "position": 26,
+    "id": 36,
+    "name": "Super Li Shenron (GT)",
     "power_level": "TOP",
     "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/1/1d/32_SUPER_GOGETA_%28Z%29.png"
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/3/3d/89%C2%BA_OMEGA_SHENRON_%28GT%29.png"
   },
   {
-    "id": 105,
-    "name": "TAPION",
-    "power_level": "MID",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/a/a4/86_TAPION.png"
-  },
-  {
-    "id": 106,
-    "name": "TIEN",
-    "power_level": "MID",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/e/eb/25_TIEN.png"
-  },
-  {
-    "id": 107,
-    "name": "TURLES",
-    "power_level": "WEAK",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/d/d5/79_TURLES.png"
-  },
-  {
-    "id": 108,
-    "name": "ULTIMATE GOHAN",
-    "power_level": "TOP",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/7/7f/18_ULTIMATE_GOHAN.png"
-  },
-  {
-    "id": 109,
-    "name": "VEGETA (GT) Super Saiyan 4",
-    "power_level": "GOOD",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/6/6a/14_VEGETA_%28GT%29_Super_Saiyan_4.png"
-  },
-  {
-    "id": 110,
-    "name": "VIDEL",
-    "power_level": "WEAK",
-    "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/d/de/36_VIDEL.png"
-  },
-  {
+    "position": 26,
     "id": 111,
-    "name": "WHIS",
+    "name": "Whis",
     "power_level": "TOP",
     "dlc": "no",
     "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/7/7b/92_WHIS.png"
   },
   {
+    "position": 25,
+    "id": 35,
+    "name": "Baby Grande Scimmia (GT)",
+    "power_level": "GIANT",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/2/23/88%C2%BA%C2%BA%C2%BA_GREAT_APE_BABY_%28GT%29.png"
+  },
+  {
+    "position": 25,
+    "id": 35,
+    "name": "Baby Vegeta (GT)",
+    "power_level": "MID",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/f/fb/88_BABY_VEGETA_%28GT%29.png"
+  },
+  {
+    "position": 25,
+    "id": 78,
+    "name": "Hildegarn",
+    "power_level": "GIANT",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/2/2c/87_HIRUDEGARN.png"
+  },
+  {
+    "position": 25,
+    "id": 36,
+    "name": "Li Shenron (GT)",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/3/38/89_SYN_SHENRON.png"
+  },
+  {
+    "position": 25,
+    "id": 35,
+    "name": "Super Baby 1 (GT)",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/a/a9/88%C2%BA_SUPER_BABY_1_%28GT%29.png"
+  },
+  {
+    "position": 25,
+    "id": 35,
+    "name": "Super Baby 2 (GT)",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/e/e7/88%C2%BA%C2%BA_SUPER_BABY_2_%28GT%29.png"
+  },
+  {
+    "position": 24,
+    "id": 33,
+    "name": "Bojack",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/1/16/84_BOJACK.png"
+  },
+  {
+    "position": 24,
+    "id": 33,
+    "name": "Bojack massima potenza",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/f/f6/84%C2%BA_FULL-POWER_BOJACK.png"
+  },
+  {
+    "position": 24,
+    "id": 34,
+    "name": "Janenba",
+    "power_level": "GIANT",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/5/53/85_JANEMBA.png"
+  },
+  {
+    "position": 24,
+    "id": 32,
+    "name": "Super 13",
+    "power_level": "MID",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/f/fd/83%C2%BA_FUSION_ANDROID_13.png"
+  },
+  {
+    "position": 24,
+    "id": 34,
+    "name": "Super Janenba",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/7/7f/85%C2%BA_SUPER_JANEMBA.png"
+  },
+  {
+    "position": 24,
+    "id": 105,
+    "name": "Tapion",
+    "power_level": "MID",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/a/a4/86_TAPION.png"
+  },
+  {
+    "position": 23,
+    "id": 32,
+    "name": "Androide 13",
+    "power_level": "MID",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/a/a0/83_ANDROID_13.png"
+  },
+  {
+    "position": 23,
+    "id": 31,
+    "name": "Cooler",
+    "power_level": "MID",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/a/a3/81_COOLER.png"
+  },
+  {
+    "position": 23,
+    "id": 31,
+    "name": "Cooler - Corpo perfetto",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/a/a7/81%C2%BA_COOLER_Final_Form.png"
+  },
+  {
+    "position": 23,
+    "id": 30,
+    "name": "Lord Slag",
+    "power_level": "WEAK",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/3/37/80_LORD_SLUG.png"
+  },
+  {
+    "position": 23,
+    "id": 30,
+    "name": "Lord Slag - Forma gigante",
+    "power_level": "GIANT",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/7/74/80%C2%BA_LORD_SLUG_Giant_Form.png"
+  },
+  {
+    "position": 23,
+    "id": 89,
+    "name": "Metal Cooler",
+    "power_level": "MID",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/1/1c/82_METAL_COOLER.png"
+  },
+  {
+    "position": 22,
+    "id": 29,
+    "name": "Broly (Super)",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/5/5c/76_BROLY_%28SUPER%29.PNG"
+  },
+  {
+    "position": 22,
+    "id": 29,
+    "name": "Broly (Super) - Super Saiyan",
+    "power_level": "TOP",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/7/7c/76%C2%BA_BROLY_%28SUPER%29_Super_Saiyan.png"
+  },
+  {
+    "position": 22,
+    "id": 29,
+    "name": "Broly (Super) - Super Saiyan (massima potenza)",
+    "power_level": "TOP",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/d/d6/76%C2%BA%C2%BA_BROLY_%28SUPER%29_Super_Saiyan_Full_Power.PNG"
+  },
+  {
+    "position": 22,
+    "id": 66,
+    "name": "Dr. Willow",
+    "power_level": "GIANT",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/c/c5/78_DR._WHEELO.png"
+  },
+  {
+    "position": 22,
+    "id": 103,
+    "name": "Super Garlic Jr.",
+    "power_level": "MID",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/4/43/77_GARLICK_JR..png"
+  },
+  {
+    "position": 22,
+    "id": 107,
+    "name": "Tarles",
+    "power_level": "WEAK",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/d/d5/79_TURLES.png"
+  },
+  {
+    "position": 21,
+    "id": 53,
+    "name": "Babidy",
+    "power_level": "WEAK",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/3/38/72_BABIDI.png"
+  },
+  {
+    "position": 21,
+    "id": 28,
+    "name": "Broly (Z)",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/5/50/75_BROLY_%28Z%29.png"
+  },
+  {
+    "position": 21,
+    "id": 28,
+    "name": "Broly (Z) - Super Saiyan",
+    "power_level": "TOP",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/e/e7/75%C2%BA_BROLY_%28Z%29_Super_Saiyan.png"
+  },
+  {
+    "position": 21,
+    "id": 28,
+    "name": "Broly (Z) - Super Saiyan leggendario",
+    "power_level": "TOP",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/3/3e/75%C2%BA%C2%BA_BROLY_%28Z%29_Legendary_Super_Saiyan.png"
+  },
+  {
+    "position": 21,
+    "id": 63,
+    "name": "Darbula",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/c/c2/73_DABURA.png"
+  },
+  {
+    "position": 21,
+    "id": 68,
+    "name": "Soldato dell'esercito di Freezer",
+    "power_level": "WEAK",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/6/6c/74_FRIEZA_FORCE_SOLDIER.png"
+  },
+  {
+    "position": 20,
+    "id": 47,
+    "name": "Androide 16",
+    "power_level": "WEAK",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/2/26/66_ANDROID_16.png"
+  },
+  {
+    "position": 20,
+    "id": 48,
+    "name": "Androide 17 (Super)",
+    "power_level": "MID",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/f/f3/68_ANDROID_17_%28SUPER%29.png"
+  },
+  {
+    "position": 20,
+    "id": 49,
+    "name": "Androide 17 (Z)",
+    "power_level": "MID",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/1/12/67_ANDROID_17_%28Z%29.png"
+  },
+  {
+    "position": 20,
+    "id": 50,
+    "name": "Androide 18",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/e/e1/69_ANDROID_18.png"
+  },
+  {
+    "position": 20,
+    "id": 51,
+    "name": "Androide 19",
+    "power_level": "MID",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/b/b7/70_ANDROID_19.png"
+  },
+  {
+    "position": 20,
+    "id": 65,
+    "name": "Dr. Gelo",
+    "power_level": "MID",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/5/54/71_DR._GERO.png"
+  },
+  {
+    "position": 19,
+    "id": 57,
+    "name": "Burter",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/3/32/62_BURTER.png"
+  },
+  {
+    "position": 19,
+    "id": 58,
+    "name": "Capitano Ginew",
+    "power_level": "MID",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/a/a7/60_CAPTAIN_GINYU.png"
+  },
+  {
+    "position": 19,
+    "id": 77,
+    "name": "Guldo",
+    "power_level": "MID",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/8/82/64_GULDO.png"
+  },
+  {
+    "position": 19,
+    "id": 80,
+    "name": "Jeeth",
+    "power_level": "MID",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/b/b5/63_JEICE.png"
+  },
+  {
+    "position": 19,
+    "id": 83,
+    "name": "Re Cold",
+    "power_level": "WEAK",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/4/42/65_KING_COLD.png"
+  },
+  {
+    "position": 19,
+    "id": 98,
+    "name": "Rekoom",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/b/bc/61_RECOOME.png"
+  },
+  {
+    "position": 18,
+    "id": 62,
+    "name": "Cui",
+    "power_level": "WEAK",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/0/0f/59_CUI.png"
+  },
+  {
+    "position": 18,
+    "id": 64,
+    "name": "Dodoria",
+    "power_level": "WEAK",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/9/9a/58_DODORIA.png"
+  },
+  {
+    "position": 18,
+    "id": 92,
+    "name": "Nappa",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/e/e9/56_NAPPA.png"
+  },
+  {
+    "position": 18,
+    "id": 101,
+    "name": "Saibaiman",
+    "power_level": "WEAK",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/a/ad/55_SAIBAMAN.png"
+  },
+  {
+    "position": 18,
+    "id": 27,
+    "name": "Super Zarbon",
+    "power_level": "MID",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/b/bb/57%C2%BA_SUPER_ZARBON.png"
+  },
+  {
+    "position": 18,
+    "id": 27,
+    "name": "Zarbon",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/2/25/57_ZARBON.png"
+  },
+  {
+    "position": 17,
+    "id": 54,
+    "name": "Bardak",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/1/1b/53_BARDOCK.png"
+  },
+  {
+    "position": 17,
+    "id": 93,
+    "name": "Pan (GT)",
+    "power_level": "WEAK",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/2/27/51_PAN_%28GT%29.png"
+  },
+  {
+    "position": 17,
+    "id": 97,
+    "name": "Radish",
+    "power_level": "MID",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/d/d8/54_RADITZ.png"
+  },
+  {
+    "position": 17,
+    "id": 26,
+    "name": "Super Ub (GT)",
+    "power_level": "MID",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/9/92/52%C2%BA_MAJUUB_%28GT%29.png"
+  },
+  {
+    "position": 17,
+    "id": 26,
+    "name": "Ub (GT)",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/d/de/52_UUB_%28GT%29.png"
+  },
+  {
+    "position": 17,
     "id": 112,
-    "name": "YAJIROBE",
+    "name": "Yajirobei",
     "power_level": "WEAK",
     "dlc": "no",
     "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/b/b0/50_YAJIROBE.png"
   },
   {
+    "position": 16,
+    "id": 61,
+    "name": "Jiaozi",
+    "power_level": "WEAK",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/1/1a/49_CHIAOTZU.png"
+  },
+  {
+    "position": 16,
+    "id": 82,
+    "name": "Kid Bu",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/9/94/47_KID_BUU.png"
+  },
+  {
+    "position": 16,
+    "id": 90,
+    "name": "Mr. Satan",
+    "power_level": "WEAK",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/7/73/48_MR._SATAN.png"
+  },
+  {
+    "position": 16,
+    "id": 25,
+    "name": "Super Bu",
+    "power_level": "MID",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/f/fd/46_SUPER_BUU.png"
+  },
+  {
+    "position": 16,
+    "id": 25,
+    "name": "Super Bu - Gohan assorbito",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/b/bb/46%C2%BA%C2%BA_SUPER_BUU_Gohan_Absorbed.png"
+  },
+  {
+    "position": 16,
+    "id": 25,
+    "name": "Super Bu - Gotenks assorbito",
+    "power_level": "MID",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/9/96/46%C2%BA_SUPER_BUU_Gotenks_Absorbed.png"
+  },
+  {
+    "position": 15,
+    "id": 24,
+    "name": "Cell - Forma perfetta",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/2/29/41%C2%BA%C2%BA_CELL_Perfect_Form.png"
+  },
+  {
+    "position": 15,
+    "id": 24,
+    "name": "Cell - Seconda forma",
+    "power_level": "MID",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/e/e0/41%C2%BA_CELL_2nd_Form.png"
+  },
+  {
+    "position": 15,
+    "id": 94,
+    "name": "Cell corpo perfetto",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/f/f7/42_PERFECT_CELL.png"
+  },
+  {
+    "position": 15,
+    "id": 59,
+    "name": "Cell Jr.",
+    "power_level": "WEAK",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/3/32/43_CELL_JR..png"
+  },
+  {
+    "position": 15,
+    "id": 85,
+    "name": "Majin Bu",
+    "power_level": "MID",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/8/8b/44_MAJIN_BUU.png"
+  },
+  {
+    "position": 15,
+    "id": 86,
+    "name": "Majin Bu (malvagio)",
+    "power_level": "MID",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/5/5c/45_MAJIN_BUU_%28EVIL%29.png"
+  },
+  {
+    "position": 14,
+    "id": 24,
+    "name": "Cell - Prima forma",
+    "power_level": "MID",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/3/33/41_CELL_1st_Form.png"
+  },
+  {
+    "position": 14,
+    "id": 23,
+    "name": "Freezer (Super)",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/0/00/40_FRIEZA_%28SUPER%29.png"
+  },
+  {
+    "position": 14,
+    "id": 22,
+    "name": "Freezer (Z) - Massima potenza",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/6/68/38%C2%BA%C2%BA%C2%BA%C2%BA_FRIEZA_%28Z%29_Full_Power.png"
+  },
+  {
+    "position": 14,
+    "id": 22,
+    "name": "Freezer (Z) - Quarta forma",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/a/ab/38%C2%BA%C2%BA%C2%BA_FRIEZA_%28Z%29_4th_Form.png"
+  },
+  {
+    "position": 14,
+    "id": 23,
+    "name": "Freezer dorato",
+    "power_level": "TOP",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/9/9a/40%C2%BA_GOLDEN_FRIEZA.png"
+  },
+  {
+    "position": 14,
+    "id": 88,
+    "name": "Mecha Freezer",
+    "power_level": "MID",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/7/70/39_MECHA_FRIEZA.png"
+  },
+  {
+    "position": 13,
+    "id": 22,
+    "name": "Freezer (Z) - Prima forma",
+    "power_level": "MID",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/3/38/38_FRIEZA_%28Z%29_1st_Form.png"
+  },
+  {
+    "position": 13,
+    "id": 22,
+    "name": "Freezer (Z) - Seconda forma",
+    "power_level": "MID",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/a/ab/38%C2%BA_FRIEZA_%28Z%29_2nd_Form.png"
+  },
+  {
+    "position": 13,
+    "id": 22,
+    "name": "Freezer (Z) - Terza forma",
+    "power_level": "MID",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/e/e7/38%C2%BA%C2%BA_FRIEZA_%28Z%29_3rd_Form.png"
+  },
+  {
+    "position": 13,
+    "id": 21,
+    "name": "Maestro Muten",
+    "power_level": "WEAK",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/7/74/37_MASTER_ROSHI.png"
+  },
+  {
+    "position": 13,
+    "id": 21,
+    "name": "Maestro Muten - Massima potenza",
+    "power_level": "WEAK",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/8/80/37%C2%BA_MASTER_ROSHI_Max_Power.png"
+  },
+  {
+    "position": 13,
+    "id": 110,
+    "name": "Videl",
+    "power_level": "WEAK",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/d/de/36_VIDEL.png"
+  },
+  {
+    "position": 12,
+    "id": 72,
+    "name": "Gogeta (GT) - Super Saiyan 4",
+    "power_level": "TOP",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/f/f7/34_GOGETA_%28GT%29_Super_Saiyan_4.png"
+  },
+  {
+    "position": 12,
+    "id": 19,
+    "name": "Gogeta (Super) - Super Saiyan",
+    "power_level": "TOP",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/8/87/33%C2%BA_GOGETA_%28SUPER%29_Super_Saiyan.png"
+  },
+  {
+    "position": 12,
+    "id": 19,
+    "name": "Gogeta (Super) - Super Saiyan Blue",
+    "power_level": "TOP",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/7/74/33%C2%BA%C2%BA_GOGETA_%28SUPER%29_Super_Saiyan_God_Super_Saiyan.png"
+  },
+  {
+    "position": 12,
+    "id": 20,
+    "name": "Gotenks",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/e/e9/35_GOTENKS.png"
+  },
+  {
+    "position": 12,
+    "id": 20,
+    "name": "Gotenks - Super Saiyan",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/4/45/35%C2%BA_SUPER_GOTENKS.png"
+  },
+  {
+    "position": 12,
+    "id": 20,
+    "name": "Gotenks - Super Saiyan 3",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/4/43/35%C2%BA%C2%BA_GOTENKS_Super_Saiyan_3.png"
+  },
+  {
+    "position": 11,
+    "id": 19,
+    "name": "Gogeta (Super)",
+    "power_level": "TOP",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/8/80/33_GOGETA_%28SUPER%29.png"
+  },
+  {
+    "position": 11,
+    "id": 17,
+    "name": "Goten - Super Saiyan",
+    "power_level": "MID",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/1/16/30%C2%BA_GOTEN_Super_Saiyan.png"
+  },
+  {
+    "position": 11,
+    "id": 104,
+    "name": "Super Gogeta (Z)",
+    "power_level": "TOP",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/1/1d/32_SUPER_GOGETA_%28Z%29.png"
+  },
+  {
+    "position": 11,
+    "id": 18,
+    "name": "Super Vegeth",
+    "power_level": "TOP",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/d/dc/31%C2%BA_SUPER_VEGITO.png"
+  },
+  {
+    "position": 11,
+    "id": 18,
+    "name": "Vegeth",
+    "power_level": "TOP",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/0/08/31_VEGITO.png"
+  },
+  {
+    "position": 11,
+    "id": 18,
+    "name": "Vegeth - Super Saiyan Blue",
+    "power_level": "TOP",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/d/de/31%C2%BA%C2%BA_VEGITO_Super_Saiyan_God_Super_Saiyan.png"
+  },
+  {
+    "position": 10,
+    "id": 17,
+    "name": "Goten",
+    "power_level": "WEAK",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/d/d7/30_GOTEN.png"
+  },
+  {
+    "position": 10,
+    "id": 14,
+    "name": "Super Trunks",
+    "power_level": "MID",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/c/cd/27%C2%BA%C2%BA_SUPER_TRUNKS.png"
+  },
+  {
+    "position": 10,
+    "id": 16,
+    "name": "Trunks (bambino)",
+    "power_level": "WEAK",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/2/26/29_TRUNKS_%28KID%29.png"
+  },
+  {
+    "position": 10,
+    "id": 16,
+    "name": "Trunks (bambino) - Super Saiyan",
+    "power_level": "WEAK",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/9/9a/29%C2%BA_TRUNKS_%28KID%29_Super_Saiyan.png"
+  },
+  {
+    "position": 10,
+    "id": 15,
+    "name": "Trunks (futuro)",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/9/91/28_FUTURE_TRUNKS.png"
+  },
+  {
+    "position": 10,
+    "id": 15,
+    "name": "Trunks (futuro) - Super Saiyan",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/a/a8/28%C2%BA_FUTURE_TRUNKS_Super_Saiyan.png"
+  },
+  {
+    "position": 9,
+    "id": 106,
+    "name": "Tenshinhan",
+    "power_level": "MID",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/e/eb/25_TIEN.png"
+  },
+  {
+    "position": 9,
+    "id": 14,
+    "name": "Trunks",
+    "power_level": "MID",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/4/40/27_TRUNKS_%28MELEE%29.png"
+  },
+  {
+    "position": 9,
+    "id": 14,
+    "name": "Trunks - Super Saiyan",
+    "power_level": "MID",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/c/cc/27%C2%BA_TRUNKS_%28MELEE%29_Super_Saiyan.png"
+  },
+  {
+    "position": 9,
+    "id": 13,
+    "name": "Trunks (spada)",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/4/47/26_TRUNKS_%28SWORD%29.png"
+  },
+  {
+    "position": 9,
+    "id": 13,
+    "name": "Trunks (spada) - Super Saiyan",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/5/58/26%C2%BA_TRUNKS_%28SWORD%29_Super_Saiyan.png"
+  },
+  {
+    "position": 9,
     "id": 113,
-    "name": "YAMCHA",
+    "name": "Yamcha",
     "power_level": "MID",
     "dlc": "no",
     "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/a/a4/24_YAMCHA.png"
   },
   {
-    "id": 114,
-    "name": "ZAMASU",
+    "position": 8,
+    "id": 84,
+    "name": "Crilin",
     "power_level": "MID",
     "dlc": "no",
-    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/b/b2/94_ZAMASU.png"
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/9/93/23_KRILLIN.png"
+  },
+  {
+    "position": 8,
+    "id": 12,
+    "name": "Gohan (futuro)",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/2/21/19_GOHAN_%28FUTURE%29.png"
+  },
+  {
+    "position": 8,
+    "id": 12,
+    "name": "Gohan (futuro) - Super Saiyan",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/e/e4/19%C2%BA_GOHAN_%28FUTURE%29_Super_Saiyan.png"
+  },
+  {
+    "position": 8,
+    "id": 91,
+    "name": "Nail",
+    "power_level": "MID",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/2/2a/22_NAIL.png"
+  },
+  {
+    "position": 8,
+    "id": 95,
+    "name": "Piccolo",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/5/5f/20_PICCOLO.png"
+  },
+  {
+    "position": 8,
+    "id": 96,
+    "name": "Piccolo (fus. con Dio)",
+    "power_level": "MID",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/3/36/21_PICCOLO_%28FUSED_WITH_KAMI%29.png"
+  },
+  {
+    "position": 7,
+    "id": 11,
+    "name": "Gohan (adulto)",
+    "power_level": "MID",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/4/45/17_GOHAN_%28ADULT%29.png"
+  },
+  {
+    "position": 7,
+    "id": 11,
+    "name": "Gohan (adulto) - Super Saiyan",
+    "power_level": "MID",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/4/47/17%C2%BA_GOHAN_%28ADULT%29_Super_Saiyan.png"
+  },
+  {
+    "position": 7,
+    "id": 11,
+    "name": "Gohan (adulto) - Super Saiyan 2",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/a/a6/17%C2%BA%C2%BA_GOHAN_%28ADULT%29_Super_Saiyan_2.png"
+  },
+  {
+    "position": 7,
+    "id": 10,
+    "name": "Gohan (ragazzo) - Super Saiyan 2",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/a/a7/16%C2%BA%C2%BA_GOHAN_%28TEEN%29_Super_Saiyan_2.png"
+  },
+  {
+    "position": 7,
+    "id": 108,
+    "name": "Gohan Supremo",
+    "power_level": "TOP",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/7/7f/18_ULTIMATE_GOHAN.png"
+  },
+  {
+    "position": 7,
+    "id": 11,
+    "name": "Great Saiyaman",
+    "power_level": "MID",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/b/b0/17%C2%BA%C2%BA%C2%BA_GREAT_SAIYAMAN.png"
+  },
+  {
+    "position": 6,
+    "id": 73,
+    "name": "Gohan (bambino)",
+    "power_level": "WEAK",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/7/7d/15_GOHAN_%28KID%29.png"
+  },
+  {
+    "position": 6,
+    "id": 10,
+    "name": "Gohan (ragazzo)",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/3/3a/16_GOHAN_%28TEEN%29.png"
+  },
+  {
+    "position": 6,
+    "id": 10,
+    "name": "Gohan (ragazzo) - Super Saiyan",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/d/d1/16%C2%BA_GOHAN_%28TEEN%29_Super_Saiyan.png"
+  },
+  {
+    "position": 6,
+    "id": 109,
+    "name": "Vegeta (GT) - Super Saiyan 4",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/6/6a/14_VEGETA_%28GT%29_Super_Saiyan_4.png"
+  },
+  {
+    "position": 6,
+    "id": 9,
+    "name": "Vegeta (Super) - Super Saiyan Blue",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/a/ae/13%C2%BA%C2%BA%C2%BA_VEGETA_%28SUPER%29_Super_Saiyan_God_Super_Saiyan.png"
+  },
+  {
+    "position": 6,
+    "id": 9,
+    "name": "Vegeta (Super) - Super Saiyan God",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/b/b1/13%C2%BA%C2%BA_VEGETA_%28SUPER%29_Super_Saiyan_God.png"
+  },
+  {
+    "position": 5,
+    "id": 87,
+    "name": "Majin Vegeta",
+    "power_level": "MID",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/5/55/12_MAJIN_VEGETA.png"
+  },
+  {
+    "position": 5,
+    "id": 9,
+    "name": "Vegeta (Super)",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/1/10/13_VEGETA_%28SUPER%29.png"
+  },
+  {
+    "position": 5,
+    "id": 9,
+    "name": "Vegeta (Super) - Super Saiyan",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/7/75/13%C2%BA_VEGETA_%28SUPER%29_Super_Saiyan.png"
+  },
+  {
+    "position": 5,
+    "id": 8,
+    "name": "Vegeta (Z - II)",
+    "power_level": "MID",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/a/ad/11_VEGETA_%28Z-END%29.png"
+  },
+  {
+    "position": 5,
+    "id": 8,
+    "name": "Vegeta (Z - II) - Super Saiyan",
+    "power_level": "MID",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/d/df/11%C2%BA_VEGETA_%28Z-END%29_Super_Saiyan.png"
+  },
+  {
+    "position": 5,
+    "id": 8,
+    "name": "Vegeta (Z - II) - Super Saiyan 2",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/0/06/11%C2%BA%C2%BA_VEGETA_%28Z-END%29_Super_Saiyan_2.png"
+  },
+  {
+    "position": 4,
+    "id": 74,
+    "name": "Goku (Mini)",
+    "power_level": "WEAK",
+    "dlc": "si",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/b/bf/08_GOKU_%28MINI%29.png"
+  },
+  {
+    "position": 4,
+    "id": 7,
+    "name": "Super Vegeta",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/d/d0/10%C2%BA%C2%BA_SUPER_VEGETA.png"
+  },
+  {
+    "position": 4,
+    "id": 6,
+    "name": "Vegeta (scouter)",
+    "power_level": "WEAK",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/a/ab/09_VEGETA_%28Z-SCOUTER%29.png"
+  },
+  {
+    "position": 4,
+    "id": 7,
+    "name": "Vegeta (Z - I)",
+    "power_level": "MID",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/0/08/10_VEGETA_%28Z-EARLY%29.png"
+  },
+  {
+    "position": 4,
+    "id": 7,
+    "name": "Vegeta (Z - I) - Super Saiyan",
+    "power_level": "MID",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/3/3b/10%C2%BA_VEGETA_%28Z-EARLY%29_Super_Saiyan.png"
+  },
+  {
+    "position": 4,
+    "id": 6,
+    "name": "Vegeta Grande Scimmia",
+    "power_level": "GIANT",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/4/40/09%C2%BA_GREAT_APE_VEGETA.png"
+  },
+  {
+    "position": 3,
+    "id": 5,
+    "name": "Goku (GT)",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/b/bb/06_GOKU_%28GT%29.png"
+  },
+  {
+    "position": 3,
+    "id": 5,
+    "name": "Goku (GT) - Super Saiyan",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/1/16/06%C2%BA_GOKU_%28GT%29_Super_Saiyan.png"
+  },
+  {
+    "position": 3,
+    "id": 5,
+    "name": "Goku (GT) - Super Saiyan 3",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/d/dd/06%C2%BA%C2%BA_GOKU_%28GT%29_Super_Saiyan_3.png"
+  },
+  {
+    "position": 3,
+    "id": 5,
+    "name": "Goku (GT) - Super Saiyan 4",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/0/07/06%C2%BA%C2%BA%C2%BA_GOKU_%28GT%29_Super_Saiyan_4.png"
+  },
+  {
+    "position": 3,
+    "id": 75,
+    "name": "Goku (ragazzo)",
+    "power_level": "WEAK",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/5/52/07_GOKU_%28TEEN%29.png"
+  },
+  {
+    "position": 3,
+    "id": 4,
+    "name": "Goku (Super) - Ultra istinto",
+    "power_level": "TOP",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/9/9f/05%C2%BA_GOKU_%28SUPER%29_Ultra_Instinct.png"
+  },
+  {
+    "position": 2,
+    "id": 3,
+    "name": "Goku (Super)",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/2/2e/04_GOKU_%28SUPER%29.png"
+  },
+  {
+    "position": 2,
+    "id": 3,
+    "name": "Goku (Super) - Super Saiyan",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/1/15/04%C2%BA_GOKU_%28SUPER%29_Super_Saiyan.png"
+  },
+  {
+    "position": 2,
+    "id": 3,
+    "name": "Goku (Super) - Super Saiyan Blue",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/d/d8/04%C2%BA%C2%BA%C2%BA_GOKU_%28SUPER%29_Super_Saiyan_God_Super_Saiyan.png"
+  },
+  {
+    "position": 2,
+    "id": 3,
+    "name": "Goku (Super) - Super Saiyan God",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/3/30/04%C2%BA%C2%BA_GOKU_%28SUPER%29_Super_Saiyan_God.png"
+  },
+  {
+    "position": 2,
+    "id": 4,
+    "name": "Goku (Super) - Ultra istinto -Segno-",
+    "power_level": "TOP",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/8/8b/05_GOKU_%28SUPER%29_Ultra_Instinct_-Sign-.png"
+  },
+  {
+    "position": 2,
+    "id": 2,
+    "name": "Goku (Z - III) - Super Saiyan 3",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/3/3f/03%C2%BA%C2%BA%C2%BA_GOKU_%28Z-END%29_Super_Saiyan_3.png"
+  },
+  {
+    "position": 1,
+    "id": 76,
+    "name": "Goku (Z - I)",
+    "power_level": "MID",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/2/23/01_GOKU_%28Z-EARLY%29.png"
+  },
+  {
+    "position": 1,
+    "id": 1,
+    "name": "Goku (Z - II)",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/f/fd/02_GOKU_%28Z-MID%29.png"
+  },
+  {
+    "position": 1,
+    "id": 1,
+    "name": "Goku (Z - II) - Super Saiyan",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/3/3f/02%C2%BA_GOKU_%28Z-MID%29_Super_Saiyan.png"
+  },
+  {
+    "position": 1,
+    "id": 2,
+    "name": "Goku (Z - III)",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/4/43/03_GOKU_%28Z-END%29.png"
+  },
+  {
+    "position": 1,
+    "id": 2,
+    "name": "Goku (Z - III) - Super Saiyan",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/d/de/03%C2%BA_GOKU_%28Z-END%29_Super_Saiyan.png"
+  },
+  {
+    "position": 1,
+    "id": 2,
+    "name": "Goku (Z - III) - Super Saiyan 2",
+    "power_level": "GOOD",
+    "dlc": "no",
+    "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/0/05/03%C2%BA%C2%BA_GOKU_%28Z-END%29_Super_Saiyan_2.png"
   }
 ]

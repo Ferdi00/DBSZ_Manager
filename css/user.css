@@ -60,11 +60,9 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #2b2b2b;
   gap: 20px;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 .user-info h2 {
@@ -95,6 +93,27 @@ h1 {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  object-fit: cover;
+  object-fit: contain;
   border: 3px solid #e25822;
+}
+
+/* Stile per la sezione delle statistiche */
+#statsContainer {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #2b2b2b;
+  border-radius: 8px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+  border: 2px solid #e25822;
+  text-align: center;
+}
+
+#statsContainer h2 {
+  color: #e25822;
+  margin-bottom: 10px;
+}
+
+#statsContainer p {
+  color: #dddddd;
+  font-size: 1.1em;
 }
