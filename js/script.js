@@ -1,5 +1,4 @@
-const leftTableBody = document.querySelector("#leftTable tbody");
-const rightTableBody = document.querySelector("#rightTable tbody");
+const tableBody = document.querySelector("#table tbody");
 const pagination = document.getElementById("pagination");
 const prevButton = document.getElementById("prevTable");
 const nextButton = document.getElementById("nextTable");
@@ -9,9 +8,8 @@ const sortSelect = document.getElementById("sortSelect");
 let characters = [];
 let filteredCharacters = [];
 let currentPage = 1;
-const rowsPerPage = 20;
-const rowsPerTable = rowsPerPage / 2;
-const typeOrder = ["GIANT", "TOP", "GOOD", "MID", "WEAK", "NC"];
+const rowsPerPage = 10;
+const typeOrder = ["GIANT", "TOP", "GOOD", "MID", "WEAK", "ULTRA-WEAK"];
 const sortOptions = {
   DEFAULT: "default",
   TYPE_ASC: "type-asc",
@@ -27,54 +25,41 @@ async function fetchCharacters() {
     if (!response.ok) throw new Error("Errore nel caricamento del JSON");
     characters = await response.json();
     filteredCharacters = [...characters]; // Inizializza i dati filtrati
-    initializeTables();
+    initializeTable();
   } catch (error) {
     console.error("Errore nel caricamento dei dati:", error);
   }
 }
 
-// 📌 Funzione per inizializzare le tabelle
-function initializeTables() {
+// 📌 Funzione per inizializzare la tabella
+function initializeTable() {
   renderTableStructure();
   renderTableRows();
   renderPagination();
-  updateMobileTableNavigation();
 }
 
-// 📌 Funzione per creare la struttura delle tabelle
+// 📌 Funzione per creare la struttura della tabella
 function renderTableStructure() {
-  leftTableBody.innerHTML = "";
-  rightTableBody.innerHTML = "";
+  tableBody.innerHTML = "";
 
-  for (let i = 0; i < rowsPerTable; i++) {
-    const leftRow = document.createElement("tr");
-    const rightRow = document.createElement("tr");
+  for (let i = 0; i < rowsPerPage; i++) {
+    const row = document.createElement("tr");
 
     for (let j = 0; j < 3; j++) {
-      leftRow.appendChild(document.createElement("td"));
-      rightRow.appendChild(document.createElement("td"));
+      row.appendChild(document.createElement("td"));
     }
 
-    leftTableBody.appendChild(leftRow);
-    rightTableBody.appendChild(rightRow);
+    tableBody.appendChild(row);
   }
 }
 
-// 📌 Funzione per aggiornare le righe delle tabelle
+// 📌 Funzione per aggiornare le righe della tabella
 function renderTableRows() {
   const startIndex = (currentPage - 1) * rowsPerPage;
-  const endIndex = Math.min(
-    startIndex + rowsPerPage,
-    filteredCharacters.length
-  );
+  const endIndex = Math.min(startIndex + rowsPerPage, filteredCharacters.length);
   const pageCharacters = filteredCharacters.slice(startIndex, endIndex);
 
-  const leftCharacters = pageCharacters.slice(0, rowsPerTable);
-  const rightCharacters = pageCharacters.slice(rowsPerTable);
-
-  updateTableRows(leftTableBody, leftCharacters);
-  updateTableRows(rightTableBody, rightCharacters);
-  updateMobileTableNavigation();
+  updateTableRows(tableBody, pageCharacters);
 }
 
 // 📌 Funzione per aggiornare una tabella
@@ -96,9 +81,9 @@ function updateTableRows(tableBody, tableCharacters) {
     imageCell.appendChild(img);
 
     const typeCell = document.createElement("td");
-    typeCell.textContent = character.type;
+    typeCell.textContent = character.power_level;
     typeCell.style.fontWeight = "bold";
-    typeCell.style.color = getTypeColor(character.type);
+    typeCell.style.color = getTypeColor(character.power_level);
 
     row.appendChild(nameCell);
     row.appendChild(imageCell);
@@ -164,13 +149,15 @@ function sortCharacters(order) {
   switch (order) {
     case sortOptions.TYPE_ASC:
       filteredCharacters.sort(
-        (a, b) => typeOrder.indexOf(a.type) - typeOrder.indexOf(b.type)
+        (a, b) =>
+          typeOrder.indexOf(a.power_level) - typeOrder.indexOf(b.power_level)
       );
       break;
 
     case sortOptions.TYPE_DESC:
       filteredCharacters.sort(
-        (a, b) => typeOrder.indexOf(b.type) - typeOrder.indexOf(a.type)
+        (a, b) =>
+          typeOrder.indexOf(b.power_level) - typeOrder.indexOf(a.power_level)
       );
       break;
 
@@ -195,24 +182,6 @@ function sortCharacters(order) {
 searchInput.addEventListener("input", (e) => filterCharacters(e.target.value));
 sortSelect.addEventListener("change", (e) => sortCharacters(e.target.value));
 
-// 📌 Navigazione su mobile
-function updateMobileTableNavigation() {
-  const isMobile = window.innerWidth <= 768;
-  const leftTable = document.getElementById("leftTable");
-  const rightTable = document.getElementById("rightTable");
-
-  if (isMobile) {
-    leftTable.style.display = currentPage % 2 === 1 ? "table" : "none";
-    rightTable.style.display = currentPage % 2 === 0 ? "table" : "none";
-    prevButton.disabled = currentPage === 1;
-    nextButton.disabled =
-      currentPage === Math.ceil(filteredCharacters.length / rowsPerPage);
-  } else {
-    leftTable.style.display = "table";
-    rightTable.style.display = "table";
-  }
-}
-
 // 📌 Eventi per la navigazione su mobile
 prevButton.addEventListener("click", () => {
   if (currentPage > 1) {
@@ -229,9 +198,6 @@ nextButton.addEventListener("click", () => {
     renderPagination();
   }
 });
-
-// 📌 Aggiorna la visibilità della tabella quando cambia la dimensione dello schermo
-window.addEventListener("resize", updateMobileTableNavigation);
 
 // 📌 Carica i dati inizialmente
 document.addEventListener("DOMContentLoaded", fetchCharacters);

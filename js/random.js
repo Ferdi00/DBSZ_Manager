@@ -220,7 +220,7 @@ function getCharactersByType(availableCharacters, types, usedIds) {
   types.forEach((type) => {
     const filteredCharacters = availableCharacters.filter(
       (character) =>
-        character.type === type &&
+        character.power_level === type &&
         !usedCharacters.has(character.name) &&
         !usedIds.has(character.id) // Escludi personaggi con ID già usati
     );
@@ -262,10 +262,10 @@ function updateTable(tableBody, characterList) {
     imageCell.appendChild(img);
 
     const typeCell = document.createElement("td");
-    typeCell.textContent = character.type;
+    typeCell.textContent = character.power_level;
     typeCell.style.fontWeight = "bold";
 
-    switch (character.type) {
+    switch (character.power_level) {
       case "TOP":
         typeCell.style.color = "purple";
         break;

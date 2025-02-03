@@ -105,8 +105,8 @@ thead {
 
 th,
 td {
-  padding: 10px;
-  text-align: left;
+  padding: 2px;
+  text-align: center;
   border: 1px solid #444444;
   font-size: 0.95em;
 }
@@ -190,6 +190,7 @@ td img {
 /* 📱 Media Query: Schermi piccoli (max 768px) */
 @media (max-width: 768px) {
   .tables {
+    width: 100%;
     flex-direction: column; /* Imposta le tabelle in colonna */
     align-items: center;
     justify-content: center;

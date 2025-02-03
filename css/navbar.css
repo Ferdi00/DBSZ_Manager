@@ -102,7 +102,12 @@
 
 .sidebar-link:hover {
   color: #e25822; /* Cambia colore al passaggio del mouse */
-  background-color: rgba(255, 255, 255, 0.1); /* Sfondo al passaggio del mouse */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.1
+  ); /* Sfondo al passaggio del mouse */
 }
 
 /* Icone dei link */

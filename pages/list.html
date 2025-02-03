@@ -27,6 +27,10 @@
           <li>
             <a href="random.html" class="navbar-link">Random Selection</a>
           </li>
+          <li>
+            <a href="updates.html" class="navbar-link">Updates</a>
+          </li>
+          <li><a href="user.html" class="navbar-link">User</a></li>
         </ul>
       </div>
     </nav>
@@ -43,6 +47,11 @@
           </a>
         </li>
         <li>
+          <a href="user.html" class="sidebar-link"
+            ><i class="fas fa-user"></i> User</a
+          >
+        </li>
+        <li>
           <a href="list.html" class="sidebar-link">
             <i class="fas fa-list"></i> Characters List
           </a>
@@ -51,6 +60,11 @@
           <a href="random.html" class="sidebar-link">
             <i class="fas fa-random"></i> Random Selection
           </a>
+        </li>
+        <li>
+          <a href="updates.html" class="sidebar-link"
+            ><i class="fas fa-history"></i> Updates</a
+          >
         </li>
       </ul>
     </div>
@@ -79,8 +93,8 @@
         <label for="sortSelect">Sort by:</label>
         <select id="sortSelect">
           <option value="default">Default</option>
-          <option value="type-asc">Type (TOP → WEAK)</option>
-          <option value="type-desc">Type (WEAK → TOP)</option>
+          <option value="type-asc">PL (TOP → WEAK)</option>
+          <option value="type-desc">PL (WEAK → TOP)</option>
           <option value="name-asc">Name (A-Z)</option>
           <option value="name-desc">Name (Z-A)</option>
         </select>
@@ -94,27 +108,13 @@
 
       <!-- Contenitore delle tabelle -->
       <div class="tables">
-        <!-- Tabella sinistra (Player 1) -->
-        <table id="leftTable">
+        <!-- Tabella unica -->
+        <table id="table">
           <thead>
             <tr>
               <th>Name</th>
               <th>Image</th>
-              <th class="sortable" onclick="sortTableByType()">Type</th>
-            </tr>
-          </thead>
-          <tbody>
-            <!-- Righe generate dinamicamente -->
-          </tbody>
-        </table>
-
-        <!-- Tabella destra (Player 2) -->
-        <table id="rightTable">
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Image</th>
-              <th class="sortable">Type</th>
+              <th class="sortable" onclick="sortTableByType()">Power Level</th>
             </tr>
           </thead>
           <tbody>
