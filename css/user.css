@@ -10,8 +10,8 @@ body {
 /* Contenitore principale */
 .container {
   text-align: center;
-  margin: 20px;
-  padding: 20px;
+  margin: 10px;
+  padding: 10px;
 }
 
 /* Titolo */
@@ -66,7 +66,7 @@ h1 {
 }
 
 .user-info h2 {
-  color: #dddddd;
+  color: #e25822;
 }
 
 .user-info p {
@@ -90,8 +90,8 @@ h1 {
 
 /* Immagine di profilo */
 .profile-img {
-  width: 100px;
-  height: 100px;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
   object-fit: contain;
   border: 3px solid #e25822;
@@ -116,4 +116,60 @@ h1 {
 #statsContainer p {
   color: #dddddd;
   font-size: 1.1em;
+}
+
+/* Stile per la sezione delle battaglie */
+#battlesContainer {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #2b2b2b;
+  border-radius: 8px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+  border: 2px solid #e25822;
+  text-align: center;
+}
+
+#battlesContainer h2 {
+  color: #e25822;
+  margin-bottom: 10px;
+}
+
+#battlesContainer p {
+  color: #dddddd;
+  font-size: 1.1em;
+}
+
+
+#battlesList {
+  list-style-type: none;
+  padding: 0;
+}
+
+#battlesList li {
+  color: #dddddd;
+  font-size: 1em;
+  margin: 5px 0;
+  padding: 10px;
+  background-color: #343434;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+#battlesList li:hover {
+  background-color: #444444;
+}
+
+#battlesList li .battle-date {
+  font-weight: bold;
+  color: #e25822;
+}
+
+#battlesList li .battle-players {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+#battlesList li .battle-score {
+  font-weight: bold;
+  color: #138f25;
 }

@@ -14,8 +14,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 80vh;
   padding: 20px;
+  margin: 10px;
 }
 
 /* Logo responsive */
@@ -44,7 +44,6 @@ p {
 /* 📱 Responsive */
 @media (max-width: 768px) {
   .container {
-    height: auto;
     padding: 40px 20px;
   }
 
@@ -61,4 +60,113 @@ p {
     font-size: 1.1em;
     max-width: 90%;
   }
+
+  .features {
+    max-width: 90%;
+  }
+
+  .features ul {
+    padding-left: 15px;
+  }
+
+  .features ul li {
+    font-size: 1em;
+  }
+
+  .features h2 {
+    text-align: center;
+  }
+
+
+  #countdown {
+    font-size: 1.2em;
+  }
+
+  #countdown span {
+    min-width: 40px;
+  }
+}
+
+/* 📱 Responsive per schermi molto piccoli */
+@media (max-width: 480px) {
+  .container {
+    padding: 20px 10px;
+  }
+
+  .logo {
+    width: 90%;
+    max-width: 200px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  p {
+    font-size: 1em;
+    max-width: 100%;
+  }
+
+  .features {
+    max-width: 100%;
+  }
+
+  .features ul {
+    padding-left: 10px;
+  }
+
+  .features ul li {
+    font-size: 0.9em;
+  }
+
+  #countdown {
+    font-size: 1em;
+  }
+
+  #countdown span {
+    min-width: 30px;
+  }
+}
+
+/* Stile per la descrizione delle funzionalità */
+.features {
+  text-align: left;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.features h2 {
+  color: #e25822;
+  margin-bottom: 10px;
+}
+
+.features ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.features ul li {
+  margin-bottom: 10px;
+  color: #dddddd;
+}
+
+/* Stile per il timer */
+.timer {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.timer h1 {
+  font-size: 2.1em;
+  color: #e61414;
+  margin-bottom: 20px;
+}
+
+#countdown {
+  font-size: 1.1em;
+  color: #ffffff;
+}
+
+#countdown span {
+ 
 }

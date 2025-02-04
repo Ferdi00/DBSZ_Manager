@@ -334,7 +334,7 @@ td img {
 
 .room-container {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   text-align: start;
   margin: 20px 0;
 }

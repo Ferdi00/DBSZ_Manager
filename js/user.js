@@ -6,7 +6,7 @@ import {
   query,
   where,
   getDocs,
-  collection
+  collection,
 } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-firestore.js";
 
 // Configurazione Firebase
@@ -83,12 +83,81 @@ function showUserInfo(user) {
   // Mostra la sezione delle statistiche
   const statsContainer = document.getElementById("statsContainer");
   statsContainer.classList.remove("hidden");
+  statsContainer.querySelector("p").textContent = "No stats available yet.";
+
+  // Mostra le battaglie dell'utente
+  fetchUserBattles(user.username);
 }
 
 // Funzione per effettuare il logout
 function logoutUser() {
   localStorage.removeItem("user");
   showLoginForm();
+}
+
+// Funzione per ottenere le battaglie dell'utente
+async function fetchUserBattles(username) {
+  const battlesContainer = document.getElementById("battlesContainer");
+  const battlesList = document.getElementById("battlesList");
+
+  // Query per ottenere le battaglie in cui l'utente è coinvolto come player1 o player2
+  const q1 = query(collection(db, "battles"), where("player1", "==", username));
+  const q2 = query(collection(db, "battles"), where("player2", "==", username));
+
+  const querySnapshot1 = await getDocs(q1);
+  const querySnapshot2 = await getDocs(q2);
+
+  battlesList.innerHTML = "";
+
+  // Funzione per colorare i punteggi
+  function colorScore(score) {
+    const [score1, score2] = score.split("-").map(Number);
+    let score1Color, score2Color;
+
+    if (score1 > score2) {
+      score1Color = "green";
+      score2Color = "red";
+    } else if (score1 < score2) {
+      score1Color = "red";
+      score2Color = "green";
+    } else {
+      score1Color = "yellow";
+      score2Color = "yellow";
+    }
+
+    return `<span style="color: ${score1Color}; font-weight: bold;">${score1}</span> <span style="color: white;">-</span> <span style="color: ${score2Color}; font-weight: bold;">${score2}</span>`;
+  }
+
+  // Aggiungi le battaglie in cui l'utente è player1
+  querySnapshot1.forEach((doc) => {
+    const battle = doc.data();
+    const listItem = document.createElement("li");
+    listItem.innerHTML = `
+      <span class="battle-date">${battle.date}</span>: 
+      <span class="battle-players">${battle.player1} vs ${battle.player2}</span> - 
+      <span class="battle-score">${colorScore(battle.score)}</span>
+    `;
+    battlesList.appendChild(listItem);
+  });
+
+  // Aggiungi le battaglie in cui l'utente è player2
+  querySnapshot2.forEach((doc) => {
+    const battle = doc.data();
+    const listItem = document.createElement("li");
+    listItem.innerHTML = `
+      <span class="battle-date">${battle.date}</span>: 
+      <span class="battle-players">${battle.player1} vs ${battle.player2}</span> - 
+      <span class="battle-score">${colorScore(battle.score)}</span>
+    `;
+    battlesList.appendChild(listItem);
+  });
+
+  if (battlesList.innerHTML === "") {
+    battlesList.innerHTML = "<li>No battles recorded yet.</li>";
+  }
+
+  battlesContainer.classList.remove("hidden");
+  battlesContainer.querySelector("p").style.display = "none";
 }
 
 // Controlla se l'utente è già autenticato

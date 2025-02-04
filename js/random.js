@@ -121,13 +121,21 @@ function generateRandomCharacters() {
     'input[name="gameMode"]:checked'
   ).value;
 
-  // Filtra i personaggi in base alla spunta DLC (solo per multiplayer online)
-  const availableCharacters = characters.filter(
+  // Filtra i personaggi in base alla spunta DLC per ogni giocatore
+  const player1DlcCheckbox = document.getElementById("dlcCheckboxPlayer1");
+  const player2DlcCheckbox = document.getElementById("dlcCheckboxPlayer2");
+
+  const availableCharactersPlayer1 = characters.filter(
     (character) =>
-      selectedMode === "local" || dlcCheckbox.checked || character.dlc === "no"
+      selectedMode === "local" || player1DlcCheckbox.checked || character.dlc === "no"
   );
 
-  if (availableCharacters.length < 10) {
+  const availableCharactersPlayer2 = characters.filter(
+    (character) =>
+      selectedMode === "local" || player2DlcCheckbox.checked || character.dlc === "no"
+  );
+
+  if (availableCharactersPlayer1.length < 5 || availableCharactersPlayer2.length < 5) {
     console.error("Non ci sono abbastanza personaggi disponibili!");
     return;
   }
@@ -138,52 +146,55 @@ function generateRandomCharacters() {
 
   if (preset === "preset1") {
     player1Characters = getCharactersByType(
-      availableCharacters,
+      availableCharactersPlayer1,
       ["WEAK", "GOOD", "MID", "TOP", "MID"],
       usedIds
     );
     player2Characters = getCharactersByType(
-      availableCharacters,
+      availableCharactersPlayer2,
       ["WEAK", "GOOD", "MID", "TOP", "MID"],
       usedIds
     );
   } else if (preset === "preset2") {
     player1Characters = getCharactersByType(
-      availableCharacters,
+      availableCharactersPlayer1,
       ["TOP", "GOOD", "WEAK", "MID", "GOOD"],
       usedIds
     );
     player2Characters = getCharactersByType(
-      availableCharacters,
+      availableCharactersPlayer2,
       ["TOP", "GOOD", "WEAK", "MID", "GOOD"],
       usedIds
     );
   } else if (preset === "preset3") {
     player1Characters = getCharactersByType(
-      availableCharacters,
+      availableCharactersPlayer1,
       ["TOP", "WEAK", "MID", "GOOD", "TOP"],
       usedIds
     );
     player2Characters = getCharactersByType(
-      availableCharacters,
+      availableCharactersPlayer2,
       ["TOP", "WEAK", "MID", "GOOD", "TOP"],
       usedIds
     );
-  }  else if (preset === "preset4") {
-    const shuffledCharacters = availableCharacters
+  } else if (preset === "preset4") {
+    const shuffledCharactersPlayer1 = availableCharactersPlayer1
       .sort(() => 0.5 - Math.random())
-      .slice(0, 10);
-    player1Characters = shuffledCharacters.slice(0, 5);
-    player2Characters = shuffledCharacters.slice(5, 10);
+      .slice(0, 5);
+    const shuffledCharactersPlayer2 = availableCharactersPlayer2
+      .sort(() => 0.5 - Math.random())
+      .slice(0, 5);
+    player1Characters = shuffledCharactersPlayer1;
+    player2Characters = shuffledCharactersPlayer2;
   } else if (preset === "custom") {
     const customPreset = customPresetInput.value.split(",");
     player1Characters = getCharactersByType(
-      availableCharacters,
+      availableCharactersPlayer1,
       customPreset,
       usedIds
     );
     player2Characters = getCharactersByType(
-      availableCharacters,
+      availableCharactersPlayer2,
       customPreset,
       usedIds
     );

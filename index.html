@@ -7,7 +7,9 @@
   <link rel="stylesheet" href="css/navbar.css">
   <link rel="stylesheet" href="css/index.css">
   <script src="js/navbar.js" defer></script>
+  <script src="js/timer.js" defer></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -24,10 +26,11 @@
       <!-- Menu standard -->
       <ul class="navbar-menu" id="navbarMenu">
         <li><a href="index.html" class="navbar-link">Home</a></li>
+        <li><a href="pages/user.html" class="navbar-link">User</a></li>
         <li><a href="pages/list.html" class="navbar-link">Characters List</a></li>
         <li><a href="pages/random.html" class="navbar-link">Random Selection</a></li>
+        <li><a href="pages/battle.html" class="navbar-link">Battle</a></li>
         <li><a href="pages/updates.html" class="navbar-link">Updates</a></li>
-        <li><a href="pages/user.html" class="navbar-link">User</a></li>
       </ul>
     </div>
   </nav>
@@ -39,12 +42,11 @@
     </div>
     <ul class="sidebar-menu">
       <li><a href="index.html" class="sidebar-link"><i class="fas fa-home"></i> Home</a></li>
-       <li><a href="pages/user.html" class="sidebar-link"><i class="fas fa-user"></i> User</a></li>
+      <li><a href="pages/user.html" class="sidebar-link"><i class="fas fa-user"></i> User</a></li>
       <li><a href="pages/list.html" class="sidebar-link"><i class="fas fa-list"></i> Characters List</a></li>
       <li><a href="pages/random.html" class="sidebar-link"><i class="fas fa-random"></i> Random Selection</a></li>
-      <li><a href="pages/updates.html" class="sidebar-link"><i class="fas fa-history"></i> Updates</a></li>
-      
-      
+      <li><a href="pages/battle.html" class="sidebar-link"><i class="fas fa-fist-raised"></i> Battle</a></li>
+       <li><a href="pages/updates.html" class="sidebar-link"><i class="fas fa-history"></i> Updates</a></li>
     </ul>
   </div>
 
@@ -53,9 +55,31 @@
 
   <!-- Contenuto principale -->
   <div class="container">
-    <img src="images/logo.png" alt="DBZ Logo" class="logo">
-    <h1>Benvenuto in DBZ Manager</h1>
-    <p></p>
+    <h1>Welcome to DBZ Manager</h1>
+    <p>Manage your Dragon Ball characters and battles with ease!</p>
+
+    <!-- Descrizione delle funzionalità -->
+    <div class="features">
+      <h2>Features</h2>
+      <ul>
+        <li><strong>Characters List:</strong> Browse and search through all playable characters.</li>
+        <li><strong>Random Selection:</strong> Generate random teams for local or online multiplayer.</li>
+        <li><strong>User Account:</strong> Log in to access your personal account and battle history.</li>
+        <li><strong>Battle:</strong> Record and view battles between players.</li>
+         <li><strong>Updates:</strong> Stay updated with the latest changes and improvements.</li>
+      </ul>
+    </div>
+
+    <!-- Timer per la Season 1 -->
+    <div class="timer">
+      <h1>Season 1 coming soon</h1>
+      <div id="countdown">
+        <span id="days"></span> Days -
+        <span id="hours"></span> Hours - 
+        <span id="minutes"></span> Minutes - 
+        <span id="seconds"></span> Seconds 
+      </div>
+    </div>
   </div>
 
 </body>

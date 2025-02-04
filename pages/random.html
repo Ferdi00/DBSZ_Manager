@@ -16,20 +16,21 @@
     <!-- Navbar -->
     <nav class="navbar">
       <div class="navbar-container">
-        <a href="../index.html" class="navbar-logo"
-          ><img src="../images/logo.png"
-        /></a>
+        <a href="../index.html" class="navbar-logo">
+          <img src="../images/logo.png" alt="DBZ Logo" />
+        </a>
         <div class="menu-icon" id="menuIcon">
           <i class="fas fa-bars"></i>
         </div>
         <ul class="navbar-menu" id="navbarMenu">
           <li><a href="../index.html" class="navbar-link">Home</a></li>
+          <li><a href="user.html" class="navbar-link">User</a></li>
           <li><a href="list.html" class="navbar-link">Characters List</a></li>
           <li>
             <a href="random.html" class="navbar-link">Random Selection</a>
           </li>
+          <li><a href="battle.html" class="navbar-link">Battle</a></li>
           <li><a href="updates.html" class="navbar-link">Updates</a></li>
-          <li><a href="user.html" class="navbar-link">User</a></li>
         </ul>
       </div>
     </nav>
@@ -41,22 +42,35 @@
       </div>
       <ul class="sidebar-menu">
         <li>
-          <a href="../index.html" class="sidebar-link">
-            <i class="fas fa-home"></i> Home
-          </a>
-        </li>
-        <li><a href="user.html" class="sidebar-link"><i class="fas fa-user"></i> User</a></li>
-        <li>
-          <a href="list.html" class="sidebar-link">
-            <i class="fas fa-list"></i> Characters List
-          </a>
+          <a href="../index.html" class="sidebar-link"
+            ><i class="fas fa-home"></i> Home</a
+          >
         </li>
         <li>
-          <a href="random.html" class="sidebar-link">
-            <i class="fas fa-random"></i> Random Selection
-          </a>
+          <a href="user.html" class="sidebar-link"
+            ><i class="fas fa-user"></i> User</a
+          >
         </li>
-        <li><a href="updates.html" class="sidebar-link"><i class="fas fa-history"></i> Updates</a></li>
+        <li>
+          <a href="list.html" class="sidebar-link"
+            ><i class="fas fa-list"></i> Characters List</a
+          >
+        </li>
+        <li>
+          <a href="random.html" class="sidebar-link"
+            ><i class="fas fa-random"></i> Random Selection</a
+          >
+        </li>
+        <li>
+          <a href="battle.html" class="sidebar-link"
+            ><i class="fas fa-fist-raised"></i> Battle</a
+          >
+        </li>
+        <li>
+          <a href="updates.html" class="sidebar-link"
+            ><i class="fas fa-history"></i> Updates</a
+          >
+        </li>
       </ul>
     </div>
 
@@ -114,14 +128,6 @@
         <input type="text" id="customPreset" placeholder="e.g., TOP,GOOD,MID,WEAK,WEAK" />
       </div>
 
-      <!-- Spunta DLC (solo per multiplayer online) -->
-      <div id="dlcToggle" class="hidden">
-        <label class="toggle-switch">
-          DLC
-          <input type="checkbox" id="dlcCheckbox" checked />
-          <span class="slider"></span>
-        </label>
-      </div>
 
       <button id="generateButton" class="random-button">
         Generate Characters
@@ -131,8 +137,16 @@
     
       <!-- Contenitore delle tabelle -->
       <div class="tables">
+
         <!-- Giocatore 1 -->
         <div class="player-table" id="player1TableContainer">
+           <div class="dlcToggle">
+        <label class="toggle-switch">
+          DLC
+          <input type="checkbox" id="dlcCheckboxPlayer1" checked />
+          <span class="slider"></span>
+        </label>
+      </div>
           <h2>Player 1</h2>
           <table id="player1Table">
             <thead>
@@ -151,6 +165,14 @@
 
         <!-- Giocatore 2 -->
         <div class="player-table" id="player2TableContainer">
+           <div class="dlcToggle">
+        <label class="toggle-switch">
+          DLC
+          <input type="checkbox" id="dlcCheckboxPlayer2" checked />
+          <span class="slider"></span>
+        </label>
+      </div>
+
           <h2>Player 2</h2>
           <table id="player2Table">
             <thead>

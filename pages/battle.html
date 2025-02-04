@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="it">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DBZ Characters - User</title>
-    <link rel="stylesheet" href="../css/navbar.css" />
-    <link rel="stylesheet" href="../css/user.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-  </head>
-  <body>
-    <!-- Navbar -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DBZ Characters - Battle</title>
+  <link rel="stylesheet" href="../css/navbar.css">
+  <link rel="stylesheet" href="../css/battle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navbar -->
     <nav class="navbar">
       <div class="navbar-container">
         <a href="../index.html" class="navbar-logo">
@@ -73,29 +71,18 @@
       </ul>
     </div>
 
-    <!-- Overlay -->
-    <div class="overlay" id="overlay"></div>
+  <!-- Overlay -->
+  <div class="overlay" id="overlay"></div>
 
-    <!-- Contenitore principale -->
-    <div class="container">
-      <h1>User Account</h1>
-      <div id="userContainer">
-        <!-- Contenuto dinamico -->
-      </div>
-      <div id="statsContainer" class="hidden">
-        <h2>Your Stats</h2>
-        <p>Log in to view your battle statistics, win percentages, etc.</p>
-      </div>
-      <div id="battlesContainer" class="hidden">
-        <h2>Your Battles</h2>
-        <p>Log in to view your battle history.</p>
-        <ul id="battlesList">
-          <!-- Lista delle battaglie -->
-        </ul>
-      </div>
+  <!-- Contenitore principale -->
+  <div class="container">
+    <h1>Record a Battle</h1>
+    <div id="battleFormContainer">
+      <!-- Contenuto dinamico -->
     </div>
-      
-    <script type="module" src="../js/user.js" defer></script>
-    <script src="../js/navbar.js" defer></script>
-  </body>
+  </div>
+
+  <script type="module" src="../js/battle.js" defer></script>
+  <script src="../js/navbar.js" defer></script>
+</body>
 </html>
