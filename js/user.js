@@ -68,7 +68,19 @@ async function loginUser() {
 }
 
 // Funzione per mostrare le informazioni dell'utente
-function showUserInfo(user) {
+async function showUserInfo(user) {
+  const userQuery = query(collection(db, "users"), where("username", "==", user.username));
+  const userSnapshot = await getDocs(userQuery);
+  const userData = userSnapshot.docs[0].data();
+
+  // Inizializza i campi se non esistono
+  const wins = userData?.wins ?? 0;
+  const losses = userData?.losses ?? 0;
+  const totalBattles = userData?.totalBattles ?? 0;
+
+  const winRate =
+    totalBattles > 0 ? ((wins / totalBattles) * 100).toFixed(2) : 0;
+
   userContainer.innerHTML = `
     <div class="user-info">
       <h2>Welcome back! ${user.username}</h2>
@@ -77,13 +89,17 @@ function showUserInfo(user) {
     </div>
   `;
 
+  const statsContainer = document.getElementById("statsContainer");
+  statsContainer.innerHTML = `
+    <h2>Your Stats</h2>
+    <p>Vittorie totali: ${wins}</p>
+    <p>Sconfitte totali: ${losses}</p>
+    <p>WinRate: ${winRate}%</p>
+  `;
+  statsContainer.classList.remove("hidden");
+
   const logoutButton = document.getElementById("logoutButton");
   logoutButton.addEventListener("click", logoutUser);
-
-  // Mostra la sezione delle statistiche
-  const statsContainer = document.getElementById("statsContainer");
-  statsContainer.classList.remove("hidden");
-  statsContainer.querySelector("p").textContent = "No stats available yet.";
 
   // Mostra le battaglie dell'utente
   fetchUserBattles(user.username);
@@ -157,7 +173,6 @@ async function fetchUserBattles(username) {
   }
 
   battlesContainer.classList.remove("hidden");
-  battlesContainer.querySelector("p").style.display = "none";
 }
 
 // Controlla se l'utente è già autenticato

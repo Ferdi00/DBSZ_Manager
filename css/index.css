@@ -167,6 +167,48 @@ p {
   color: #ffffff;
 }
 
-#countdown span {
- 
+/* Stile per la classifica */
+.leaderboard {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.leaderboard h2 {
+  color: #e25822;
+  margin-bottom: 20px;
+}
+
+#leaderboardTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+#leaderboardTable th,
+#leaderboardTable td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #444444;
+  font-size: 1em;
+}
+
+#leaderboardTable th {
+  background: #3a3a3a;
+  color: white;
+}
+
+#leaderboardTable tr:nth-child(even) {
+  background-color: #343434;
+}
+
+#leaderboardTable tr:nth-child(odd) {
+  background-color: #2b2b2b;
+}
+
+#leaderboardTable img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
 }

@@ -7,9 +7,9 @@
   <link rel="stylesheet" href="css/navbar.css">
   <link rel="stylesheet" href="css/index.css">
   <script src="js/navbar.js" defer></script>
-  <script src="js/timer.js" defer></script>
+  <script type="module" src="js/timer.js" defer></script>
+  <script type="module" src="js/leaderboard.js" defer></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -45,8 +45,8 @@
       <li><a href="pages/user.html" class="sidebar-link"><i class="fas fa-user"></i> User</a></li>
       <li><a href="pages/list.html" class="sidebar-link"><i class="fas fa-list"></i> Characters List</a></li>
       <li><a href="pages/random.html" class="sidebar-link"><i class="fas fa-random"></i> Random Selection</a></li>
+      <li><a href="pages/updates.html" class="sidebar-link"><i class="fas fa-history"></i> Updates</a></li>
       <li><a href="pages/battle.html" class="sidebar-link"><i class="fas fa-fist-raised"></i> Battle</a></li>
-       <li><a href="pages/updates.html" class="sidebar-link"><i class="fas fa-history"></i> Updates</a></li>
     </ul>
   </div>
 
@@ -56,7 +56,7 @@
   <!-- Contenuto principale -->
   <div class="container">
     <h1>Welcome to DBZ Manager</h1>
-    <p>Manage your Dragon Ball characters and battles with ease!</p>
+    <p>Manage your Dragon Ball Z characters and battles with ease!</p>
 
     <!-- Descrizione delle funzionalità -->
     <div class="features">
@@ -66,7 +66,7 @@
         <li><strong>Random Selection:</strong> Generate random teams for local or online multiplayer.</li>
         <li><strong>User Account:</strong> Log in to access your personal account and battle history.</li>
         <li><strong>Battle:</strong> Record and view battles between players.</li>
-         <li><strong>Updates:</strong> Stay updated with the latest changes and improvements.</li>
+        <li><strong>Updates:</strong> Stay updated with the latest changes and improvements.</li>
       </ul>
     </div>
 
@@ -74,11 +74,29 @@
     <div class="timer">
       <h1>Season 1 coming soon</h1>
       <div id="countdown">
-        <span id="days"></span> Days -
-        <span id="hours"></span> Hours - 
-        <span id="minutes"></span> Minutes - 
-        <span id="seconds"></span> Seconds 
+        <span id="days"></span> Days 
+        <span id="hours"></span> Hours 
+        <span id="minutes"></span> Minutes 
+        <span id="seconds"></span> Seconds
       </div>
+    </div>
+
+    <!-- Classifica -->
+    <div class="leaderboard">
+      <h2>Leaderboard</h2>
+      <table id="leaderboardTable">
+        <thead>
+          <tr>
+            <th>Username</th>
+            <th>Wins</th>
+            <th>Losses</th>
+            <th>Win Rate</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Righe generate dinamicamente -->
+        </tbody>
+      </table>
     </div>
   </div>
 

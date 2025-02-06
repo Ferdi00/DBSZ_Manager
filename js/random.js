@@ -60,6 +60,17 @@ createRoomButton.addEventListener("click", async () => {
     return;
   }
 
+  // Verifica se esiste già una stanza con la stessa password
+  const roomQuery = query(
+    collection(db, "rooms"),
+    where("password", "==", roomPassword)
+  );
+  const roomSnapshot = await getDocs(roomQuery);
+  if (!roomSnapshot.empty) {
+    alert("A room with this password already exists.");
+    return;
+  }
+
   const roomRef = await addDoc(collection(db, "rooms"), {
     password: roomPassword,
     player1: [],
@@ -93,10 +104,29 @@ joinRoomButton.addEventListener("click", async () => {
     return;
   }
 
+  const roomData = roomSnapshot.docs[0].data();
+  if (roomData.player1.length > 0 && roomData.player2.length > 0) {
+    alert("This room is already full.");
+    return;
+  }
+
   roomId = roomSnapshot.docs[0].id;
   roomIdText.textContent = roomId;
   roomIdDisplay.style.display = "block";
   alert("Joined room successfully. Room ID: " + roomId);
+
+  // Assegna l'utente a player1 o player2
+  const user = JSON.parse(localStorage.getItem("user"));
+  const roomRef = doc(db, "rooms", roomId);
+  if (roomData.player1.length === 0) {
+    await updateDoc(roomRef, {
+      player1: user,
+    });
+  } else {
+    await updateDoc(roomRef, {
+      player2: user,
+    });
+  }
 
   // Ascolta le modifiche in tempo reale
   listenToRoomChanges(roomId);
