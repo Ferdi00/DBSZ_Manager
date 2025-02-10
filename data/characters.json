@@ -907,7 +907,7 @@
     "position": 14,
     "id": 23,
     "name": "Freezer dorato",
-    "power_level": "TOP",
+    "power_level": "GOOD",
     "dlc": "no",
     "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/9/9a/40%C2%BA_GOLDEN_FRIEZA.png"
   },
@@ -1243,7 +1243,7 @@
     "position": 7,
     "id": 108,
     "name": "Gohan Supremo",
-    "power_level": "TOP",
+    "power_level": "GOOD",
     "dlc": "no",
     "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/7/7f/18_ULTIMATE_GOHAN.png"
   },
