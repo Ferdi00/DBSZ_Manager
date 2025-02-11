@@ -212,3 +212,59 @@ p {
   height: 60px;
   border-radius: 50%;
 }
+
+/* Stile per le prime tre posizioni */
+#leaderboardTable tr.gold {
+  background-color: rgba(255, 215, 0, 0.3); /* Oro sbiadito */
+}
+
+#leaderboardTable tr.silver {
+  background-color: rgba(192, 192, 192, 0.3); /* Argento sbiadito */
+}
+
+#leaderboardTable tr.bronze {
+  background-color: rgba(205, 127, 50, 0.3); /* Bronzo sbiadito */
+}
+
+#leaderboardTable .medal {
+  font-size: 1.5em;
+  margin-right: 5px;
+}
+
+/* Stile per la tabella delle partite */
+.matches {
+  width: 100%;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.matches h2 {
+  color: #e25822;
+  margin-bottom: 20px;
+}
+
+#matchesTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+#matchesTable th,
+#matchesTable td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #444444;
+}
+
+#matchesTable th {
+  background: #3a3a3a;
+  color: white;
+}
+
+#matchesTable tr:nth-child(even) {
+  background-color: #343434;
+}
+
+#matchesTable tr:nth-child(odd) {
+  background-color: #2b2b2b;
+}

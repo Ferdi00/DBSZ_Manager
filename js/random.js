@@ -105,7 +105,7 @@ joinRoomButton.addEventListener("click", async () => {
   }
 
   const roomData = roomSnapshot.docs[0].data();
-  
+
   roomId = roomSnapshot.docs[0].id;
   roomIdText.textContent = roomId;
   roomIdDisplay.style.display = "block";
@@ -138,61 +138,91 @@ function generateRandomCharacters() {
 
   const availableCharactersPlayer1 = characters.filter(
     (character) =>
-      selectedMode === "local" || player1DlcCheckbox.checked || character.dlc === "no"
+      selectedMode === "local" ||
+      player1DlcCheckbox.checked ||
+      character.dlc === "no"
   );
 
   const availableCharactersPlayer2 = characters.filter(
     (character) =>
-      selectedMode === "local" || player2DlcCheckbox.checked || character.dlc === "no"
+      selectedMode === "local" ||
+      player2DlcCheckbox.checked ||
+      character.dlc === "no"
   );
 
-  if (availableCharactersPlayer1.length < 5 || availableCharactersPlayer2.length < 5) {
+  if (
+    availableCharactersPlayer1.length < 5 ||
+    availableCharactersPlayer2.length < 5
+  ) {
     console.error("Non ci sono abbastanza personaggi disponibili!");
     return;
   }
 
   let player1Characters = [];
   let player2Characters = [];
-  const usedIds = new Set(); // Set per tenere traccia degli ID già usati
+  let usedCharacters1 = [];
+  let usedCharacters2 = [];
+  let usedIds1 = [];
+  let usedIds2 = [];
 
   if (preset === "preset1") {
     player1Characters = getCharactersByType(
       availableCharactersPlayer1,
       ["WEAK", "GOOD", "MID", "TOP", "MID"],
-      usedIds
+      usedCharacters1,
+      usedIds1
     );
     player2Characters = getCharactersByType(
       availableCharactersPlayer2,
       ["WEAK", "GOOD", "MID", "TOP", "MID"],
-      usedIds
+      usedCharacters2,
+      usedIds2
     );
   } else if (preset === "preset2") {
     player1Characters = getCharactersByType(
       availableCharactersPlayer1,
-      ["TOP", "GOOD", "WEAK", "MID", "GOOD"],
-      usedIds
+      ["GOOD", "WEAK", "TOP", "MID", "GOOD"],
+      usedCharacters1,
+      usedIds1
     );
     player2Characters = getCharactersByType(
       availableCharactersPlayer2,
-      ["TOP", "GOOD", "WEAK", "MID", "GOOD"],
-      usedIds
+      ["GOOD", "WEAK", "TOP", "MID", "GOOD"],
+      usedCharacters2,
+      usedIds2
     );
   } else if (preset === "preset3") {
     player1Characters = getCharactersByType(
       availableCharactersPlayer1,
       ["TOP", "WEAK", "MID", "GOOD", "TOP"],
-      usedIds
+      usedCharacters1,
+      usedIds1
     );
     player2Characters = getCharactersByType(
       availableCharactersPlayer2,
       ["TOP", "WEAK", "MID", "GOOD", "TOP"],
-      usedIds
+      usedCharacters2,
+      usedIds2
     );
   } else if (preset === "preset4") {
     const shuffledCharactersPlayer1 = availableCharactersPlayer1
+      .filter(
+        (character) =>
+          !usedCharacters1.includes(character.name) &&
+          !usedIds1.includes(character.id)
+      )
       .sort(() => 0.5 - Math.random())
       .slice(0, 5);
+    usedCharacters1.push(
+      ...shuffledCharactersPlayer1.map((character) => character.name)
+    );
+    usedIds1.push(...shuffledCharactersPlayer1.map((character) => character.id));
     const shuffledCharactersPlayer2 = availableCharactersPlayer2
+      .filter(
+        (character) =>
+          !usedCharacters2.includes(character.name) &&
+          !usedIds2.includes(character.id)
+      )
       .sort(() => 0.5 - Math.random())
       .slice(0, 5);
     player1Characters = shuffledCharactersPlayer1;
@@ -202,12 +232,14 @@ function generateRandomCharacters() {
     player1Characters = getCharactersByType(
       availableCharactersPlayer1,
       customPreset,
-      usedIds
+      usedCharacters1,
+      usedIds1
     );
     player2Characters = getCharactersByType(
       availableCharactersPlayer2,
       customPreset,
-      usedIds
+      usedCharacters2,
+      usedIds2
     );
   }
 
@@ -226,16 +258,20 @@ function generateRandomCharacters() {
 }
 
 // Funzione per ottenere personaggi in base ai tipi specificati
-function getCharactersByType(availableCharacters, types, usedIds) {
+function getCharactersByType(
+  availableCharacters,
+  types,
+  usedCharacters = [],
+  usedIds = []
+) {
   const selectedCharacters = [];
-  const usedCharacters = new Set();
 
   types.forEach((type) => {
     const filteredCharacters = availableCharacters.filter(
       (character) =>
         character.power_level === type &&
-        !usedCharacters.has(character.name) &&
-        !usedIds.has(character.id) // Escludi personaggi con ID già usati
+        !usedCharacters.includes(character.name) &&
+        !usedIds.includes(character.id)
     );
 
     if (filteredCharacters.length === 0) {
@@ -249,8 +285,8 @@ function getCharactersByType(availableCharacters, types, usedIds) {
       filteredCharacters[Math.floor(Math.random() * filteredCharacters.length)];
     if (randomCharacter) {
       selectedCharacters.push(randomCharacter);
-      usedCharacters.add(randomCharacter.name);
-      usedIds.add(randomCharacter.id); // Aggiungi l'ID alla lista degli ID usati
+      usedCharacters.push(randomCharacter.name); // Aggiungi il personaggio usato alla lista
+      usedIds.push(randomCharacter.id); // Aggiungi l'ID del personaggio usato alla lista
     }
   });
 

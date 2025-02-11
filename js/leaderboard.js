@@ -5,6 +5,7 @@ import {
   query,
   orderBy,
   onSnapshot,
+  getDocs,
 } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-firestore.js";
 
 // Configurazione Firebase
@@ -32,6 +33,7 @@ function updateLeaderboard() {
   const q = query(collection(db, "users"), orderBy("wins", "desc"));
   onSnapshot(q, (querySnapshot) => {
     leaderboardTableBody.innerHTML = ""; // Pulisci la tabella prima di aggiornarla
+    let index = 0; // Inizializza l'indice
     querySnapshot.forEach((doc) => {
       const user = doc.data();
       const row = document.createElement("tr");
@@ -54,8 +56,18 @@ function updateLeaderboard() {
 
       const winRateCell = document.createElement("td");
       const totalBattles = user.wins + user.losses;
-      const winRate = totalBattles > 0 ? ((user.wins / totalBattles) * 100).toFixed(2) : 0;
+      const winRate =
+        totalBattles > 0 ? ((user.wins / totalBattles) * 100).toFixed(2) : 0;
       winRateCell.textContent = `${winRate}%`;
+
+      // Aggiungi colori e icone per le prime 3 posizioni
+      if (index === 0) {
+        row.classList.add("gold");
+      } else if (index === 1) {
+        row.classList.add("silver");
+      } else if (index === 2) {
+        row.classList.add("bronze");
+      }
 
       row.appendChild(userCell);
       row.appendChild(winsCell);
@@ -63,9 +75,63 @@ function updateLeaderboard() {
       row.appendChild(winRateCell);
 
       leaderboardTableBody.appendChild(row);
+      index++; // Incrementa l'indice
     });
   });
 }
 
-// Aggiorna la classifica al caricamento della pagina
-document.addEventListener("DOMContentLoaded", updateLeaderboard);
+// Funzione per aggiornare la matrice delle partite
+async function updateMatchesMatrix() {
+  const matchesTableBody = document.querySelector("#matchesTable tbody");
+  matchesTableBody.innerHTML = "";
+
+  const battlesQuery = query(collection(db, "battles"));
+  const battlesSnapshot = await getDocs(battlesQuery);
+
+  const matches = {};
+
+  battlesSnapshot.forEach((doc) => {
+    const battle = doc.data();
+    const player1 = battle.player1;
+    const player2 = battle.player2;
+
+    const key =
+      player1 < player2 ? `${player1}-${player2}` : `${player2}-${player1}`;
+
+    if (!matches[key]) {
+      matches[key] = { player1, player2, wins: 0, losses: 0 };
+    }
+
+    const [winsPlayer1, winsPlayer2] = battle.score.split("-").map(Number);
+    matches[key].wins += winsPlayer1;
+    matches[key].losses += winsPlayer2;
+  });
+
+  Object.values(matches).forEach((match) => {
+    const row = document.createElement("tr");
+
+    const player1Cell = document.createElement("td");
+    player1Cell.textContent = match.player1;
+
+    const player2Cell = document.createElement("td");
+    player2Cell.textContent = match.player2;
+
+    const matchesCell = document.createElement("td");
+    matchesCell.textContent = match.wins + match.losses;
+
+    row.appendChild(player1Cell);
+    row.appendChild(player2Cell);
+    row.appendChild(matchesCell);
+
+    matchesTableBody.appendChild(row);
+  });
+
+  // Aumenta la dimensione della matrice delle partite
+  matchesTableBody.style.fontSize = "1.2em";
+}
+
+// Aggiorna la classifica e la matrice delle partite al caricamento della pagina
+document.addEventListener("DOMContentLoaded", () => {
+  updateLeaderboard();
+  updateMatchesMatrix();
+});

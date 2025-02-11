@@ -92,8 +92,8 @@ async function showUserInfo(user) {
   const statsContainer = document.getElementById("statsContainer");
   statsContainer.innerHTML = `
     <h2>Your Stats</h2>
-    <p>Vittorie totali: ${wins}</p>
-    <p>Sconfitte totali: ${losses}</p>
+    <p>Total Wins: ${wins}</p>
+    <p>Total Losses: ${losses}</p>
     <p>WinRate: ${winRate}%</p>
   `;
   statsContainer.classList.remove("hidden");
