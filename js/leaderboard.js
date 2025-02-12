@@ -99,15 +99,24 @@ async function updateMatchesMatrix() {
       player1 < player2 ? `${player1}-${player2}` : `${player2}-${player1}`;
 
     if (!matches[key]) {
-      matches[key] = { player1, player2, wins: 0, losses: 0 };
+      matches[key] = { player1, player2, wins: 0, losses: 0, totalMatches: 0 };
     }
 
     const [winsPlayer1, winsPlayer2] = battle.score.split("-").map(Number);
     matches[key].wins += winsPlayer1;
     matches[key].losses += winsPlayer2;
+    matches[key].totalMatches += 1;
   });
 
-  Object.values(matches).forEach((match) => {
+  const sortedMatches = Object.values(matches).sort((a, b) => {
+    if (a.player1 < b.player1) return -1;
+    if (a.player1 > b.player1) return 1;
+    if (a.player2 < b.player2) return -1;
+    if (a.player2 > b.player2) return 1;
+    return 0;
+  });
+
+  sortedMatches.forEach((match) => {
     const row = document.createElement("tr");
 
     const player1Cell = document.createElement("td");
@@ -116,12 +125,16 @@ async function updateMatchesMatrix() {
     const player2Cell = document.createElement("td");
     player2Cell.textContent = match.player2;
 
-    const matchesCell = document.createElement("td");
-    matchesCell.textContent = match.wins + match.losses;
+    const scoreCell = document.createElement("td");
+    scoreCell.textContent = `${match.wins}-${match.losses}`;
+
+    const totalMatchesCell = document.createElement("td");
+    totalMatchesCell.textContent = match.wins + match.losses;
 
     row.appendChild(player1Cell);
     row.appendChild(player2Cell);
-    row.appendChild(matchesCell);
+    row.appendChild(scoreCell);
+    row.appendChild(totalMatchesCell);
 
     matchesTableBody.appendChild(row);
   });
