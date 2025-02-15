@@ -80,7 +80,6 @@ function updateLeaderboard() {
   });
 }
 
-// Funzione per aggiornare la matrice delle partite
 async function updateMatchesMatrix() {
   const matchesTableBody = document.querySelector("#matchesTable tbody");
   matchesTableBody.innerHTML = "";
@@ -95,17 +94,28 @@ async function updateMatchesMatrix() {
     const player1 = battle.player1;
     const player2 = battle.player2;
 
-    const key =
-      player1 < player2 ? `${player1}-${player2}` : `${player2}-${player1}`;
+    // Ordine canonico: il giocatore che viene prima alfabeticamente è sempre il primo
+    const [first, second] =
+      player1 < player2 ? [player1, player2] : [player2, player1];
+    const key = `${first}-${second}`;
 
     if (!matches[key]) {
-      matches[key] = { player1, player2, wins: 0, losses: 0, totalMatches: 0 };
+      // Salviamo l'ordine canonico nel match
+      matches[key] = { player1: first, player2: second, wins: 0, losses: 0 };
     }
 
-    const [winsPlayer1, winsPlayer2] = battle.score.split("-").map(Number);
-    matches[key].wins += winsPlayer1;
-    matches[key].losses += winsPlayer2;
-    matches[key].totalMatches += 1;
+    // Estraiamo il punteggio dalla stringa (es. "1-0")
+    const [score1, score2] = battle.score.split("-").map(Number);
+
+    // Se l'ordine nella battaglia corrisponde all'ordine canonico,
+    // aggiungiamo il punteggio così com'è, altrimenti invertiamo i valori.
+    if (player1 === first) {
+      matches[key].wins += score1;
+      matches[key].losses += score2;
+    } else {
+      matches[key].wins += score2;
+      matches[key].losses += score1;
+    }
   });
 
   const sortedMatches = Object.values(matches).sort((a, b) => {
@@ -129,6 +139,7 @@ async function updateMatchesMatrix() {
     scoreCell.textContent = `${match.wins}-${match.losses}`;
 
     const totalMatchesCell = document.createElement("td");
+    // Total è la somma dei punteggi (wins + losses)
     totalMatchesCell.textContent = match.wins + match.losses;
 
     row.appendChild(player1Cell);
@@ -142,6 +153,8 @@ async function updateMatchesMatrix() {
   // Aumenta la dimensione della matrice delle partite
   matchesTableBody.style.fontSize = "1.2em";
 }
+
+
 
 // Aggiorna la classifica e la matrice delle partite al caricamento della pagina
 document.addEventListener("DOMContentLoaded", () => {
