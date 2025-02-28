@@ -67,7 +67,7 @@
     "position": 31,
     "id": 45,
     "name": "Gohan (Super Hero)",
-    "power_level": "MID",
+    "power_level": "GOOD",
     "dlc": "si",
     "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/c/c9/110_GOHAN_%28SUPER_HERO%29.png"
   },
@@ -75,7 +75,7 @@
     "position": 31,
     "id": 45,
     "name": "Gohan (Super Hero) - Super Saiyan",
-    "power_level": "GOOD",
+    "power_level": "TOP",
     "dlc": "si",
     "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/9/9c/110%C2%BA_GOHAN_%28SUPER_HERO%29_Super_Saiyan.png"
   },
@@ -491,7 +491,7 @@
     "position": 22,
     "id": 29,
     "name": "Broly (Super)",
-    "power_level": "GOOD",
+    "power_level": "TOP",
     "dlc": "no",
     "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/5/5c/76_BROLY_%28SUPER%29.PNG"
   },
@@ -547,7 +547,7 @@
     "position": 21,
     "id": 28,
     "name": "Broly (Z)",
-    "power_level": "GOOD",
+    "power_level": "TOP",
     "dlc": "no",
     "image_url": "https://static.wikia.nocookie.net/dbzsparkingzero/images/5/50/75_BROLY_%28Z%29.png"
   },

@@ -7,11 +7,11 @@ import {
   where,
   getDocs,
   collection,
+  orderBy,
 } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-firestore.js";
 
 // Configurazione Firebase
 const firebaseConfig = {
-  apiKey: "AIzaSyAAr2hqejSjlFnLq9KBEqXG_EQZFMh588E",
   authDomain: "dbszmanager.firebaseapp.com",
   projectId: "dbszmanager",
   storageBucket: "dbszmanager.firebasestorage.app",
@@ -69,7 +69,10 @@ async function loginUser() {
 
 // Funzione per mostrare le informazioni dell'utente
 async function showUserInfo(user) {
-  const userQuery = query(collection(db, "users"), where("username", "==", user.username));
+  const userQuery = query(
+    collection(db, "users"),
+    where("username", "==", user.username)
+  );
   const userSnapshot = await getDocs(userQuery);
   const userData = userSnapshot.docs[0].data();
 
@@ -117,11 +120,25 @@ async function fetchUserBattles(username) {
   const battlesList = document.getElementById("battlesList");
 
   // Query per ottenere le battaglie in cui l'utente è coinvolto come player1 o player2
-  const q1 = query(collection(db, "battles"), where("player1", "==", username));
-  const q2 = query(collection(db, "battles"), where("player2", "==", username));
+  const q1 = query(
+    collection(db, "battles"),
+    where("player1", "==", username)
+  );
+  const q2 = query(
+    collection(db, "battles"),
+    where("player2", "==", username)
+  );
 
   const querySnapshot1 = await getDocs(q1);
   const querySnapshot2 = await getDocs(q2);
+
+  // Combina i risultati delle due query
+  const battles = [];
+  querySnapshot1.forEach((doc) => battles.push(doc.data()));
+  querySnapshot2.forEach((doc) => battles.push(doc.data()));
+
+  // Ordina le battaglie per data decrescente
+  battles.sort((a, b) => new Date(b.date) - new Date(a.date));
 
   battlesList.innerHTML = "";
 
@@ -144,21 +161,8 @@ async function fetchUserBattles(username) {
     return `<span style="color: ${score1Color}; font-weight: bold;">${score1}</span> <span style="color: white;">-</span> <span style="color: ${score2Color}; font-weight: bold;">${score2}</span>`;
   }
 
-  // Aggiungi le battaglie in cui l'utente è player1
-  querySnapshot1.forEach((doc) => {
-    const battle = doc.data();
-    const listItem = document.createElement("li");
-    listItem.innerHTML = `
-      <span class="battle-date">${battle.date}</span>: 
-      <span class="battle-players">${battle.player1} vs ${battle.player2}</span> - 
-      <span class="battle-score">${colorScore(battle.score)}</span>
-    `;
-    battlesList.appendChild(listItem);
-  });
-
-  // Aggiungi le battaglie in cui l'utente è player2
-  querySnapshot2.forEach((doc) => {
-    const battle = doc.data();
+  // Aggiungi le battaglie alla lista
+  battles.forEach((battle) => {
     const listItem = document.createElement("li");
     listItem.innerHTML = `
       <span class="battle-date">${battle.date}</span>: 
