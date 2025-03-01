@@ -54,9 +54,11 @@ fetch("../data/characters.json")
 
 // Funzione per creare una stanza
 createRoomButton.addEventListener("click", async () => {
-  const roomPassword = roomPasswordInput.value;
+  let roomPassword = roomPasswordInput.value.trim().toUpperCase();
+  roomPassword = roomPassword.replace(/\s+/g, ''); // Rimuovi spazi
+
   if (!roomPassword) {
-    alert("Please enter a room password.");
+    alert("Please enter a valid room password.");
     return;
   }
 
@@ -88,9 +90,11 @@ createRoomButton.addEventListener("click", async () => {
 
 // Funzione per partecipare a una stanza
 joinRoomButton.addEventListener("click", async () => {
-  const roomPassword = joinRoomPasswordInput.value;
+  let roomPassword = joinRoomPasswordInput.value.trim().toUpperCase();
+  roomPassword = roomPassword.replace(/\s+/g, ''); // Rimuovi spazi
+
   if (!roomPassword) {
-    alert("Please enter a room password.");
+    alert("Please enter a valid room password.");
     return;
   }
 
